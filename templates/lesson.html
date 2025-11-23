@@ -7,8 +7,33 @@
   <div class="content">
     {{ lesson.content|safe }}
   </div>
-  <p><a href="{{ url_for('index') }}">Volver</a></p>
+  <div style="margin-top: 2em; padding: 1em; background: #f0f0f0; border-radius: 5px;">
+    <button id="completeBtn" onclick="markAsComplete()" style="padding: 10px 20px; background: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+      ✓ Marcar como completado
+    </button>
+    <span id="completionMsg" style="margin-left: 10px; color: green; display: none;">¡Lección completada!</span>
+  </div>
+  <p><a href="{{ url_for('index') }}">← Volver al inicio</a></p>
 </article>
+
+<script>
+function markAsComplete() {
+  const lessonId = '{{ lesson.id }}';
+  
+  fetch(`/api/complete/${lessonId}`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'}
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      document.getElementById('completeBtn').disabled = true;
+      document.getElementById('completeBtn').style.background = '#6c757d';
+      document.getElementById('completionMsg').style.display = 'inline';
+    }
+  });
+}
+</script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

@@ -5,14 +5,28 @@
   <h2>Básicos</h2>
   <ul>
     {% for l in lessons if l.level == 'Básico' %}
-      <li><a href="{{ url_for('lesson', lesson_id=l.id) }}">{{ l.title }}</a></li>
+      <li>
+        <a href="{{ url_for('lesson', lesson_id=l.id) }}">
+          {{ l.title }}
+          {% if l.id in completed_lessons %}
+            <span style="color: green;">✓</span>
+          {% endif %}
+        </a>
+      </li>
     {% endfor %}
   </ul>
 
   <h2>Intermedios</h2>
   <ul>
     {% for l in lessons if l.level == 'Intermedio' %}
-      <li><a href="{{ url_for('lesson', lesson_id=l.id) }}">{{ l.title }}</a></li>
+      <li>
+        <a href="{{ url_for('lesson', lesson_id=l.id) }}">
+          {{ l.title }}
+          {% if l.id in completed_lessons %}
+            <span style="color: green;">✓</span>
+          {% endif %}
+        </a>
+      </li>
     {% endfor %}
   </ul>
 </section>
