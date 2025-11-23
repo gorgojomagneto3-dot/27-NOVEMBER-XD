@@ -1,5 +1,8 @@
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, abort, session, request, jsonify
 from markupsafe import Markup
+import os
+import uuid
+from database import init_db, save_progress, get_progress
 from b02_content import get_b02_content
 from b03_content import get_b03_content
 from b04_content import get_b04_content
@@ -11,8 +14,16 @@ from b09_content import get_b09_content
 from b10_content import get_b10_content
 from b11_content import get_b11_content
 from b12_content import get_b12_content
+from int01_content import get_int01_content
+from int02_content import get_int02_content
+from int03_content import get_int03_content
+from int04_content import get_int04_content
 
 app = Flask(__name__)
+app.secret_key = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
+
+# Inicializar base de datos
+init_db()
 
 def get_b01_content():
     return Markup("""
@@ -884,14 +895,34 @@ def make_lessons():
         "content": get_b12_content()
     })
     
-    # Intermediates
-    for i in range(1, 13):
-        lessons.append({
-            "id": f"i{i}",
-            "level": "Intermedio",
-            "title": f"Intermedio {i:02d}",
-            "content": "Contenido por llenar."
-        })
+    # Intermediates INT01-INT04 with full content
+    lessons.append({
+        "id": "int1",
+        "level": "Intermedio",
+        "title": "Intermedio 01 - WorldLink Intermediate 1",
+        "content": get_int01_content()
+    })
+    
+    lessons.append({
+        "id": "int2",
+        "level": "Intermedio",
+        "title": "Intermedio 02 - WorldLink Intermediate 2",
+        "content": get_int02_content()
+    })
+    
+    lessons.append({
+        "id": "int3",
+        "level": "Intermedio",
+        "title": "Intermedio 03 - WorldLink Intermediate 3",
+        "content": get_int03_content()
+    })
+    
+    lessons.append({
+        "id": "int4",
+        "level": "Intermedio",
+        "title": "Intermedio 04 - WorldLink Intermediate 4",
+        "content": get_int04_content()
+    })
     
     return lessons
 
@@ -900,16 +931,46 @@ LESSONS = {l["id"]: l for l in make_lessons()}
 
 @app.route("/")
 def index():
+    # Crear user_id si no existe
+    if 'user_id' not in session:
+        session['user_id'] = str(uuid.uuid4())
+    
     lessons = list(LESSONS.values())
-    return render_template("index.html", lessons=lessons)
+    progress = get_progress(session['user_id'])
+    completed_lessons = {p['lesson_id'] for p in progress if p.get('completed')}
+    
+    return render_template("index.html", lessons=lessons, completed_lessons=completed_lessons)
 
 
 @app.route("/lesson/<lesson_id>")
 def lesson(lesson_id):
+    if 'user_id' not in session:
+        session['user_id'] = str(uuid.uuid4())
+    
     lesson = LESSONS.get(lesson_id)
     if not lesson:
         abort(404)
+    
+    # Registrar acceso
+    save_progress(session['user_id'], lesson_id, completed=False)
+    
     return render_template("lesson.html", lesson=lesson)
+
+@app.route("/api/complete/<lesson_id>", methods=['POST'])
+def complete_lesson(lesson_id):
+    if 'user_id' not in session:
+        return jsonify({'error': 'No session'}), 400
+    
+    save_progress(session['user_id'], lesson_id, completed=True)
+    return jsonify({'success': True})
+
+@app.route("/api/progress")
+def api_progress():
+    if 'user_id' not in session:
+        return jsonify({'progress': []})
+    
+    progress = get_progress(session['user_id'])
+    return jsonify({'progress': progress})
 
 
 if __name__ == "__main__":
