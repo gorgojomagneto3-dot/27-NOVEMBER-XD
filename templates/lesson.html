@@ -1,0 +1,260 @@
+{% extends "base.html" %}
+{% block title %}{{ lesson.title }}{% endblock %}
+{% block content %}
+<article>
+  <h2>{{ lesson.title }}</h2>
+  <p><strong>Nivel:</strong> {{ lesson.level }}</p>
+  <div class="content">
+    {{ lesson.content|safe }}
+  </div>
+  <p><a href="{{ url_for('index') }}">Volver</a></p>
+</article>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Hacer ejercicios interactivos
+    makeExercisesInteractive();
+    
+    // Añadir botones de audio (TTS)
+    addTextToSpeech();
+    
+    // Crear flashcards para vocabulario
+    createFlashcards();
+    
+    // Añadir progress tracking
+    initProgressTracking();
+});
+
+function makeExercisesInteractive() {
+    // Encontrar todos los ejercicios con respuestas entre paréntesis
+    const exercises = document.querySelectorAll('.grammar-section ol, .vocab-section ol');
+    
+    exercises.forEach(list => {
+        const items = list.querySelectorAll('li');
+        items.forEach((item, index) => {
+            const text = item.textContent;
+            const match = text.match(/\(([^)]+)\)/);
+            
+            if (match) {
+                const answer = match[1];
+                const question = text.replace(/\s*\([^)]+\)/, '');
+                const blank = question.includes('______') ? question : question.replace(/\s+_+\s+/, ' <input type="text" class="answer-input" placeholder="..."> ');
+                
+                item.innerHTML = `
+                    <div class="exercise-item">
+                        <span class="question">${blank}</span>
+                        <button class="check-btn" onclick="checkAnswer(this, '${answer}')">Verificar</button>
+                        <button class="reveal-btn" onclick="revealAnswer(this, '${answer}')">Mostrar respuesta</button>
+                        <span class="feedback"></span>
+                    </div>
+                `;
+            }
+        });
+    });
+}
+
+function checkAnswer(button, correctAnswer) {
+    const exerciseItem = button.closest('.exercise-item');
+    const input = exerciseItem.querySelector('.answer-input');
+    const feedback = exerciseItem.querySelector('.feedback');
+    
+    if (!input) return;
+    
+    const userAnswer = input.value.trim().toLowerCase();
+    const correct = correctAnswer.toLowerCase();
+    
+    if (userAnswer === correct) {
+        feedback.textContent = '✓ ¡Correcto!';
+        feedback.className = 'feedback correct';
+        input.classList.add('correct');
+        input.classList.remove('incorrect');
+    } else {
+        feedback.textContent = '✗ Incorrecto. Intenta de nuevo.';
+        feedback.className = 'feedback incorrect';
+        input.classList.add('incorrect');
+        input.classList.remove('correct');
+    }
+}
+
+function revealAnswer(button, answer) {
+    const exerciseItem = button.closest('.exercise-item');
+    const input = exerciseItem.querySelector('.answer-input');
+    const feedback = exerciseItem.querySelector('.feedback');
+    
+    if (input) {
+        input.value = answer;
+        input.classList.add('revealed');
+    }
+    feedback.textContent = `✓ Respuesta: ${answer}`;
+    feedback.className = 'feedback revealed';
+}
+
+function addTextToSpeech() {
+    // Añadir botones de audio a secciones de vocabulario
+    const vocabSections = document.querySelectorAll('.vocab-section li, .speaking-section li');
+    
+    vocabSections.forEach(item => {
+        if (item.textContent.trim().length > 0) {
+            const speakBtn = document.createElement('button');
+            speakBtn.className = 'speak-btn';
+            speakBtn.innerHTML = '🔊';
+            speakBtn.title = 'Escuchar pronunciación';
+            speakBtn.onclick = () => speak(item.textContent);
+            item.appendChild(speakBtn);
+        }
+    });
+}
+
+function speak(text) {
+    if ('speechSynthesis' in window) {
+        // Limpiar texto de símbolos
+        const cleanText = text.replace(/→/g, '').replace(/_+/g, 'blank');
+        const utterance = new SpeechSynthesisUtterance(cleanText);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.8;
+        window.speechSynthesis.speak(utterance);
+    }
+}
+
+function createFlashcards() {
+    const tables = document.querySelectorAll('table');
+    
+    tables.forEach(table => {
+        const flashcardBtn = document.createElement('button');
+        flashcardBtn.className = 'flashcard-btn';
+        flashcardBtn.textContent = '📇 Practicar con Flashcards';
+        flashcardBtn.onclick = () => startFlashcardMode(table);
+        table.parentNode.insertBefore(flashcardBtn, table);
+    });
+}
+
+function startFlashcardMode(table) {
+    const rows = Array.from(table.querySelectorAll('tbody tr'));
+    if (rows.length === 0) return;
+    
+    let currentIndex = 0;
+    const modal = document.createElement('div');
+    modal.className = 'flashcard-modal';
+    modal.innerHTML = `
+        <div class="flashcard-container">
+            <button class="close-flashcard" onclick="this.closest('.flashcard-modal').remove()">✕</button>
+            <div class="flashcard" onclick="this.classList.toggle('flipped')">
+                <div class="flashcard-front"></div>
+                <div class="flashcard-back"></div>
+            </div>
+            <div class="flashcard-controls">
+                <button onclick="prevFlashcard()">⬅ Anterior</button>
+                <span class="flashcard-counter"></span>
+                <button onclick="nextFlashcard()">Siguiente ➡</button>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    window.currentFlashcards = rows;
+    window.currentFlashcardIndex = 0;
+    
+    showFlashcard(0);
+}
+
+function showFlashcard(index) {
+    const rows = window.currentFlashcards;
+    if (!rows || index < 0 || index >= rows.length) return;
+    
+    window.currentFlashcardIndex = index;
+    const row = rows[index];
+    const cells = row.querySelectorAll('td');
+    
+    if (cells.length >= 2) {
+        const front = document.querySelector('.flashcard-front');
+        const back = document.querySelector('.flashcard-back');
+        const counter = document.querySelector('.flashcard-counter');
+        
+        front.textContent = cells[0].textContent;
+        back.textContent = cells[1].textContent;
+        counter.textContent = `${index + 1} / ${rows.length}`;
+        
+        document.querySelector('.flashcard').classList.remove('flipped');
+    }
+}
+
+function nextFlashcard() {
+    const next = window.currentFlashcardIndex + 1;
+    if (next < window.currentFlashcards.length) {
+        showFlashcard(next);
+    }
+}
+
+function prevFlashcard() {
+    const prev = window.currentFlashcardIndex - 1;
+    if (prev >= 0) {
+        showFlashcard(prev);
+    }
+}
+
+function initProgressTracking() {
+    // Añadir checkboxes para marcar secciones completadas
+    const sections = document.querySelectorAll('section');
+    
+    sections.forEach((section, index) => {
+        const heading = section.querySelector('h2, h3');
+        if (heading) {
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.className = 'progress-checkbox';
+            checkbox.id = `section-${index}`;
+            checkbox.onchange = saveProgress;
+            
+            const label = document.createElement('label');
+            label.htmlFor = `section-${index}`;
+            label.className = 'progress-label';
+            label.textContent = ' Completado';
+            
+            const wrapper = document.createElement('div');
+            wrapper.className = 'progress-wrapper';
+            wrapper.appendChild(checkbox);
+            wrapper.appendChild(label);
+            
+            heading.appendChild(wrapper);
+            
+            // Cargar progreso guardado
+            const saved = localStorage.getItem(`section-${index}`);
+            if (saved === 'true') {
+                checkbox.checked = true;
+            }
+        }
+    });
+}
+
+function saveProgress() {
+    const checkboxes = document.querySelectorAll('.progress-checkbox');
+    checkboxes.forEach(cb => {
+        localStorage.setItem(cb.id, cb.checked);
+    });
+    
+    // Calcular y mostrar progreso total
+    const total = checkboxes.length;
+    const completed = Array.from(checkboxes).filter(cb => cb.checked).length;
+    const percentage = Math.round((completed / total) * 100);
+    
+    showProgressNotification(percentage);
+}
+
+function showProgressNotification(percentage) {
+    const notification = document.createElement('div');
+    notification.className = 'progress-notification';
+    notification.textContent = `Progreso: ${percentage}% completado`;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.classList.add('show');
+    }, 10);
+    
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => notification.remove(), 300);
+    }, 2000);
+}
+</script>
+{% endblock %}
