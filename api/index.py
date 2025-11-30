@@ -479,6 +479,514 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "b4": """
+    <div class="lesson-container">
+        <h1 class="text-3xl font-bold text-green-400 mb-6">🎯 BASIC 04 - Shopping & Jobs</h1>
+        <p class="text-white/60 mb-6">CEFR Level: A1 | ICPNA: Básico 4</p>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📋 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Talk about jobs and occupations</li>
+                <li>Use "there is/there are" correctly</li>
+                <li>Shop for clothing and ask prices</li>
+                <li>Describe your home and possessions</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">💼 Jobs & Occupations</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong class="text-green-400">teacher</strong> → profesor/a</li>
+                    <li><strong class="text-green-400">doctor</strong> → doctor/a</li>
+                    <li><strong class="text-green-400">engineer</strong> → ingeniero/a</li>
+                    <li><strong class="text-green-400">lawyer</strong> → abogado/a</li>
+                    <li><strong class="text-green-400">nurse</strong> → enfermero/a</li>
+                    <li><strong class="text-green-400">accountant</strong> → contador/a</li>
+                    <li><strong class="text-green-400">chef</strong> → chef</li>
+                    <li><strong class="text-green-400">waiter/waitress</strong> → mesero/a</li>
+                    <li><strong class="text-green-400">police officer</strong> → policía</li>
+                    <li><strong class="text-green-400">firefighter</strong> → bombero/a</li>
+                </ul>
+                <p class="mt-4"><strong>What do you do?</strong> → I'm a/an [job].</p>
+                <p><strong>Where do you work?</strong> → I work at/in [place].</p>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 There is / There are</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-yellow-400 mb-3"><strong>Singular: There is (There's)</strong></p>
+                <ul class="space-y-1 mb-4">
+                    <li>There <strong>is</strong> a book on the table.</li>
+                    <li>There <strong>isn't</strong> a window in this room.</li>
+                    <li><strong>Is there</strong> a bathroom? → Yes, there is. / No, there isn't.</li>
+                </ul>
+                <p class="text-yellow-400 mb-3"><strong>Plural: There are</strong></p>
+                <ul class="space-y-1">
+                    <li>There <strong>are</strong> three bedrooms in my house.</li>
+                    <li>There <strong>aren't</strong> any chairs in the kitchen.</li>
+                    <li><strong>Are there</strong> any students? → Yes, there are. / No, there aren't.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🏠 Rooms & Furniture</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Rooms:</h3>
+                <p>bedroom, living room, kitchen, bathroom, dining room, garage</p>
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Furniture:</h3>
+                <ul class="space-y-1">
+                    <li><strong>bed</strong> → cama</li>
+                    <li><strong>sofa/couch</strong> → sofá</li>
+                    <li><strong>table</strong> → mesa</li>
+                    <li><strong>chair</strong> → silla</li>
+                    <li><strong>desk</strong> → escritorio</li>
+                    <li><strong>lamp</strong> → lámpara</li>
+                    <li><strong>closet/wardrobe</strong> → armario</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">👕 Shopping for Clothes</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Clothing:</h3>
+                <ul class="space-y-1">
+                    <li><strong>shirt</strong> → camisa | <strong>T-shirt</strong> → camiseta</li>
+                    <li><strong>pants/trousers</strong> → pantalones | <strong>jeans</strong> → jeans</li>
+                    <li><strong>dress</strong> → vestido | <strong>skirt</strong> → falda</li>
+                    <li><strong>shoes</strong> → zapatos | <strong>sneakers</strong> → zapatillas</li>
+                    <li><strong>jacket</strong> → chaqueta | <strong>coat</strong> → abrigo</li>
+                </ul>
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Shopping Expressions:</h3>
+                <ul class="space-y-1">
+                    <li><strong>How much is this?</strong> → ¿Cuánto cuesta esto?</li>
+                    <li><strong>How much are these?</strong> → ¿Cuánto cuestan estos?</li>
+                    <li><strong>Can I try this on?</strong> → ¿Puedo probármelo?</li>
+                    <li><strong>Do you have this in size...?</strong> → ¿Tiene esto en talla...?</li>
+                    <li><strong>I'll take it.</strong> → Me lo llevo.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">✏️ Practice Exercises</h2>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>_____ there a bathroom in your house? (Is)</li>
+                <li>There _____ three bedrooms upstairs. (are)</li>
+                <li>How much _____ this shirt? (is)</li>
+                <li>There _____ any chairs in the room. (aren't)</li>
+                <li>_____ do you do? I'm a teacher. (What)</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
+    """,
+    
+    "b5": """
+    <div class="lesson-container">
+        <h1 class="text-3xl font-bold text-green-400 mb-6">🎯 BASIC 05 - Descriptions & Food</h1>
+        <p class="text-white/60 mb-6">CEFR Level: A2 | ICPNA: Básico 5</p>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📋 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Describe people's physical appearance</li>
+                <li>Talk about food and meals</li>
+                <li>Use adjectives to describe personality</li>
+                <li>Order food in a restaurant</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">👤 Physical Descriptions</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Height & Build:</h3>
+                <ul class="space-y-1">
+                    <li><strong>tall</strong> / <strong>short</strong> → alto/a / bajo/a</li>
+                    <li><strong>thin/slim</strong> / <strong>heavy/overweight</strong> → delgado/a / gordo/a</li>
+                    <li><strong>average height</strong> → estatura promedio</li>
+                </ul>
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Hair:</h3>
+                <ul class="space-y-1">
+                    <li><strong>long/short</strong> hair → cabello largo/corto</li>
+                    <li><strong>straight/curly/wavy</strong> → lacio/rizado/ondulado</li>
+                    <li><strong>blonde/brown/black/red</strong> → rubio/castaño/negro/rojo</li>
+                    <li><strong>bald</strong> → calvo</li>
+                </ul>
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Eyes:</h3>
+                <p>blue, green, brown, hazel, black eyes</p>
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Other features:</h3>
+                <ul class="space-y-1">
+                    <li><strong>beard</strong> → barba | <strong>mustache</strong> → bigote</li>
+                    <li><strong>glasses</strong> → lentes | <strong>freckles</strong> → pecas</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">😊 Personality Adjectives</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong class="text-green-400">friendly</strong> → amigable | <strong class="text-red-400">unfriendly</strong> → antipático</li>
+                    <li><strong class="text-green-400">funny</strong> → gracioso | <strong class="text-red-400">serious</strong> → serio</li>
+                    <li><strong class="text-green-400">kind</strong> → amable | <strong class="text-red-400">mean</strong> → malo</li>
+                    <li><strong class="text-green-400">smart/intelligent</strong> → inteligente</li>
+                    <li><strong class="text-green-400">hardworking</strong> → trabajador | <strong class="text-red-400">lazy</strong> → perezoso</li>
+                    <li><strong class="text-green-400">outgoing</strong> → extrovertido | <strong class="text-red-400">shy</strong> → tímido</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🍽️ Food & Meals</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Meals:</h3>
+                <p><strong>breakfast</strong> (desayuno), <strong>lunch</strong> (almuerzo), <strong>dinner</strong> (cena), <strong>snack</strong> (merienda)</p>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Food categories:</h3>
+                <ul class="space-y-1">
+                    <li><strong>Fruits:</strong> apple, banana, orange, grape, strawberry</li>
+                    <li><strong>Vegetables:</strong> tomato, potato, carrot, onion, lettuce</li>
+                    <li><strong>Meat:</strong> chicken, beef, pork, fish</li>
+                    <li><strong>Dairy:</strong> milk, cheese, yogurt, butter</li>
+                    <li><strong>Grains:</strong> bread, rice, pasta, cereal</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Tastes:</h3>
+                <p><strong>sweet</strong> (dulce), <strong>salty</strong> (salado), <strong>spicy</strong> (picante), <strong>sour</strong> (ácido), <strong>bitter</strong> (amargo)</p>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🍴 Ordering Food</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong>Waiter:</strong> Are you ready to order?</li>
+                    <li><strong>Customer:</strong> Yes, I'd like the chicken, please.</li>
+                    <li><strong>Waiter:</strong> Anything to drink?</li>
+                    <li><strong>Customer:</strong> I'll have a soda, please.</li>
+                    <li><strong>Customer:</strong> Can I have the bill/check, please?</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">✏️ Practice Exercises</h2>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>She has long _____ hair. (straight/curly/wavy)</li>
+                <li>He is very _____. He always helps people. (kind)</li>
+                <li>I'd _____ the fish, please. (like)</li>
+                <li>My father is _____. He doesn't have hair. (bald)</li>
+                <li>This soup is too _____! I need water. (spicy)</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
+    """,
+    
+    "b6": """
+    <div class="lesson-container">
+        <h1 class="text-3xl font-bold text-green-400 mb-6">🎯 BASIC 06 - Past Simple</h1>
+        <p class="text-white/60 mb-6">CEFR Level: A2 | ICPNA: Básico 6</p>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📋 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Talk about past events and experiences</li>
+                <li>Use regular and irregular verbs in past tense</li>
+                <li>Form questions and negatives in past simple</li>
+                <li>Use time expressions for the past</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Past Simple - Regular Verbs</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-yellow-400 mb-3"><strong>Add -ed to the base verb:</strong></p>
+                <ul class="space-y-2">
+                    <li><strong>work</strong> → worked | I worked yesterday.</li>
+                    <li><strong>play</strong> → played | We played soccer last week.</li>
+                    <li><strong>study</strong> → studied | She studied English.</li>
+                    <li><strong>stop</strong> → stopped | The bus stopped here.</li>
+                    <li><strong>live</strong> → lived | They lived in Lima.</li>
+                </ul>
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Spelling Rules:</h3>
+                <ul class="space-y-1">
+                    <li>Verb + -ed: <em>work → worked</em></li>
+                    <li>Verb ending in -e + -d: <em>live → lived</em></li>
+                    <li>Verb ending in consonant + y → -ied: <em>study → studied</em></li>
+                    <li>CVC verbs → double consonant: <em>stop → stopped</em></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Past Simple - Irregular Verbs</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong>be</strong> → was/were | I was tired. They were happy.</li>
+                    <li><strong>go</strong> → went | She went to school.</li>
+                    <li><strong>have</strong> → had | We had breakfast.</li>
+                    <li><strong>eat</strong> → ate | He ate pizza.</li>
+                    <li><strong>see</strong> → saw | I saw a movie.</li>
+                    <li><strong>come</strong> → came | They came late.</li>
+                    <li><strong>buy</strong> → bought | She bought a dress.</li>
+                    <li><strong>take</strong> → took | He took a photo.</li>
+                    <li><strong>make</strong> → made | We made dinner.</li>
+                    <li><strong>get</strong> → got | I got a gift.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">❓ Negatives & Questions</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Negative: didn't + base verb</h3>
+                <ul class="space-y-1">
+                    <li>I <strong>didn't go</strong> to work yesterday.</li>
+                    <li>She <strong>didn't eat</strong> breakfast.</li>
+                    <li>They <strong>didn't see</strong> the movie.</li>
+                </ul>
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Questions: Did + subject + base verb?</h3>
+                <ul class="space-y-1">
+                    <li><strong>Did you go</strong> to school? → Yes, I did. / No, I didn't.</li>
+                    <li><strong>Did she eat</strong> lunch? → Yes, she did. / No, she didn't.</li>
+                    <li><strong>What did you do</strong> yesterday? → I watched TV.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">⏰ Time Expressions</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong>yesterday</strong> → ayer</li>
+                    <li><strong>last night/week/month/year</strong> → anoche/la semana pasada...</li>
+                    <li><strong>... ago</strong> → hace... (two days ago = hace dos días)</li>
+                    <li><strong>in 2020</strong> → en 2020</li>
+                    <li><strong>when I was young</strong> → cuando era joven</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">✏️ Practice Exercises</h2>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I _____ (go) to the beach yesterday. (went)</li>
+                <li>She _____ (not/eat) breakfast this morning. (didn't eat)</li>
+                <li>_____ you _____ (see) that movie? (Did/see)</li>
+                <li>They _____ (buy) a new car last month. (bought)</li>
+                <li>We _____ (study) English two years ago. (studied)</li>
+                <li>He _____ (be) very tired last night. (was)</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
+    """,
+    
+    "int1": """
+    <div class="lesson-container">
+        <h1 class="text-3xl font-bold text-green-400 mb-6">🚀 INTERMEDIATE 01 - Relative Clauses</h1>
+        <p class="text-white/60 mb-6">CEFR Level: B1 | ICPNA: Intermedio 1 | World Link Intermediate 1</p>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📋 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Use defining and non-defining relative clauses</li>
+                <li>Talk about friends, family, and relationships</li>
+                <li>Express quantities using specific vocabulary</li>
+                <li>Describe community and social connections</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Defining Relative Clauses</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-yellow-400 mb-3">Essential information - no commas needed:</p>
+                <ul class="space-y-2">
+                    <li><strong>who</strong> (people): The man <em>who lives next door</em> is a doctor.</li>
+                    <li><strong>which</strong> (things): The book <em>which I bought</em> is interesting.</li>
+                    <li><strong>that</strong> (people/things): The car <em>that she drives</em> is red.</li>
+                    <li><strong>where</strong> (places): The restaurant <em>where we met</em> closed down.</li>
+                    <li><strong>when</strong> (time): I remember the day <em>when we first met</em>.</li>
+                    <li><strong>whose</strong> (possession): The woman <em>whose car was stolen</em> called police.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Non-Defining Relative Clauses</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-yellow-400 mb-3">Extra information - USE COMMAS:</p>
+                <ul class="space-y-2">
+                    <li>My sister, <em>who lives in Madrid</em>, is visiting next week.</li>
+                    <li>The Eiffel Tower, <em>which is in Paris</em>, is famous worldwide.</li>
+                    <li>My boss, <em>whose office is on the 5th floor</em>, is very kind.</li>
+                </ul>
+                <p class="mt-4 text-red-400">⚠️ Cannot use "that" in non-defining clauses!</p>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📝 Vocabulary: Community & Relationships</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong>circle of friends</strong> → grupo de amigos</li>
+                    <li><strong>keep in touch</strong> → mantenerse en contacto</li>
+                    <li><strong>walks of life</strong> → diferentes estilos de vida</li>
+                    <li><strong>acquaintance</strong> → conocido</li>
+                    <li><strong>close friend</strong> → amigo cercano</li>
+                    <li><strong>colleague</strong> → colega de trabajo</li>
+                    <li><strong>neighbor</strong> → vecino</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📊 Expressing Quantities</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong>the majority</strong> → la mayoría</li>
+                    <li><strong>just over</strong> → un poco más de</li>
+                    <li><strong>about / around</strong> → aproximadamente</li>
+                    <li><strong>nearly</strong> → casi</li>
+                    <li><strong>more than half</strong> → más de la mitad</li>
+                    <li><strong>a quarter</strong> → un cuarto</li>
+                    <li><strong>a third</strong> → un tercio</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">✏️ Practice Exercises</h2>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>The man _____ called you is my uncle. (who)</li>
+                <li>This is the restaurant _____ we had dinner. (where)</li>
+                <li>My brother, _____ is a doctor, works in Lima. (who)</li>
+                <li>The book _____ I'm reading is very interesting. (that/which)</li>
+                <li>She's the woman _____ husband works with me. (whose)</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
+    """,
+    
+    "int2": """
+    <div class="lesson-container">
+        <h1 class="text-3xl font-bold text-green-400 mb-6">🚀 INTERMEDIATE 02 - Dynamic Verbs & Work</h1>
+        <p class="text-white/60 mb-6">CEFR Level: B1 | ICPNA: Intermedio 2 | World Link Intermediate 1</p>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📋 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Distinguish between dynamic and stative verbs</li>
+                <li>Talk about work-life balance</li>
+                <li>Express opinions about work</li>
+                <li>Use get/have/need + someone/something</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Dynamic vs Stative Verbs</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Dynamic Verbs (can use continuous):</h3>
+                <ul class="space-y-1">
+                    <li><strong>work, run, eat, write, play, study</strong></li>
+                    <li>I'm working on a project. ✓</li>
+                    <li>She's eating lunch. ✓</li>
+                </ul>
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Stative Verbs (usually no continuous):</h3>
+                <ul class="space-y-1">
+                    <li><strong>know, believe, like, love, hate, want, need</strong></li>
+                    <li>I know the answer. ✓ | I'm knowing the answer. ✗</li>
+                    <li>She loves music. ✓ | She's loving music. ✗</li>
+                </ul>
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Verbs with both uses:</h3>
+                <ul class="space-y-1">
+                    <li><strong>think:</strong> I think it's good. (opinion) / I'm thinking about it. (process)</li>
+                    <li><strong>have:</strong> I have a car. (possession) / I'm having dinner. (activity)</li>
+                    <li><strong>see:</strong> I see the problem. (understand) / I'm seeing the doctor. (meeting)</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">💼 Work-Life Balance Vocabulary</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong>performance</strong> → rendimiento</li>
+                    <li><strong>morale</strong> → moral del equipo</li>
+                    <li><strong>burn out</strong> → agotarse</li>
+                    <li><strong>work overtime</strong> → trabajar horas extras</li>
+                    <li><strong>flexible hours</strong> → horario flexible</li>
+                    <li><strong>remote work</strong> → trabajo remoto</li>
+                    <li><strong>deadline</strong> → fecha límite</li>
+                    <li><strong>workload</strong> → carga de trabajo</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📝 Personal Qualities</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong>patience</strong> → paciencia</li>
+                    <li><strong>motivation</strong> → motivación</li>
+                    <li><strong>confident</strong> → seguro de sí mismo</li>
+                    <li><strong>experienced</strong> → experimentado</li>
+                    <li><strong>reliable</strong> → confiable</li>
+                    <li><strong>organized</strong> → organizado</li>
+                    <li><strong>creative</strong> → creativo</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Get/Have/Need + Someone/Something</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong>I need to get my car fixed.</strong></li>
+                    <li><strong>She had her hair cut yesterday.</strong></li>
+                    <li><strong>We need someone to help us.</strong></li>
+                    <li><strong>They got the house painted last month.</strong></li>
+                </ul>
+                <p class="mt-4 text-yellow-400">Structure: get/have + object + past participle</p>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">✏️ Practice Exercises</h2>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I _____ (think) about changing jobs. (am thinking)</li>
+                <li>She _____ (know) the answer. (knows - NOT "is knowing")</li>
+                <li>He needs to get his computer _____. (fixed/repaired)</li>
+                <li>We _____ (have) a meeting right now. (are having)</li>
+                <li>I _____ (believe) you're right. (believe - NOT "am believing")</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 

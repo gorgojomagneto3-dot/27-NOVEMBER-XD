@@ -2,23 +2,32 @@ from markupsafe import Markup
 
 def get_b01_content_new():
     """
-    BASIC 01 - A1 Inicial
+    BASIC 01 - A1 Inicial (World Link Intro Units 1-3)
     Basado en syllabus oficial ICPNA
-    Temas: Personal introductions, names, countries, nationalities, favorites
+    Temas: Personal introductions, names, countries, nationalities, favorites, possessions
     """
     return Markup("""
-    <h1>🎯 BASIC 01 - Nivel A1 Inicial</h1>
-    <p class="level-indicator">CEFR Level: A1 | ICPNA: Básico 1</p>
+    <h1>📚 B01: World Link Intro Units 1-3 - Complete Course Content</h1>
     
-    <div class="learning-objectives">
-        <h3>📋 Learning Objectives (Objetivos de Aprendizaje)</h3>
-        <ul>
-            <li>✅ Greet and introduce yourself using subject pronouns and possessive adjectives</li>
-            <li>✅ Ask and answer yes/no questions about personal information</li>
-            <li>✅ Talk about favorite TV shows, sports, and music</li>
-            <li>✅ Describe places and cities using adjectives</li>
-            <li>✅ Ask and answer wh-questions about countries and location</li>
-        </ul>
+    <div class="course-info">
+        <p><strong>📖 Libro:</strong> World Link Intro (3rd Edition) - Libro Azul/Blue</p>
+        <p><strong>🎯 Nivel CEFR:</strong> A1 (Principiante)</p>
+        <p><strong>📋 Unidades:</strong> 1-3 (My Favorites, Countries, Possessions)</p>
+    </div>
+    
+    <div class="lesson-section">
+        <h2>🎯 Unit Goals</h2>
+        <ol>
+            <li>Greet and introduce yourself using subject pronouns and possessive adjectives</li>
+            <li>Ask and answer yes/no questions about personal information</li>
+            <li>Talk about favorite TV shows, sports, and music</li>
+            <li>Identify countries, nationalities, and languages</li>
+            <li>Describe places and cities using adjectives</li>
+            <li>Ask and answer wh-questions about countries and location</li>
+            <li>Identify everyday objects and use articles a/an</li>
+            <li>Use demonstratives (this/that/these/those)</li>
+            <li>Form plural nouns correctly</li>
+        </ol>
     </div>
 
     <section id="unit1">
