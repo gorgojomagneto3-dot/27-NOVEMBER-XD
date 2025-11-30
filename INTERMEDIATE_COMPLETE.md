@@ -2,320 +2,223 @@
 
 ## 🎉 ¡Contenido Intermedio Agregado Exitosamente!
 
-### Fecha de Completación: Diciembre 2024
-### Commit: 361ec34
+### Fecha de Actualización: Noviembre 2025
+### Arquitectura: Astro Frontend + Flask Backend API
 
 ---
 
-## 📚 Archivos Creados
+## 📚 Archivos del Proyecto
 
-### Contenido de Niveles Intermedios:
-1. ✅ **int01_content.py** - Intermedio 01 (WorldLink Intermediate 1)
-2. ✅ **int02_content.py** - Intermedio 02 (WorldLink Intermediate 2)
-3. ✅ **int03_content.py** - Intermedio 03 (WorldLink Intermediate 3)
-4. ✅ **int04_content.py** - Intermedio 04 (WorldLink Intermediate 4)
+### Backend (Flask API - Puerto 5000):
+```
+backend/
+├── api.py              # API REST principal
+├── content.py          # Gestión central de contenido
+├── database.py         # SQLite para progreso
+├── b01-b12_content_new.py  # 12 archivos básicos
+├── int01-int12_content.py  # 12 archivos intermedios
+└── exam_prep_content.py    # Contenido especial
+```
 
-### Documentación:
-5. ✅ **SYLLABUS_INTERMEDIOS.md** - Syllabus completo INT01-INT04
-6. ✅ **database.py** - Módulo de base de datos PostgreSQL
-
-### Actualizaciones:
-7. ✅ **app.py** - Actualizado con imports e integración de niveles intermedios
+### Frontend (Astro - Puerto 4321):
+```
+frontend/
+├── src/
+│   ├── pages/
+│   │   ├── index.astro
+│   │   ├── lesson/[id].astro
+│   │   ├── flashcards.astro
+│   │   ├── practice.astro
+│   │   └── stats.astro
+│   ├── components/
+│   └── lib/api.ts
+└── package.json
+```
 
 ---
 
 ## 📖 Contenido por Nivel
 
-### INT01 - INTERMEDIO 01 (6 Unidades)
-**Libro:** World Link Intermediate 1 - Libro 1A (3rd Edition)
-**ISBN:** 9781305651357
-**MCER:** B1
+### 🔤 BÁSICO (B01-B12) - World Link Intro 3rd Edition
+**Nivel MCER:** A1 → A2
 
-#### Unidades:
-1. **UNIT 1: SOCIAL LIFE**
-   - Grammar: Present Perfect Continuous, Stative Verbs
-   - Vocabulary: Relationships, social media, networking
-   - Skills: Discussing social habits
-
-2. **UNIT 2: NATURE**
-   - Grammar: Used to, Present Perfect vs Continuous
-   - Vocabulary: Wildlife, conservation, habitats
-   - Skills: Describing changes over time
-
-3. **UNIT 3: FOOD**
-   - Grammar: Quantifiers (much/many/a lot of), Articles
-   - Vocabulary: Cooking methods, ingredients, cuisine
-   - Skills: Talking about food preferences
-
-4. **UNIT 4: SCIENCE**
-   - Grammar: Future forms, Future Perfect/Continuous
-   - Vocabulary: Scientific discoveries, experiments
-   - Skills: Making predictions
-
-5. **UNIT 5: LIFE**
-   - Grammar: Modals (advice, obligation, permission)
-   - Vocabulary: Life stages, experiences, choices
-   - Skills: Giving advice
-
-6. **UNIT 6: MONEY**
-   - Grammar: First Conditional, Time Clauses
-   - Vocabulary: Banking, investments, spending
-   - Skills: Discussing financial planning
+| Nivel | Contenido |
+|-------|-----------|
+| B01 | Introductions, Verb To Be, Numbers |
+| B02 | Countries, Nationalities, Present Simple |
+| B03 | Daily Routines, Time Expressions |
+| B04 | Food & Restaurants, Countable/Uncountable |
+| B05 | Directions, Prepositions of Place |
+| B06 | Past Simple, Life Events |
+| B07 | Comparatives & Superlatives |
+| B08 | Future with Will & Going to |
+| B09 | Present Perfect Introduction |
+| B10 | Modal Verbs (can, could, should) |
+| B11 | Conditionals Type 0 & 1 |
+| B12 | Review & Integration |
 
 ---
 
-### INT02 - INTERMEDIO 02 (6 Unidades: 7-12)
-**Libro:** World Link Intermediate 1 - Libro 1B (3rd Edition)
-**ISBN:** 9781305651364
-**MCER:** B1
+### 📘 INTERMEDIO 01-04 (World Link Intermediate 1)
+**Nivel MCER:** B1
 
-#### Unidades:
-7. **UNIT 7: INFORMATION**
-   - Grammar: Reported Speech (statements, questions)
-   - Vocabulary: Media, news, journalism
-   - Skills: Reporting what others said
+#### INT01 - World Link Intermediate 1A (Units 1-3)
+- **Unit 1:** Relationships - Present Perfect Continuous
+- **Unit 2:** Media - Reported Speech basics
+- **Unit 3:** Lifestyles - Used to vs Would
 
-8. **UNIT 8: BEHAVIOR**
-   - Grammar: Modals for speculation, Tag questions
-   - Vocabulary: Personality traits, behavior
-   - Skills: Making deductions
+#### INT02 - World Link Intermediate 1A (Units 4-6)
+- **Unit 4:** Health - Modals of advice/obligation
+- **Unit 5:** Shopping - Comparatives advanced
+- **Unit 6:** Food culture - Quantifiers
 
-9. **UNIT 9: THE MIND**
-   - Grammar: Gerunds/Infinitives advanced
-   - Vocabulary: Psychology, emotions, thinking
-   - Skills: Expressing preferences
+#### INT03 - World Link Intermediate 1B (Units 7-9)
+- **Unit 7:** Society - Passive Voice
+- **Unit 8:** Change - First & Second Conditional
+- **Unit 9:** Work - Gerunds & Infinitives
 
-10. **UNIT 10: THE CITY**
-    - Grammar: Passive Voice (present/past)
-    - Vocabulary: Urban planning, city life
-    - Skills: Describing city features
-
-11. **UNIT 11: STORIES**
-    - Grammar: Past Perfect, Time Sequencing
-    - Vocabulary: Narrative language, storytelling
-    - Skills: Narrating past events
-
-12. **UNIT 12: CELEBRATIONS**
-    - Grammar: Relative Clauses (defining/non-defining)
-    - Vocabulary: Festivals, traditions, customs
-    - Skills: Describing celebrations
+#### INT04 - World Link Intermediate 1B (Units 10-12)
+- **Unit 10:** Travel - Past Perfect
+- **Unit 11:** Arts - Relative Clauses
+- **Unit 12:** Review - All B1 structures
 
 ---
 
-### INT03 - INTERMEDIO 03 (6 Unidades)
-**Libro:** World Link Intermediate 2 - Libro 2A (3rd Edition)
-**ISBN:** 9781305651371
-**MCER:** B1+
+### 📗 INTERMEDIO 05-08 (World Pass Book 1 - Upper Intermediate)
+**Nivel MCER:** B1+ → B2
 
-#### Unidades:
-1. **UNIT 1: COMPARISONS**
-   - Grammar: Advanced Comparatives, Superlatives
-   - Vocabulary: Making comparisons, contrasts
-   - Skills: Comparing options
+#### INT05 - World Pass Unit 1-3
+- **Unit 1:** Communication - Advanced tenses review
+- **Unit 2:** Personalities - Character idioms
+- **Unit 3:** Lifestyle choices - Wish/If only
 
-2. **UNIT 2: CAREER**
-   - Grammar: Second Conditional, Wish + past
-   - Vocabulary: Jobs, careers, workplace
-   - Skills: Discussing hypothetical situations
+#### INT06 - World Pass Unit 4-6
+- **Unit 4:** Trends - Future forms advanced
+- **Unit 5:** Global issues - Third Conditional
+- **Unit 6:** Technology - Mixed Conditionals
 
-3. **UNIT 3: PERSONALITY**
-   - Grammar: Present Perfect Continuous extended
-   - Vocabulary: Character traits, temperament
-   - Skills: Describing people
+#### INT07 - World Pass Unit 7-9
+- **Unit 7:** Entertainment - Reported Speech advanced
+- **Unit 8:** Relationships - Causative structures
+- **Unit 9:** Success - Modal perfects
 
-4. **UNIT 4: CHANGE**
-   - Grammar: Used to vs Would, Be/Get used to
-   - Vocabulary: Transformation, adaptation
-   - Skills: Talking about changes
-
-5. **UNIT 5: BORDERS**
-   - Grammar: Articles (advanced usage)
-   - Vocabulary: Immigration, travel, cultures
-   - Skills: Discussing travel experiences
-
-6. **UNIT 6: ENVIRONMENT**
-   - Grammar: Passive Voice (all tenses)
-   - Vocabulary: Ecology, climate, conservation
-   - Skills: Discussing environmental issues
+#### INT08 - World Pass Unit 10-12
+- **Unit 10:** Health & Wellbeing - Inversion
+- **Unit 11:** World cultures - Cleft sentences
+- **Unit 12:** Review - B2 consolidation
 
 ---
 
-### INT04 - INTERMEDIO 04 (6 Unidades: 7-12)
-**Libro:** World Link Intermediate 2 - Libro 2B (3rd Edition)
-**ISBN:** 9781305651388
-**MCER:** B1+
+### 📕 INTERMEDIO 09-12 (American Big Picture B2-C1)
+**Nivel MCER:** B2 → C1
 
-#### Unidades:
-7. **UNIT 7: COMMUNICATION**
-   - Grammar: Reported Speech (all forms), Reporting verbs
-   - Vocabulary: Communication styles, digital communication
-   - Skills: Reporting commands/requests
+#### INT09 - Social Networks
+- Auxiliary Verbs & Emphasis
+- Reflexive & Reciprocal Pronouns
+- Social media vocabulary
 
-8. **UNIT 8: THE FUTURE**
-   - Grammar: Future Perfect/Continuous advanced, Future in past
-   - Vocabulary: Technology trends, predictions
-   - Skills: Making future predictions
+#### INT10 - Reinvention
+- Word Formation (prefixes/suffixes)
+- Idioms about change & appearance
+- Describing transformations
 
-9. **UNIT 9: CULTURE**
-   - Grammar: Third Conditional, Mixed Conditionals, Wish + past perfect
-   - Vocabulary: Cultural heritage, arts, values
-   - Skills: Expressing regrets
+#### INT11 - Rules & Luck
+- Past Modals (should have, could have)
+- Cleft Sentences emphasis
+- Quantifiers advanced (hardly any, a great deal)
 
-10. **UNIT 10: STORYTELLING**
-    - Grammar: Narrative Tenses (integrated)
-    - Vocabulary: Narrative techniques, plot elements
-    - Skills: Telling engaging stories
-
-11. **UNIT 11: VALUES**
-    - Grammar: Modal Perfect (should/could/would/must/might have)
-    - Vocabulary: Ethics, morality, social issues
-    - Skills: Expressing speculation about past
-
-12. **UNIT 12: REVIEW**
-    - Grammar: Comprehensive review of all intermediate structures
-    - Vocabulary: Integration of 3,500-4,000 words
-    - Skills: All B1+ skills consolidated
+#### INT12 - Value for Money
+- Past Perfect advanced uses
+- Either/Or, Neither/Nor structures
+- Finance & economics vocabulary
 
 ---
 
 ## 📊 Estadísticas del Proyecto
 
 ### Contenido Total:
-- **16 Niveles Completos:** B01-B12 + INT01-INT04
-- **Vocabulario:** 3,500-4,000 palabras activas
-- **Estructuras Gramaticales:** 50+ temas avanzados
-- **Unidades:** 24 unidades intermedias (4 niveles × 6 unidades)
+- **24 Niveles Completos:** B01-B12 + INT01-INT12
+- **4 Secciones Especiales:** Exam Prep, Common Mistakes, Phrasal Verbs, Advanced Grammar
+- **Vocabulario:** 5,000+ palabras activas
+- **Estructuras Gramaticales:** 80+ temas
 
-### Tiempo de Estudio:
-- **INT01-INT04:** 8 meses (200-240 horas)
-- **Total B01-INT04:** 32 meses (800-960 horas)
+### Libros Utilizados:
+| Niveles | Libro | Editorial |
+|---------|-------|-----------|
+| B01-B12 | World Link Intro 3rd Ed | National Geographic |
+| INT01-INT04 | World Link Intermediate 1 | National Geographic |
+| INT05-INT08 | World Pass Book 1 | Thomson |
+| INT09-INT12 | American Big Picture B2-C1 | Richmond |
 
-### Nivel MCER:
-- **Básico (B01-B12):** A1 → A2+
-- **Intermedio (INT01-INT04):** B1 → B1+
-
----
-
-## 🚀 Estado de Despliegue
-
-### ✅ Archivos de Configuración:
-- render.yaml
-- requirements.txt (con todas las dependencias)
-- .python-version (3.11.0)
-- .gitignore
-- build.sh
-
-### ✅ Repositorio GitHub:
-- **URL:** https://github.com/gorgojomagneto3-dot/27-NOVEMBER-XD
-- **Branch:** main
-- **Último commit:** 361ec34 - "Add complete INT01-INT04 intermediate levels with full syllabus content"
-
-### ✅ Listo para Render:
-1. ✅ Código completo en GitHub
-2. ✅ Todos los archivos de configuración presentes
-3. ✅ Dependencias actualizadas
-4. ✅ Base de datos PostgreSQL integrada
-5. ✅ Variables de entorno configuradas
+### Nivel MCER Progresión:
+```
+B01-B04  → A1
+B05-B08  → A1+
+B09-B12  → A2
+INT01-04 → B1
+INT05-08 → B1+/B2
+INT09-12 → B2/C1
+```
 
 ---
 
-## 📋 Próximos Pasos para Despliegue
+## 🚀 Ejecución Local
 
-### En Render Dashboard:
-1. Ve a https://dashboard.render.com
-2. Click en "New +" → "Web Service"
-3. Conecta tu repositorio: `gorgojomagneto3-dot/27-NOVEMBER-XD`
-4. Configuración:
-   - **Name:** 27-november-xd (o el nombre que prefieras)
-   - **Region:** Oregon (US West)
-   - **Branch:** main
-   - **Root Directory:** (dejar vacío)
-   - **Runtime:** Python 3
-   - **Build Command:** pip install -r requirements.txt
-   - **Start Command:** gunicorn app:app
-   - **Instance Type:** Free
+### Iniciar Backend:
+```powershell
+cd backend
+python api.py
+# Servidor en http://localhost:5000
+```
 
-5. Variables de Entorno (Environment):
-   - `PYTHON_VERSION`: 3.11.0
-   - `SECRET_KEY`: (genera una clave secreta segura)
-   - `DATABASE_URL`: (Render la creará automáticamente si añades PostgreSQL)
+### Iniciar Frontend:
+```powershell
+cd frontend
+npm run dev
+# Servidor en http://localhost:4321
+```
 
-6. Click en "Create Web Service"
-
-### Agregar Base de Datos (Opcional):
-Si quieres persistencia de progreso del usuario:
-1. En el dashboard de tu servicio, ve a "Environment"
-2. Añade PostgreSQL Database
-3. Render creará automáticamente `DATABASE_URL`
+### Ambos corriendo:
+- **Frontend:** http://localhost:4321
+- **API:** http://localhost:5000/api/lessons
 
 ---
 
 ## 🎯 Características del Sistema
 
-### Frontend:
-- ✅ Diseño responsivo con CSS moderno
-- ✅ Navegación intuitiva por niveles
-- ✅ Visualización de contenido HTML con Markup
-- ✅ Sistema de progreso visual
+### Frontend (Astro + TailwindCSS):
+- ✅ Diseño moderno tipo Duolingo/Babbel
+- ✅ Navegación por niveles
+- ✅ Sistema de flashcards
+- ✅ Práctica interactiva
+- ✅ Tracking de estadísticas
 
-### Backend:
-- ✅ Flask 2.2+ con rutas dinámicas
-- ✅ Gunicorn WSGI server
-- ✅ PostgreSQL para tracking de progreso
-- ✅ Sesiones de usuario con UUID
-- ✅ API REST para progreso
+### Backend (Flask + SQLite):
+- ✅ API REST completa
+- ✅ CORS habilitado
+- ✅ Base de datos SQLite para progreso
+- ✅ Contenido HTML con Markup
 
-### Contenido:
-- ✅ 16 niveles completos (B01-INT04)
-- ✅ Formato HTML estructurado
-- ✅ Gramática explicada con ejemplos
-- ✅ Vocabulario organizado por temas
-- ✅ Habilidades integradas
-
----
-
-## 📞 Soporte
-
-### Documentación Disponible:
-- README.md - Guía principal
-- DEPLOY.md - Guía de despliegue detallada
-- QUICKSTART.md - Inicio rápido
-- GIT_COMMANDS.md - Comandos Git
-- RENDER_CONFIG.md - Configuración Render
-- SYLLABUS_INTERMEDIOS.md - Syllabus INT01-INT04
-
-### Comandos Útiles:
-```bash
-# Ver estado del repositorio
-git status
-
-# Hacer cambios y subir
-git add .
-git commit -m "Descripción del cambio"
-git push origin main
-
-# Ejecutar localmente
-python app.py
-
-# O con gunicorn
-gunicorn app:app
-```
+### Rutas API:
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| GET | /api/lessons | Lista todas las lecciones |
+| GET | /api/lessons/{id} | Contenido de una lección |
+| GET | /api/stats | Estadísticas del usuario |
+| POST | /api/progress | Guardar progreso |
 
 ---
 
-## ✨ ¡Listo para Desplegar!
+## ✨ Estado Actual
 
-Tu plataforma ICPNA está completamente lista con:
-- ✅ 12 niveles básicos (B01-B12)
-- ✅ 4 niveles intermedios (INT01-INT04)
-- ✅ Contenido completo basado en World Link 3rd Edition
-- ✅ Sistema de tracking de progreso
-- ✅ Configuración de producción para Render
-- ✅ Documentación completa
+✅ **FUNCIONANDO LOCALMENTE**
 
-**¡Solo falta hacer el despliegue en Render! 🚀**
+- Backend: Puerto 5000 ✅
+- Frontend: Puerto 4321 ✅
+- 24 lecciones disponibles ✅
+- Contenido ICPNA completo ✅
 
 ---
 
-**Fecha de creación:** Diciembre 2024
-**Estado:** ✅ COMPLETO Y LISTO PARA PRODUCCIÓN
+**Última actualización:** Noviembre 2025
+**Estado:** ✅ FUNCIONANDO

@@ -5,15 +5,15 @@ from markupsafe import Markup
 
 # Import all content functions
 from b01_content_new import get_b01_content_new
-from b02_content_new import get_b02_content_new
-from b03_content_new import get_b03_content_new
-from b04_content_new import get_b04_content_new
-from b05_content_new import get_b05_content_new
-from b06_content_new import get_b06_content_new
-from b07_content_new import get_b07_content_new
-from b08_content_new import get_b08_content_new
-from b09_content_new import get_b09_content_new
-from b10_content_new import get_b10_content_new
+from b02_content_new import get_b02_content
+from b03_content_new import get_b03_content
+from b04_content_new import get_b04_content
+from b05_content_new import get_b05_content
+from b06_content_new import get_b06_content
+from b07_content_new import get_b07_content
+from b08_content_new import get_b08_content
+from b09_content_new import get_b09_content
+from b10_content_new import get_b10_content
 from b11_content_new import get_b11_content_new
 from b12_content_new import get_b12_content_new
 from int01_content import get_int01_content
@@ -81,15 +81,15 @@ def get_lesson_by_id(lesson_id):
     """Get lesson by ID with full content"""
     content_map = {
         'b1': get_b01_content_new,
-        'b2': get_b02_content_new,
-        'b3': get_b03_content_new,
-        'b4': get_b04_content_new,
-        'b5': get_b05_content_new,
-        'b6': get_b06_content_new,
-        'b7': get_b07_content_new,
-        'b8': get_b08_content_new,
-        'b9': get_b09_content_new,
-        'b10': get_b10_content_new,
+        'b2': get_b02_content,
+        'b3': get_b03_content,
+        'b4': get_b04_content,
+        'b5': get_b05_content,
+        'b6': get_b06_content,
+        'b7': get_b07_content,
+        'b8': get_b08_content,
+        'b9': get_b09_content,
+        'b10': get_b10_content,
         'b11': get_b11_content_new,
         'b12': get_b12_content_new,
         'int1': get_int01_content,
