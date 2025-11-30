@@ -3291,6 +3291,228 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "int9": """
+    <div class="lesson-container max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-bold text-green-400 mb-4">📱 INTERMEDIATE 9 - Social Networks</h1>
+        <p class="text-gray-300 mb-6">ICPNA Intermediate Level - CEFR B1/B2 | Reflexive Pronouns & Digital Communication</p>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-green-400 mb-3">🎯 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Use reflexive pronouns correctly (myself, yourself, etc.)</li>
+                <li>Distinguish reflexive vs. reciprocal pronouns (each other)</li>
+                <li>Vocabulary: social media, digital communication, online interactions</li>
+                <li>Discuss advantages and disadvantages of social networks</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">🪞 Reflexive Pronouns</h2>
+            
+            <p class="text-gray-300 mb-4">Use when the subject and object are the same person:</p>
+            
+            <div class="overflow-x-auto mb-4">
+                <table class="w-full text-gray-300">
+                    <thead class="bg-white/10">
+                        <tr>
+                            <th class="p-2 text-left text-green-400">Subject</th>
+                            <th class="p-2 text-left text-green-400">Reflexive</th>
+                            <th class="p-2 text-left text-green-400">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">I</td>
+                            <td class="p-2 text-yellow-400">myself</td>
+                            <td class="p-2">I taught <span class="text-yellow-400">myself</span> to code.</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">you</td>
+                            <td class="p-2 text-yellow-400">yourself</td>
+                            <td class="p-2">Did you hurt <span class="text-yellow-400">yourself</span>?</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">he</td>
+                            <td class="p-2 text-yellow-400">himself</td>
+                            <td class="p-2">He introduced <span class="text-yellow-400">himself</span> online.</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">she</td>
+                            <td class="p-2 text-yellow-400">herself</td>
+                            <td class="p-2">She took a photo of <span class="text-yellow-400">herself</span>.</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">it</td>
+                            <td class="p-2 text-yellow-400">itself</td>
+                            <td class="p-2">The app updates <span class="text-yellow-400">itself</span>.</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">we</td>
+                            <td class="p-2 text-yellow-400">ourselves</td>
+                            <td class="p-2">We enjoyed <span class="text-yellow-400">ourselves</span> at the party.</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">they</td>
+                            <td class="p-2 text-yellow-400">themselves</td>
+                            <td class="p-2">They protect <span class="text-yellow-400">themselves</span> online.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">Special Uses:</h3>
+            <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                <li><span class="text-green-400">Emphasis:</span> I did it <span class="text-yellow-400">myself</span>! (without help)</li>
+                <li><span class="text-green-400">by + reflexive:</span> She lives <span class="text-yellow-400">by herself</span>. (alone)</li>
+                <li><span class="text-green-400">Help yourself:</span> Help <span class="text-yellow-400">yourself</span> to some food. (take what you want)</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">🤝 Reflexive vs. Reciprocal (Each Other)</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white/5 p-3 rounded border-l-4 border-yellow-400">
+                    <h4 class="text-yellow-400 mb-2">Reflexive (same person)</h4>
+                    <p class="text-gray-300">They looked at <span class="text-yellow-400">themselves</span> in the mirror.</p>
+                    <p class="text-sm text-gray-400">(each person looked at their own reflection)</p>
+                </div>
+                <div class="bg-white/5 p-3 rounded border-l-4 border-blue-400">
+                    <h4 class="text-blue-400 mb-2">Reciprocal (different people)</h4>
+                    <p class="text-gray-300">They looked at <span class="text-blue-400">each other</span>.</p>
+                    <p class="text-sm text-gray-400">(person A looked at B, B looked at A)</p>
+                </div>
+            </div>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">More examples:</h3>
+            <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                <li>We message <span class="text-blue-400">each other</span> every day. (I message you, you message me)</li>
+                <li>They follow <span class="text-blue-400">each other</span> on Instagram.</li>
+                <li>We taught <span class="text-yellow-400">ourselves</span> Spanish. (each person learned alone)</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">📲 Social Media Vocabulary</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Actions</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">post</span> - share content</li>
+                        <li><span class="text-yellow-400">like</span> - show approval</li>
+                        <li><span class="text-yellow-400">comment</span> - write a response</li>
+                        <li><span class="text-yellow-400">share/repost</span> - share others' content</li>
+                        <li><span class="text-yellow-400">follow</span> - subscribe to someone</li>
+                        <li><span class="text-yellow-400">unfollow</span> - stop following</li>
+                        <li><span class="text-yellow-400">block</span> - prevent contact</li>
+                        <li><span class="text-yellow-400">tag</span> - mention someone</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Content Types</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">selfie</span> - photo of yourself</li>
+                        <li><span class="text-yellow-400">story</span> - temporary post (24h)</li>
+                        <li><span class="text-yellow-400">reel/video</span> - short video</li>
+                        <li><span class="text-yellow-400">meme</span> - funny image/video</li>
+                        <li><span class="text-yellow-400">livestream</span> - live video</li>
+                        <li><span class="text-yellow-400">thread</span> - connected posts</li>
+                        <li><span class="text-yellow-400">DM</span> - direct message</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Platform Terms</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">profile</span> - your page</li>
+                        <li><span class="text-yellow-400">feed</span> - content stream</li>
+                        <li><span class="text-yellow-400">followers</span> - people who follow you</li>
+                        <li><span class="text-yellow-400">algorithm</span> - content selection system</li>
+                        <li><span class="text-yellow-400">trending</span> - popular now</li>
+                        <li><span class="text-yellow-400">viral</span> - spreading fast</li>
+                        <li><span class="text-yellow-400">hashtag (#)</span> - topic label</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Issues & Concerns</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">privacy</span> - keeping info private</li>
+                        <li><span class="text-yellow-400">cyberbullying</span> - online harassment</li>
+                        <li><span class="text-yellow-400">fake news</span> - false information</li>
+                        <li><span class="text-yellow-400">addiction</span> - unable to stop using</li>
+                        <li><span class="text-yellow-400">screen time</span> - hours on device</li>
+                        <li><span class="text-yellow-400">digital detox</span> - break from tech</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">⚖️ Advantages vs. Disadvantages</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-green-500/10 p-3 rounded border border-green-500/30">
+                    <h4 class="text-green-400 mb-2">✅ Advantages</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li>• Stay connected with friends/family</li>
+                        <li>• Meet people with similar interests</li>
+                        <li>• Access to information quickly</li>
+                        <li>• Platform for self-expression</li>
+                        <li>• Business and networking opportunities</li>
+                        <li>• Learn new skills for free</li>
+                    </ul>
+                </div>
+                <div class="bg-red-500/10 p-3 rounded border border-red-500/30">
+                    <h4 class="text-red-400 mb-2">❌ Disadvantages</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li>• Privacy concerns</li>
+                        <li>• Addiction and time waste</li>
+                        <li>• Cyberbullying and negativity</li>
+                        <li>• Fake news and misinformation</li>
+                        <li>• Comparison and low self-esteem</li>
+                        <li>• Less face-to-face interaction</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-yellow-500/20 rounded-lg border border-yellow-500/50">
+            <h2 class="text-xl text-yellow-400 mb-3">📝 Practice Exercises</h2>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Complete with reflexive pronouns:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I taught _____ how to edit videos. (myself)</li>
+                <li>She takes photos of _____ for Instagram. (herself)</li>
+                <li>The app updated _____. (itself)</li>
+                <li>We enjoyed _____ at the concert. (ourselves)</li>
+                <li>Did you create this account _____? (yourself)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Choose: reflexive or each other?</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>They follow _____ on TikTok. (each other)</li>
+                <li>He looked at _____ in the camera before going live. (himself)</li>
+                <li>We send _____ memes every day. (each other)</li>
+                <li>She introduced _____ to the audience. (herself)</li>
+                <li>The twins always defend _____. (each other)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Match the social media term:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>A photo of yourself = _____ (selfie)</li>
+                <li>Content that spreads quickly = _____ (viral)</li>
+                <li>People who subscribe to your content = _____ (followers)</li>
+                <li>A private message = _____ (DM)</li>
+                <li>A break from technology = _____ (digital detox)</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 
