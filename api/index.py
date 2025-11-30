@@ -2306,6 +2306,180 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "int4": """
+    <div class="lesson-container">
+        <h1 class="text-3xl font-bold text-green-400 mb-6">🔀 INTERMEDIATE 04 - Conditionals</h1>
+        <p class="text-white/60 mb-6">CEFR Level: B1 | ICPNA: Intermedio 4 | World Link Intermediate 1, Unit 4</p>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📋 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Use Zero Conditional for general truths</li>
+                <li>Use First Conditional for real possibilities</li>
+                <li>Use Second Conditional for unreal/hypothetical situations</li>
+                <li>Use unless, as long as, provided that</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Zero Conditional</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-yellow-400 mb-3"><strong>If + Present Simple, Present Simple</strong></p>
+                <p class="text-white/60 mb-3">Use: General truths, scientific facts, things that are always true</p>
+                <ul class="space-y-2">
+                    <li>If you heat water to 100°C, it <strong>boils</strong>.</li>
+                    <li>If it rains, the streets <strong>get</strong> wet.</li>
+                    <li>If you don't eat, you <strong>get</strong> hungry.</li>
+                    <li>Plants die if they <strong>don't get</strong> water.</li>
+                </ul>
+                <p class="mt-4 text-white/60">Note: You can use "when" instead of "if" for things that always happen.</p>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 First Conditional</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-yellow-400 mb-3"><strong>If + Present Simple, will + base verb</strong></p>
+                <p class="text-white/60 mb-3">Use: Real possibilities in the future, likely situations</p>
+                <ul class="space-y-2">
+                    <li>If it rains tomorrow, I <strong>will stay</strong> home.</li>
+                    <li>If you study hard, you <strong>will pass</strong> the exam.</li>
+                    <li>If she calls me, I <strong>will tell</strong> her the news.</li>
+                    <li>I <strong>won't go</strong> to the party if I'm tired.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Questions:</h3>
+                <ul class="space-y-1">
+                    <li><strong>What will you do</strong> if it rains?</li>
+                    <li><strong>Will you come</strong> if I invite you?</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Other modals (instead of will):</h3>
+                <ul class="space-y-1">
+                    <li>If you're tired, you <strong>can</strong> take a break.</li>
+                    <li>If he's late, we <strong>might</strong> miss the movie.</li>
+                    <li>If you finish early, you <strong>should</strong> review your answers.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Second Conditional</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-yellow-400 mb-3"><strong>If + Past Simple, would + base verb</strong></p>
+                <p class="text-white/60 mb-3">Use: Unreal/hypothetical situations, imaginary scenarios, advice</p>
+                <ul class="space-y-2">
+                    <li>If I <strong>had</strong> more money, I <strong>would travel</strong> the world.</li>
+                    <li>If she <strong>spoke</strong> English, she <strong>would get</strong> that job.</li>
+                    <li>If I <strong>were</strong> you, I <strong>would accept</strong> the offer.</li>
+                    <li>I <strong>wouldn't buy</strong> that car if I <strong>were</strong> you.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Important: If I were (not "was")</h3>
+                <ul class="space-y-1">
+                    <li>If I <strong>were</strong> rich, I would buy a house. ✓</li>
+                    <li>If I was rich... (informal, but grammatically "were" is correct)</li>
+                    <li>If I <strong>were</strong> you, I would study harder. (giving advice)</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Questions:</h3>
+                <ul class="space-y-1">
+                    <li><strong>What would you do</strong> if you won the lottery?</li>
+                    <li><strong>Where would you go</strong> if you could travel anywhere?</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">⚡ Comparison Table</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b border-white/20">
+                            <th class="py-2 text-yellow-400">Conditional</th>
+                            <th class="py-2 text-yellow-400">Structure</th>
+                            <th class="py-2 text-yellow-400">Use</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2 text-green-400">Zero</td>
+                            <td class="py-2">If + present, present</td>
+                            <td class="py-2">General truths (100% true)</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2 text-green-400">First</td>
+                            <td class="py-2">If + present, will + verb</td>
+                            <td class="py-2">Real future possibility</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 text-green-400">Second</td>
+                            <td class="py-2">If + past, would + verb</td>
+                            <td class="py-2">Unreal/hypothetical</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Other Conditional Words</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">UNLESS (= if not):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>I won't go <strong>unless</strong> you come with me. (= if you don't come)</li>
+                    <li><strong>Unless</strong> it rains, we'll have a picnic.</li>
+                    <li>She won't pass <strong>unless</strong> she studies.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">AS LONG AS / PROVIDED (THAT) (= only if):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>You can borrow my car <strong>as long as</strong> you drive carefully.</li>
+                    <li>I'll help you <strong>provided that</strong> you help me later.</li>
+                    <li>We'll go to the beach <strong>as long as</strong> the weather is good.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">IN CASE (= because something might happen):</h3>
+                <ul class="space-y-1">
+                    <li>Take an umbrella <strong>in case</strong> it rains.</li>
+                    <li>I'll give you my number <strong>in case</strong> you need help.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">✏️ Practice Exercises</h2>
+            <h3 class="text-lg text-yellow-400 mb-3">Complete with the correct form (Zero, First, or Second):</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>If you _____ (heat) ice, it _____ (melt). (heat / melts - Zero)</li>
+                <li>If it _____ (rain) tomorrow, I _____ (take) an umbrella. (rains / will take - First)</li>
+                <li>If I _____ (be) you, I _____ (talk) to the manager. (were / would talk - Second)</li>
+                <li>If she _____ (have) more time, she _____ (learn) another language. (had / would learn - Second)</li>
+                <li>If you _____ (not study), you _____ (fail) the exam. (don't study / will fail - First)</li>
+                <li>Water _____ (freeze) if the temperature _____ (drop) below 0°C. (freezes / drops - Zero)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Rewrite using UNLESS:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>If you don't hurry, you'll be late. → _____ (Unless you hurry, you'll be late.)</li>
+                <li>If she doesn't call, I won't know. → _____ (Unless she calls, I won't know.)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">What would you do if...?</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>...you won a million dollars?</li>
+                <li>...you could travel anywhere?</li>
+                <li>...you met a famous person?</li>
+                <li>...you could have any superpower?</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 
