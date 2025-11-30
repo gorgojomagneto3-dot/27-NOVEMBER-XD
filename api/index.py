@@ -2675,6 +2675,231 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "int6": """
+    <div class="lesson-container max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-bold text-green-400 mb-4">🎭 INTERMEDIATE 6 - Storytelling</h1>
+        <p class="text-gray-300 mb-6">ICPNA Intermediate Level - CEFR B1/B2 | Narrative Tenses & Drama</p>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-green-400 mb-3">🎯 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Use narrative tenses to tell stories (Past Simple, Past Continuous, Past Perfect)</li>
+                <li>Order events using time sequencers and connectors</li>
+                <li>Use adverbs and adverbial phrases for vivid storytelling</li>
+                <li>Vocabulary: drama, theater, and storytelling expressions</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">📖 Narrative Tenses - Telling Stories</h2>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Past Simple - Main Events</h3>
+            <p class="text-gray-300 mb-2">Use for completed actions, the main events of the story:</p>
+            <ul class="list-disc pl-6 space-y-1 text-gray-300 mb-4">
+                <li>She <span class="text-green-400">walked</span> into the room and <span class="text-green-400">saw</span> a strange figure.</li>
+                <li>He <span class="text-green-400">grabbed</span> his bag and <span class="text-green-400">ran</span> out.</li>
+                <li>The detective <span class="text-green-400">found</span> the evidence.</li>
+            </ul>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Past Continuous - Background/Atmosphere</h3>
+            <p class="text-gray-300 mb-2">Use to set the scene, describe ongoing actions:</p>
+            <ul class="list-disc pl-6 space-y-1 text-gray-300 mb-4">
+                <li>It <span class="text-blue-400">was raining</span> heavily that night.</li>
+                <li>People <span class="text-blue-400">were rushing</span> to find shelter.</li>
+                <li>She <span class="text-blue-400">was waiting</span> nervously when the phone rang.</li>
+            </ul>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Past Perfect - Earlier Events</h3>
+            <p class="text-gray-300 mb-2">Use for events that happened before the main story:</p>
+            <ul class="list-disc pl-6 space-y-1 text-gray-300 mb-4">
+                <li>She realized she <span class="text-purple-400">had forgotten</span> her keys.</li>
+                <li>By the time he arrived, everyone <span class="text-purple-400">had left</span>.</li>
+                <li>He didn't recognize her because she <span class="text-purple-400">had changed</span> so much.</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">⏰ Time Sequencers & Connectors</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-yellow-400 mb-2">Beginning of Story</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li>• Once upon a time...</li>
+                        <li>• One day...</li>
+                        <li>• It all started when...</li>
+                        <li>• A long time ago...</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-yellow-400 mb-2">Sequence of Events</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li>• First... Then... After that...</li>
+                        <li>• Meanwhile... At the same time...</li>
+                        <li>• Later... Eventually...</li>
+                        <li>• As soon as... The moment...</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-yellow-400 mb-2">Contrast/Surprise</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li>• Suddenly... All of a sudden...</li>
+                        <li>• Unexpectedly... To my surprise...</li>
+                        <li>• However... Although...</li>
+                        <li>• But just then...</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-yellow-400 mb-2">Ending</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li>• In the end... Finally...</li>
+                        <li>• At last... Eventually...</li>
+                        <li>• And they lived happily ever after</li>
+                        <li>• That's how it all ended</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">✨ Adverbs for Vivid Storytelling</h2>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">Manner Adverbs</h3>
+            <ul class="list-disc pl-6 space-y-1 text-gray-300 mb-4">
+                <li><span class="text-green-400">slowly, quickly, quietly, loudly, carefully, nervously</span></li>
+                <li>She walked <span class="text-green-400">slowly</span> down the dark corridor.</li>
+                <li>He whispered <span class="text-green-400">nervously</span> into her ear.</li>
+            </ul>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">Degree Adverbs</h3>
+            <ul class="list-disc pl-6 space-y-1 text-gray-300 mb-4">
+                <li><span class="text-blue-400">extremely, incredibly, absolutely, completely, hardly</span></li>
+                <li>I was <span class="text-blue-400">absolutely</span> terrified.</li>
+                <li>The room was <span class="text-blue-400">completely</span> empty.</li>
+            </ul>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">Adverbial Phrases for Atmosphere</h3>
+            <ul class="list-disc pl-6 space-y-1 text-gray-300">
+                <li><span class="text-purple-400">in the middle of the night, out of nowhere, all of a sudden</span></li>
+                <li><span class="text-purple-400">without warning, bit by bit, step by step</span></li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">🎭 Drama & Theater Vocabulary</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">People</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">actor/actress</span> - person who performs</li>
+                        <li><span class="text-yellow-400">director</span> - leads the production</li>
+                        <li><span class="text-yellow-400">playwright</span> - writes plays</li>
+                        <li><span class="text-yellow-400">audience</span> - people watching</li>
+                        <li><span class="text-yellow-400">cast</span> - all actors in a play</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Parts of a Play</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">act</span> - main division</li>
+                        <li><span class="text-yellow-400">scene</span> - smaller section</li>
+                        <li><span class="text-yellow-400">script</span> - written text</li>
+                        <li><span class="text-yellow-400">dialogue</span> - conversation</li>
+                        <li><span class="text-yellow-400">monologue</span> - one person speaks</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Theater Elements</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">stage</span> - where actors perform</li>
+                        <li><span class="text-yellow-400">scenery/set</span> - decorations</li>
+                        <li><span class="text-yellow-400">costume</span> - clothes worn</li>
+                        <li><span class="text-yellow-400">props</span> - objects used</li>
+                        <li><span class="text-yellow-400">lighting</span> - lights for effect</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Story Elements</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">plot</span> - the main story</li>
+                        <li><span class="text-yellow-400">twist</span> - unexpected turn</li>
+                        <li><span class="text-yellow-400">climax</span> - most exciting part</li>
+                        <li><span class="text-yellow-400">ending</span> - how it finishes</li>
+                        <li><span class="text-yellow-400">moral</span> - lesson learned</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">🎬 Types of Stories</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">comedy</span>
+                    <p class="text-sm text-gray-400">funny</p>
+                </div>
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">tragedy</span>
+                    <p class="text-sm text-gray-400">sad ending</p>
+                </div>
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">thriller</span>
+                    <p class="text-sm text-gray-400">suspenseful</p>
+                </div>
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">mystery</span>
+                    <p class="text-sm text-gray-400">solving puzzles</p>
+                </div>
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">romance</span>
+                    <p class="text-sm text-gray-400">love stories</p>
+                </div>
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">fairy tale</span>
+                    <p class="text-sm text-gray-400">magical stories</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-yellow-500/20 rounded-lg border border-yellow-500/50">
+            <h2 class="text-xl text-yellow-400 mb-3">📝 Practice Exercises</h2>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Choose the correct tense:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>While I _____ (walk) home, I _____ (see) an accident.
+                    <span class="text-gray-400">(was walking / saw)</span></li>
+                <li>She _____ (realize) that she _____ (leave) her phone at home.
+                    <span class="text-gray-400">(realized / had left)</span></li>
+                <li>They _____ (talk) when suddenly the lights _____ (go) out.
+                    <span class="text-gray-400">(were talking / went)</span></li>
+                <li>By the time we _____ (arrive), the movie _____ (start).
+                    <span class="text-gray-400">(arrived / had started)</span></li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Add appropriate time sequencers:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>_____, there was a young girl who lived in a forest.</li>
+                <li>She was cooking dinner. _____, she heard a loud noise.</li>
+                <li>We waited for hours. _____, the bus came.</li>
+                <li>_____ I opened the door, I knew something was wrong.</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Add adverbs to make these sentences more vivid:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>She opened the door _____. (carefully/nervously)</li>
+                <li>The children ran _____ through the park. (happily/excitedly)</li>
+                <li>He spoke _____, so no one could hear. (quietly/softly)</li>
+                <li>I was _____ shocked by the news. (completely/absolutely)</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 
