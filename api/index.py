@@ -2900,6 +2900,226 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "int7": """
+    <div class="lesson-container max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-bold text-green-400 mb-4">🏙️ INTERMEDIATE 7 - Design</h1>
+        <p class="text-gray-300 mb-6">ICPNA Intermediate Level - CEFR B1/B2 | Passive Voice & Urban Planning</p>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-green-400 mb-3">🎯 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Use the passive voice in different tenses</li>
+                <li>Form and use adjectives ending in -able/-ible</li>
+                <li>Vocabulary: architecture, urban planning, and design</li>
+                <li>Describe buildings, cities, and design features</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">📖 The Passive Voice</h2>
+            
+            <p class="text-gray-300 mb-4">We use passive when the action is more important than who does it, or when the doer is unknown.</p>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Formation: be + past participle</h3>
+            
+            <div class="overflow-x-auto mb-4">
+                <table class="w-full text-gray-300">
+                    <thead class="bg-white/10">
+                        <tr>
+                            <th class="p-2 text-left text-green-400">Tense</th>
+                            <th class="p-2 text-left text-green-400">Active</th>
+                            <th class="p-2 text-left text-green-400">Passive</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">Present Simple</td>
+                            <td class="p-2">They build houses.</td>
+                            <td class="p-2 text-blue-400">Houses are built.</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">Past Simple</td>
+                            <td class="p-2">They built this bridge.</td>
+                            <td class="p-2 text-blue-400">This bridge was built.</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">Present Perfect</td>
+                            <td class="p-2">They have designed it.</td>
+                            <td class="p-2 text-blue-400">It has been designed.</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">Future (will)</td>
+                            <td class="p-2">They will complete it.</td>
+                            <td class="p-2 text-blue-400">It will be completed.</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">Modal</td>
+                            <td class="p-2">They can repair it.</td>
+                            <td class="p-2 text-blue-400">It can be repaired.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">When to use passive:</h3>
+            <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                <li><span class="text-green-400">Unknown agent:</span> My bike was stolen. (we don't know who)</li>
+                <li><span class="text-green-400">Obvious agent:</span> The criminal was arrested. (by police - obvious)</li>
+                <li><span class="text-green-400">Formal/Scientific:</span> The experiment was conducted carefully.</li>
+                <li><span class="text-green-400">Focus on action:</span> The building was designed in 1920.</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">✨ Adjectives with -able/-ible</h2>
+            
+            <p class="text-gray-300 mb-3">These suffixes mean "can be" or "possible to":</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">-able (from verbs)</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">renewable</span> - can be renewed</li>
+                        <li><span class="text-yellow-400">sustainable</span> - can be sustained</li>
+                        <li><span class="text-yellow-400">livable</span> - good to live in</li>
+                        <li><span class="text-yellow-400">affordable</span> - can afford</li>
+                        <li><span class="text-yellow-400">walkable</span> - easy to walk</li>
+                        <li><span class="text-yellow-400">adjustable</span> - can adjust</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">-ible (Latin roots)</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">accessible</span> - easy to access</li>
+                        <li><span class="text-yellow-400">flexible</span> - can bend/change</li>
+                        <li><span class="text-yellow-400">visible</span> - can be seen</li>
+                        <li><span class="text-yellow-400">responsible</span> - has responsibility</li>
+                        <li><span class="text-yellow-400">sensible</span> - makes sense</li>
+                        <li><span class="text-yellow-400">possible</span> - can happen</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">Negative forms (un-, in-, im-):</h3>
+            <ul class="list-disc pl-6 space-y-1 text-gray-300">
+                <li><span class="text-red-400">un</span>available, <span class="text-red-400">un</span>acceptable, <span class="text-red-400">un</span>bearable</li>
+                <li><span class="text-red-400">in</span>accessible, <span class="text-red-400">in</span>visible, <span class="text-red-400">in</span>credible</li>
+                <li><span class="text-red-400">im</span>possible, <span class="text-red-400">im</span>permeable</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">🏗️ Architecture & Design Vocabulary</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Building Types</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">skyscraper</span> - very tall building</li>
+                        <li><span class="text-yellow-400">high-rise</span> - tall apartment building</li>
+                        <li><span class="text-yellow-400">warehouse</span> - storage building</li>
+                        <li><span class="text-yellow-400">townhouse</span> - multi-floor row house</li>
+                        <li><span class="text-yellow-400">landmark</span> - famous recognizable building</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Architectural Features</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">facade</span> - front of building</li>
+                        <li><span class="text-yellow-400">balcony</span> - outdoor platform</li>
+                        <li><span class="text-yellow-400">column</span> - vertical support</li>
+                        <li><span class="text-yellow-400">dome</span> - rounded roof</li>
+                        <li><span class="text-yellow-400">arch</span> - curved structure</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Urban Planning</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">zoning</span> - area use rules</li>
+                        <li><span class="text-yellow-400">infrastructure</span> - basic facilities</li>
+                        <li><span class="text-yellow-400">public spaces</span> - parks, plazas</li>
+                        <li><span class="text-yellow-400">pedestrian zone</span> - walking area</li>
+                        <li><span class="text-yellow-400">green spaces</span> - parks, gardens</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Design Concepts</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">eco-friendly</span> - good for environment</li>
+                        <li><span class="text-yellow-400">minimalist</span> - simple design</li>
+                        <li><span class="text-yellow-400">functional</span> - practical use</li>
+                        <li><span class="text-yellow-400">innovative</span> - new ideas</li>
+                        <li><span class="text-yellow-400">sustainable</span> - long-lasting</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">🏠 Describing Buildings</h2>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">Useful Adjectives:</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
+                <span class="bg-white/5 p-2 rounded text-center text-green-400">modern</span>
+                <span class="bg-white/5 p-2 rounded text-center text-green-400">traditional</span>
+                <span class="bg-white/5 p-2 rounded text-center text-green-400">spacious</span>
+                <span class="bg-white/5 p-2 rounded text-center text-green-400">compact</span>
+                <span class="bg-white/5 p-2 rounded text-center text-green-400">elegant</span>
+                <span class="bg-white/5 p-2 rounded text-center text-green-400">stunning</span>
+                <span class="bg-white/5 p-2 rounded text-center text-green-400">iconic</span>
+                <span class="bg-white/5 p-2 rounded text-center text-green-400">impressive</span>
+            </div>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">Example Descriptions (Passive):</h3>
+            <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                <li>The museum <span class="text-blue-400">was designed</span> by a famous architect.</li>
+                <li>The building <span class="text-blue-400">was constructed</span> in the 19th century.</li>
+                <li>It <span class="text-blue-400">is made</span> of glass and steel.</li>
+                <li>The park <span class="text-blue-400">will be opened</span> next year.</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-yellow-500/20 rounded-lg border border-yellow-500/50">
+            <h2 class="text-xl text-yellow-400 mb-3">📝 Practice Exercises</h2>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Change to passive voice:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>They designed the building in 1990.
+                    <span class="text-gray-400">(The building was designed in 1990.)</span></li>
+                <li>Someone has stolen my car.
+                    <span class="text-gray-400">(My car has been stolen.)</span></li>
+                <li>They will finish the project next month.
+                    <span class="text-gray-400">(The project will be finished next month.)</span></li>
+                <li>People speak English everywhere.
+                    <span class="text-gray-400">(English is spoken everywhere.)</span></li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Complete with -able or -ible:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>This area is very access_____ by public transport. (accessible)</li>
+                <li>The prices are afford_____ for most people. (affordable)</li>
+                <li>Is this material wash_____? (washable)</li>
+                <li>That's an incred_____ design! (incredible)</li>
+                <li>The building is sustain_____ and eco-friendly. (sustainable)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Describe these using passive:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>The Eiffel Tower / build / 1889
+                    <span class="text-gray-400">(The Eiffel Tower was built in 1889.)</span></li>
+                <li>This bridge / make / steel
+                    <span class="text-gray-400">(This bridge is made of steel.)</span></li>
+                <li>A new park / open / next year
+                    <span class="text-gray-400">(A new park will be opened next year.)</span></li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 
