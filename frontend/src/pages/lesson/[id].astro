@@ -76,7 +76,7 @@ const { id } = Astro.params;
 
 <script define:vars={{ lessonId: id }}>
   // Use relative URL for production (Vercel), localhost for development
-  const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '';
+  const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000' : 'https://27-november-xd.vercel.app';
   let ttsEnabled = true;
   let googleVoice = null;
   let voicesLoaded = false;
