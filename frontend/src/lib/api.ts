@@ -2,7 +2,8 @@
  * API Client for the English Learning App
  */
 
-const API_URL = import.meta.env.API_URL || 'http://localhost:5000';
+// Use relative URL for Vercel (same domain) or localhost for development
+const API_URL = import.meta.env.PUBLIC_API_URL || (typeof window !== 'undefined' && window.location.hostname !== 'localhost' ? '' : 'http://localhost:5000');
 
 // Get or create user ID
 function getUserId(): string {

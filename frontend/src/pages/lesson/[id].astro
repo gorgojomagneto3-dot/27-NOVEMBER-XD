@@ -75,7 +75,8 @@ const { id } = Astro.params;
 </Layout>
 
 <script define:vars={{ lessonId: id }}>
-  const API_URL = 'http://localhost:5000';
+  // Use relative URL for production (Vercel), localhost for development
+  const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000' : '';
   let ttsEnabled = true;
   let googleVoice = null;
   let voicesLoaded = false;
