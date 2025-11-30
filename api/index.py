@@ -1710,6 +1710,194 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "b11": """
+    <div class="lesson-container">
+        <h1 class="text-3xl font-bold text-green-400 mb-6">🎉 BASIC 11 - Celebrations</h1>
+        <p class="text-white/60 mb-6">CEFR Level: A2-B1 | ICPNA: Básico 11 | World Link Book 2</p>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📋 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Talk about celebrations and holidays</li>
+                <li>Describe traditions and customs</li>
+                <li>Use vocabulary for parties and events</li>
+                <li>Review tenses to describe past and future celebrations</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🎊 Celebrations Vocabulary</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Life Events:</h3>
+                <ul class="space-y-2">
+                    <li><strong class="text-green-400">birthday</strong> → cumpleaños</li>
+                    <li><strong class="text-green-400">wedding</strong> → boda</li>
+                    <li><strong class="text-green-400">anniversary</strong> → aniversario</li>
+                    <li><strong class="text-green-400">graduation</strong> → graduación</li>
+                    <li><strong class="text-green-400">baby shower</strong> → baby shower</li>
+                    <li><strong class="text-green-400">retirement party</strong> → fiesta de jubilación</li>
+                    <li><strong class="text-green-400">housewarming</strong> → inauguración de casa</li>
+                    <li><strong class="text-green-400">engagement</strong> → compromiso</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📅 Holidays Around the World</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong class="text-green-400">Christmas</strong> → Navidad (December 25)</li>
+                    <li><strong class="text-green-400">New Year's Eve/Day</strong> → Año Nuevo (December 31/January 1)</li>
+                    <li><strong class="text-green-400">Easter</strong> → Semana Santa / Pascua</li>
+                    <li><strong class="text-green-400">Halloween</strong> → Halloween (October 31)</li>
+                    <li><strong class="text-green-400">Thanksgiving</strong> → Día de Acción de Gracias</li>
+                    <li><strong class="text-green-400">Valentine's Day</strong> → Día de San Valentín (February 14)</li>
+                    <li><strong class="text-green-400">Mother's Day</strong> → Día de la Madre</li>
+                    <li><strong class="text-green-400">Father's Day</strong> → Día del Padre</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">🇵🇪 Peruvian Celebrations:</h3>
+                <ul class="space-y-2">
+                    <li><strong class="text-green-400">Fiestas Patrias</strong> → Independence Day (July 28-29)</li>
+                    <li><strong class="text-green-400">Inti Raymi</strong> → Festival of the Sun (June 24)</li>
+                    <li><strong class="text-green-400">Señor de los Milagros</strong> → Lord of Miracles (October)</li>
+                    <li><strong class="text-green-400">Carnaval</strong> → Carnival (February)</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🎈 Party Vocabulary</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Things at a Party:</h3>
+                <ul class="space-y-1">
+                    <li><strong>cake</strong> → torta/pastel</li>
+                    <li><strong>candles</strong> → velas</li>
+                    <li><strong>balloons</strong> → globos</li>
+                    <li><strong>decorations</strong> → decoraciones</li>
+                    <li><strong>gifts/presents</strong> → regalos</li>
+                    <li><strong>invitations</strong> → invitaciones</li>
+                    <li><strong>confetti</strong> → confeti</li>
+                    <li><strong>fireworks</strong> → fuegos artificiales</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Party Actions:</h3>
+                <ul class="space-y-1">
+                    <li><strong>celebrate</strong> → celebrar</li>
+                    <li><strong>invite guests</strong> → invitar invitados</li>
+                    <li><strong>blow out candles</strong> → soplar las velas</li>
+                    <li><strong>make a wish</strong> → pedir un deseo</li>
+                    <li><strong>open presents</strong> → abrir regalos</li>
+                    <li><strong>dance</strong> → bailar</li>
+                    <li><strong>toast</strong> → brindar</li>
+                    <li><strong>sing Happy Birthday</strong> → cantar Feliz Cumpleaños</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🗣️ Useful Expressions</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Congratulations & Wishes:</h3>
+                <ul class="space-y-2">
+                    <li><strong>Happy Birthday!</strong> → ¡Feliz cumpleaños!</li>
+                    <li><strong>Congratulations!</strong> → ¡Felicitaciones!</li>
+                    <li><strong>Merry Christmas!</strong> → ¡Feliz Navidad!</li>
+                    <li><strong>Happy New Year!</strong> → ¡Feliz Año Nuevo!</li>
+                    <li><strong>Happy Anniversary!</strong> → ¡Feliz aniversario!</li>
+                    <li><strong>Best wishes!</strong> → ¡Mis mejores deseos!</li>
+                    <li><strong>Cheers!</strong> → ¡Salud! (when toasting)</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Inviting:</h3>
+                <ul class="space-y-2">
+                    <li><strong>Would you like to come to my party?</strong></li>
+                    <li><strong>You're invited to...</strong></li>
+                    <li><strong>We're having a party on Saturday. Can you come?</strong></li>
+                    <li><strong>I'd love to invite you to...</strong></li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Accepting/Declining:</h3>
+                <ul class="space-y-2">
+                    <li><strong>Yes, I'd love to!</strong> → ¡Sí, me encantaría!</li>
+                    <li><strong>That sounds great!</strong> → ¡Suena genial!</li>
+                    <li><strong>I'm sorry, I can't make it.</strong> → Lo siento, no puedo ir.</li>
+                    <li><strong>I'm afraid I have other plans.</strong> → Me temo que tengo otros planes.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Describing Traditions</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Useful Structures:</h3>
+                <ul class="space-y-2">
+                    <li><strong>We usually...</strong> → Usualmente nosotros...</li>
+                    <li><strong>People often...</strong> → La gente a menudo...</li>
+                    <li><strong>It's traditional to...</strong> → Es tradicional...</li>
+                    <li><strong>In my country, we celebrate... by...</strong></li>
+                    <li><strong>On this day, families...</strong></li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Example:</h3>
+                <p class="text-white/80">In Peru, we celebrate Fiestas Patrias on July 28th and 29th. It's traditional to have a big parade. People usually wear red and white. Families often get together and eat traditional food like ceviche and anticuchos.</p>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Tense Review for Celebrations</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Past (describing what happened):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>We <strong>had</strong> a great party last year.</li>
+                    <li>She <strong>received</strong> many gifts.</li>
+                    <li>Everyone <strong>was dancing</strong> all night.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Present (traditions/habits):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>We always <strong>celebrate</strong> Christmas with family.</li>
+                    <li>My mom usually <strong>makes</strong> a special cake.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Future (plans):</h3>
+                <ul class="space-y-1">
+                    <li>We<strong>'re going to have</strong> a party next Saturday.</li>
+                    <li>I<strong>'m inviting</strong> 20 people to my birthday.</li>
+                    <li>It <strong>will be</strong> amazing!</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">✏️ Practice Exercises</h2>
+            <h3 class="text-lg text-yellow-400 mb-3">Complete the sentences:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>Last year, we _____ (celebrate) my grandmother's 80th birthday. (celebrated)</li>
+                <li>In Peru, people usually _____ (eat) turkey on Christmas. (eat)</li>
+                <li>Next month, I _____ (have) a graduation party. (am going to have)</li>
+                <li>Everyone _____ (dance) when the music started. (was dancing)</li>
+                <li>We always _____ (sing) Happy Birthday before cutting the cake. (sing)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Match the celebration with the activity:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>Birthday → blow out candles, make a wish</li>
+                <li>New Year's Eve → watch fireworks, toast at midnight</li>
+                <li>Wedding → exchange rings, dance the first dance</li>
+                <li>Christmas → exchange gifts, decorate a tree</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Write about a celebration:</h3>
+            <p class="text-white/80">Describe your favorite celebration. Use: What is it? When is it? What do people do? What do you usually eat? How do you feel?</p>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 
