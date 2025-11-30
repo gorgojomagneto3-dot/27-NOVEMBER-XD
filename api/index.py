@@ -1508,6 +1508,208 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "b10": """
+    <div class="lesson-container">
+        <h1 class="text-3xl font-bold text-green-400 mb-6">🚀 BASIC 10 - Future Tenses</h1>
+        <p class="text-white/60 mb-6">CEFR Level: A2-B1 | ICPNA: Básico 10 | World Link Book 2</p>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📋 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Express future plans and intentions with "going to"</li>
+                <li>Make predictions and spontaneous decisions with "will"</li>
+                <li>Talk about scheduled events with Present Continuous</li>
+                <li>Choose the correct future form for each situation</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 WILL - Future Simple</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-yellow-400 mb-3"><strong>Subject + will + base verb</strong></p>
+                <ul class="space-y-2">
+                    <li>I <strong>will call</strong> you tomorrow. → Te llamaré mañana.</li>
+                    <li>She <strong>will be</strong> 25 next year. → Ella cumplirá 25 el próximo año.</li>
+                    <li>They <strong>will arrive</strong> at 8 PM. → Llegarán a las 8 PM.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Contractions:</h3>
+                <p>I will → I'll | You will → You'll | He will → He'll | We will → We'll</p>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Negative: will not = won't</h3>
+                <ul class="space-y-1">
+                    <li>I <strong>won't</strong> be late. → No llegaré tarde.</li>
+                    <li>She <strong>won't</strong> forget. → Ella no olvidará.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Questions:</h3>
+                <ul class="space-y-1">
+                    <li><strong>Will</strong> you come to the party? → Yes, I will. / No, I won't.</li>
+                    <li><strong>What will</strong> you do tomorrow?</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🎯 Uses of WILL</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">1. Predictions (without evidence):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>I think it <strong>will rain</strong> tomorrow.</li>
+                    <li>She <strong>will probably be</strong> late.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">2. Spontaneous decisions:</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>The phone is ringing. I<strong>'ll answer</strong> it.</li>
+                    <li>I'm tired. I<strong>'ll go</strong> to bed.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">3. Offers & Promises:</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>I<strong>'ll help</strong> you with your homework. (offer)</li>
+                    <li>I <strong>won't tell</strong> anyone. I promise. (promise)</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">4. Facts about the future:</h3>
+                <ul class="space-y-1">
+                    <li>She <strong>will be</strong> 30 next month.</li>
+                    <li>The meeting <strong>will start</strong> at 9 AM.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 GOING TO</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-yellow-400 mb-3"><strong>Subject + am/is/are + going to + base verb</strong></p>
+                <ul class="space-y-2">
+                    <li>I <strong>am going to study</strong> medicine. → Voy a estudiar medicina.</li>
+                    <li>She <strong>is going to travel</strong> to Europe. → Ella va a viajar a Europa.</li>
+                    <li>We <strong>are going to buy</strong> a new car. → Vamos a comprar un carro nuevo.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Negative:</h3>
+                <ul class="space-y-1">
+                    <li>I<strong>'m not going to</strong> work tomorrow.</li>
+                    <li>They <strong>aren't going to</strong> come.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Questions:</h3>
+                <ul class="space-y-1">
+                    <li><strong>Are</strong> you <strong>going to</strong> study tonight?</li>
+                    <li><strong>What are</strong> you <strong>going to</strong> do this weekend?</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🎯 Uses of GOING TO</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">1. Plans & Intentions (decided before):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>I<strong>'m going to visit</strong> my grandparents this weekend. (I already decided)</li>
+                    <li>She<strong>'s going to start</strong> a new job next month.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">2. Predictions with evidence:</h3>
+                <ul class="space-y-1">
+                    <li>Look at those clouds! It<strong>'s going to rain</strong>.</li>
+                    <li>She's very tired. She<strong>'s going to fall</strong> asleep.</li>
+                    <li>Watch out! You<strong>'re going to fall</strong>!</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Present Continuous for Future</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-yellow-400 mb-3"><strong>For fixed arrangements (with time/place)</strong></p>
+                <ul class="space-y-2">
+                    <li>I<strong>'m meeting</strong> John at 6 PM. → (already arranged with John)</li>
+                    <li>We<strong>'re flying</strong> to Miami on Friday. → (tickets bought)</li>
+                    <li>She<strong>'s having</strong> dinner with her boss tonight.</li>
+                </ul>
+                <p class="mt-4 text-white/60">Usually with verbs: meet, have, fly, leave, arrive, come, go</p>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">⚡ Comparison Table</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b border-white/20">
+                            <th class="py-2 text-yellow-400">Form</th>
+                            <th class="py-2 text-yellow-400">Use</th>
+                            <th class="py-2 text-yellow-400">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2 text-green-400">WILL</td>
+                            <td class="py-2">Predictions, spontaneous decisions, offers, promises</td>
+                            <td class="py-2">I'll help you.</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2 text-green-400">GOING TO</td>
+                            <td class="py-2">Plans/intentions, predictions with evidence</td>
+                            <td class="py-2">I'm going to study law.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 text-green-400">PRESENT CONT.</td>
+                            <td class="py-2">Fixed arrangements</td>
+                            <td class="py-2">I'm meeting John at 6.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">⏰ Time Expressions</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong>tomorrow</strong> → mañana</li>
+                    <li><strong>next week/month/year</strong> → la próxima semana/mes/año</li>
+                    <li><strong>in a few days</strong> → en unos días</li>
+                    <li><strong>this weekend</strong> → este fin de semana</li>
+                    <li><strong>tonight</strong> → esta noche</li>
+                    <li><strong>soon</strong> → pronto</li>
+                    <li><strong>in the future</strong> → en el futuro</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">✏️ Practice Exercises</h2>
+            <h3 class="text-lg text-yellow-400 mb-3">Choose: WILL, GOING TO, or PRESENT CONTINUOUS:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>Look at those clouds! It _____ rain. (is going to - evidence)</li>
+                <li>I'm thirsty. I _____ get some water. (will - spontaneous)</li>
+                <li>We _____ dinner with the Smiths on Saturday. (are having - arrangement)</li>
+                <li>I've decided. I _____ learn French next year. (am going to - plan)</li>
+                <li>I think Brazil _____ win the World Cup. (will - prediction)</li>
+                <li>She _____ the doctor at 3 PM tomorrow. (is seeing - appointment)</li>
+                <li>Don't worry, I _____ help you. (will - offer)</li>
+                <li>Watch out! You _____ drop that! (are going to - evidence)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Complete with the correct future form:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>A: Why are you buying paint? B: I _____ (paint) my room. (am going to paint)</li>
+                <li>A: The phone is ringing! B: I _____ (get) it. (will get)</li>
+                <li>What time _____ (you/leave) tomorrow? (are you leaving)</li>
+                <li>I promise I _____ (not/be) late again. (won't be)</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 
