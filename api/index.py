@@ -1299,6 +1299,215 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "b9": """
+    <div class="lesson-container">
+        <h1 class="text-3xl font-bold text-green-400 mb-6">✨ BASIC 09 - Present Perfect</h1>
+        <p class="text-white/60 mb-6">CEFR Level: A2-B1 | ICPNA: Básico 9 | World Link Book 2</p>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📋 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Talk about life experiences</li>
+                <li>Use have/has + past participle correctly</li>
+                <li>Master time expressions: ever, never, already, yet, just, for, since</li>
+                <li>Distinguish Present Perfect from Past Simple</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Present Perfect Structure</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-yellow-400 mb-3"><strong>Subject + have/has + past participle</strong></p>
+                <ul class="space-y-2">
+                    <li><strong>I have</strong> visited Paris. → He visitado París.</li>
+                    <li><strong>You have</strong> finished your homework. → Has terminado tu tarea.</li>
+                    <li><strong>He/She has</strong> lived here for 5 years. → Ha vivido aquí por 5 años.</li>
+                    <li><strong>We have</strong> eaten at that restaurant. → Hemos comido en ese restaurante.</li>
+                    <li><strong>They have</strong> seen that movie. → Han visto esa película.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Contractions:</h3>
+                <ul class="space-y-1">
+                    <li>I have → I've | You have → You've | We have → We've | They have → They've</li>
+                    <li>He has → He's | She has → She's | It has → It's</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Negative:</h3>
+                <ul class="space-y-1">
+                    <li>I <strong>haven't</strong> seen that movie. → No he visto esa película.</li>
+                    <li>She <strong>hasn't</strong> finished yet. → Ella no ha terminado todavía.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Questions:</h3>
+                <ul class="space-y-1">
+                    <li><strong>Have</strong> you ever been to London? → Yes, I have. / No, I haven't.</li>
+                    <li><strong>Has</strong> she called you? → Yes, she has. / No, she hasn't.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📝 Regular & Irregular Past Participles</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Regular Verbs (+ ed):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>work → work<strong>ed</strong> | play → play<strong>ed</strong> | visit → visit<strong>ed</strong></li>
+                    <li>study → stud<strong>ied</strong> | stop → stopp<strong>ed</strong> | live → liv<strong>ed</strong></li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Irregular Verbs (memorize!):</h3>
+                <ul class="space-y-1">
+                    <li><strong>be</strong> → been | <strong>go</strong> → gone | <strong>see</strong> → seen</li>
+                    <li><strong>do</strong> → done | <strong>eat</strong> → eaten | <strong>have</strong> → had</li>
+                    <li><strong>take</strong> → taken | <strong>write</strong> → written | <strong>give</strong> → given</li>
+                    <li><strong>buy</strong> → bought | <strong>make</strong> → made | <strong>find</strong> → found</li>
+                    <li><strong>know</strong> → known | <strong>speak</strong> → spoken | <strong>read</strong> → read</li>
+                    <li><strong>come</strong> → come | <strong>run</strong> → run | <strong>put</strong> → put</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🎯 Uses of Present Perfect</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">1. Life Experiences (with ever/never):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>I <strong>have visited</strong> 10 countries.</li>
+                    <li><strong>Have</strong> you <strong>ever eaten</strong> sushi? → ¿Alguna vez has comido sushi?</li>
+                    <li>She <strong>has never seen</strong> snow. → Ella nunca ha visto nieve.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">2. Recent Past (with just):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>I <strong>have just finished</strong> my homework. → Acabo de terminar mi tarea.</li>
+                    <li>She <strong>has just arrived</strong>. → Ella acaba de llegar.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">3. Completed/Not completed (with already/yet):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>I <strong>have already eaten</strong> lunch. → Ya he almorzado.</li>
+                    <li>She <strong>hasn't finished yet</strong>. → Ella no ha terminado todavía.</li>
+                    <li><strong>Have</strong> you done your homework <strong>yet</strong>? → ¿Ya has hecho tu tarea?</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">4. Duration (with for/since):</h3>
+                <ul class="space-y-1">
+                    <li>I <strong>have lived</strong> here <strong>for</strong> 5 years. → He vivido aquí por 5 años.</li>
+                    <li>She <strong>has worked</strong> here <strong>since</strong> 2020. → Ella ha trabajado aquí desde 2020.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">⏰ FOR vs SINCE</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b border-white/20">
+                            <th class="py-2 text-green-400">FOR (duration)</th>
+                            <th class="py-2 text-yellow-400">SINCE (starting point)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2">for 5 minutes</td>
+                            <td class="py-2">since 9 o'clock</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2">for 2 hours</td>
+                            <td class="py-2">since Monday</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2">for 3 days</td>
+                            <td class="py-2">since January</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2">for 6 months</td>
+                            <td class="py-2">since 2020</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2">for 10 years</td>
+                            <td class="py-2">since I was a child</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">for a long time</td>
+                            <td class="py-2">since we met</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">⚡ Present Perfect vs Past Simple</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b border-white/20">
+                            <th class="py-2 text-yellow-400">Present Perfect</th>
+                            <th class="py-2 text-yellow-400">Past Simple</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2">No specific time</td>
+                            <td class="py-2">Specific time in the past</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2">I <strong>have seen</strong> that movie.</td>
+                            <td class="py-2">I <strong>saw</strong> that movie <strong>yesterday</strong>.</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2">She <strong>has been</strong> to Paris.</td>
+                            <td class="py-2">She <strong>went</strong> to Paris <strong>in 2019</strong>.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">Connection to now</td>
+                            <td class="py-2">Finished, no connection to now</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="mt-4 text-red-400">⚠️ Never use Present Perfect with: yesterday, last week, in 2020, ago, when...?</p>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">✏️ Practice Exercises</h2>
+            <h3 class="text-lg text-yellow-400 mb-3">Complete with Present Perfect:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I _____ (never/be) to Japan. (have never been)</li>
+                <li>She _____ (just/finish) her exam. (has just finished)</li>
+                <li>_____ you _____ (ever/eat) Thai food? (Have/ever eaten)</li>
+                <li>They _____ (live) here for 10 years. (have lived)</li>
+                <li>He _____ (not/call) me yet. (hasn't called)</li>
+                <li>We _____ (already/see) that movie. (have already seen)</li>
+                <li>I _____ (know) her since 2015. (have known)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Choose FOR or SINCE:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I've lived here _____ 5 years. (for)</li>
+                <li>She's worked here _____ 2018. (since)</li>
+                <li>We've been friends _____ a long time. (for)</li>
+                <li>He's studied English _____ he was 10. (since)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Present Perfect or Past Simple?</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I _____ (see) that movie last week. (saw)</li>
+                <li>She _____ (never/try) sushi. (has never tried)</li>
+                <li>They _____ (go) to Paris in 2019. (went)</li>
+                <li>_____ you _____ (ever/visit) London? (Have/ever visited)</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 
