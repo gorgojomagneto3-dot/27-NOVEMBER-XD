@@ -3120,6 +3120,177 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "int8": """
+    <div class="lesson-container max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-bold text-green-400 mb-4">🔬 INTERMEDIATE 8 - Science</h1>
+        <p class="text-gray-300 mb-6">ICPNA Intermediate Level - CEFR B1/B2 | Future Predictions & Scientific Language</p>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-green-400 mb-3">🎯 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Make predictions with will, going to, and might</li>
+                <li>Use future time clauses (when, as soon as, until, before)</li>
+                <li>Use connectors of cause and effect</li>
+                <li>Vocabulary: science, technology, and environment</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">🔮 Making Predictions</h2>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Will - Predictions based on opinion/belief</h3>
+            <ul class="list-disc pl-6 space-y-2 text-gray-300 mb-4">
+                <li>I think robots <span class="text-green-400">will</span> replace many jobs in the future.</li>
+                <li>Scientists <span class="text-green-400">will probably</span> find a cure for cancer.</li>
+                <li>Technology <span class="text-green-400">won't</span> solve all our problems.</li>
+            </ul>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Going to - Evidence-based predictions</h3>
+            <ul class="list-disc pl-6 space-y-2 text-gray-300 mb-4">
+                <li>Look at those clouds! It <span class="text-blue-400">is going to</span> rain.</li>
+                <li>The ice caps are melting. Sea levels <span class="text-blue-400">are going to</span> rise.</li>
+                <li>Based on current trends, pollution <span class="text-blue-400">is going to</span> get worse.</li>
+            </ul>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Might/May - Uncertain predictions</h3>
+            <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                <li>We <span class="text-purple-400">might</span> discover life on other planets.</li>
+                <li>Electric cars <span class="text-purple-400">may</span> become more affordable.</li>
+                <li>This experiment <span class="text-purple-400">might not</span> work as expected.</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">⏰ Future Time Clauses</h2>
+            
+            <p class="text-gray-300 mb-3">Use <span class="text-red-400">Present Simple</span> (not will) after: when, as soon as, until, before, after, if</p>
+            
+            <div class="bg-white/5 p-4 rounded mb-4">
+                <p class="text-red-400 mb-2">❌ When I will finish...</p>
+                <p class="text-green-400">✅ When I <span class="text-yellow-400">finish</span>, I will call you.</p>
+            </div>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">Examples:</h3>
+            <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                <li><span class="text-blue-400">When</span> scientists find a solution, they will announce it.</li>
+                <li><span class="text-blue-400">As soon as</span> the experiment ends, we'll analyze the results.</li>
+                <li>I'll wait <span class="text-blue-400">until</span> the data is complete.</li>
+                <li><span class="text-blue-400">Before</span> we start, we need to check the equipment.</li>
+                <li><span class="text-blue-400">After</span> we finish, we'll write the report.</li>
+                <li><span class="text-blue-400">If</span> the test succeeds, we'll continue the research.</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">🔗 Cause & Effect Connectors</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Expressing Cause</h4>
+                    <ul class="text-gray-300 space-y-2">
+                        <li><span class="text-yellow-400">because</span> - The ice melted because temperatures rose.</li>
+                        <li><span class="text-yellow-400">since/as</span> - Since pollution increased, air quality worsened.</li>
+                        <li><span class="text-yellow-400">due to</span> - Due to climate change, weather is more extreme.</li>
+                        <li><span class="text-yellow-400">because of</span> - Species are dying because of deforestation.</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Expressing Effect</h4>
+                    <ul class="text-gray-300 space-y-2">
+                        <li><span class="text-yellow-400">so</span> - It rained heavily, so the river flooded.</li>
+                        <li><span class="text-yellow-400">therefore</span> - CO2 increased; therefore, temperatures rose.</li>
+                        <li><span class="text-yellow-400">as a result</span> - Forests were cut. As a result, animals lost their homes.</li>
+                        <li><span class="text-yellow-400">consequently</span> - The experiment failed; consequently, we started over.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">🧪 Science & Environment Vocabulary</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Scientific Method</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">hypothesis</span> - educated guess</li>
+                        <li><span class="text-yellow-400">experiment</span> - test to prove something</li>
+                        <li><span class="text-yellow-400">data</span> - collected information</li>
+                        <li><span class="text-yellow-400">evidence</span> - proof</li>
+                        <li><span class="text-yellow-400">conclusion</span> - final result</li>
+                        <li><span class="text-yellow-400">research</span> - study of a topic</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Environment</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">climate change</span> - global warming</li>
+                        <li><span class="text-yellow-400">pollution</span> - contamination</li>
+                        <li><span class="text-yellow-400">renewable energy</span> - solar, wind</li>
+                        <li><span class="text-yellow-400">carbon footprint</span> - CO2 we produce</li>
+                        <li><span class="text-yellow-400">ecosystem</span> - community of living things</li>
+                        <li><span class="text-yellow-400">biodiversity</span> - variety of life</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Technology</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">artificial intelligence</span> - AI</li>
+                        <li><span class="text-yellow-400">breakthrough</span> - important discovery</li>
+                        <li><span class="text-yellow-400">innovation</span> - new idea/method</li>
+                        <li><span class="text-yellow-400">sustainable</span> - eco-friendly</li>
+                        <li><span class="text-yellow-400">cutting-edge</span> - very modern</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Scientific Verbs</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">discover</span> - find something new</li>
+                        <li><span class="text-yellow-400">analyze</span> - study carefully</li>
+                        <li><span class="text-yellow-400">predict</span> - say what will happen</li>
+                        <li><span class="text-yellow-400">prove</span> - show to be true</li>
+                        <li><span class="text-yellow-400">develop</span> - create/improve</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-yellow-500/20 rounded-lg border border-yellow-500/50">
+            <h2 class="text-xl text-yellow-400 mb-3">📝 Practice Exercises</h2>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Make predictions with will, going to, or might:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I'm sure technology _____ change our lives. (will)</li>
+                <li>Look at those dark clouds! It _____ storm. (is going to)</li>
+                <li>Scientists _____ find a cure, but I'm not sure. (might)</li>
+                <li>Based on the data, temperatures _____ rise by 2°C. (are going to)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Complete with the correct verb form:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>When scientists _____ (find) a solution, they will publish it. (find)</li>
+                <li>I'll call you as soon as I _____ (arrive). (arrive)</li>
+                <li>We won't start until everyone _____ (be) ready. (is)</li>
+                <li>After we _____ (finish) the experiment, we'll clean up. (finish)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Join using cause/effect connectors:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>Forests are cut down. Animals lose their homes.
+                    <span class="text-gray-400">(Because forests are cut down, animals lose their homes.)</span></li>
+                <li>Pollution increased. Air quality worsened.
+                    <span class="text-gray-400">(Pollution increased; therefore, air quality worsened.)</span></li>
+                <li>Global warming / sea levels rising
+                    <span class="text-gray-400">(Due to global warming, sea levels are rising.)</span></li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 
