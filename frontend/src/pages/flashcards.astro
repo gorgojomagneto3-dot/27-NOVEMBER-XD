@@ -127,7 +127,7 @@ import Layout from '../layouts/Layout.astro';
 </style>
 
 <script>
-  const API_URL = 'http://localhost:5000';
+  const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000' : 'https://27-november-xd.vercel.app';
   
   let cards = [];
   let currentIndex = 0;

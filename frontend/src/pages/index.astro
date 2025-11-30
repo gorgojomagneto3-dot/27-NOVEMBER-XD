@@ -80,7 +80,7 @@ import StatsBar from '../components/StatsBar.astro';
 </Layout>
 
 <script>
-  const API_URL = 'http://localhost:5000';
+  const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000' : 'https://27-november-xd.vercel.app';
   
   // Get user ID
   function getUserId() {
