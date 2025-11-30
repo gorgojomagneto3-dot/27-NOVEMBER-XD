@@ -53,7 +53,12 @@ def get_user_stats(user_id):
 
 # ============== CONTENT ==============
 
-from .content import get_all_lessons, get_lesson_by_id
+# Import content directly without relative imports
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from content import get_all_lessons, get_lesson_by_id
 
 # ============== LESSONS API ==============
 
