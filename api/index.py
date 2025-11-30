@@ -53,7 +53,7 @@ def get_user_stats(user_id):
 
 # ============== CONTENT ==============
 
-from content import get_all_lessons, get_lesson_by_id
+from .content import get_all_lessons, get_lesson_by_id
 
 # ============== LESSONS API ==============
 

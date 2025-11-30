@@ -3,32 +3,32 @@ Content Module - Manages all lesson content
 """
 from markupsafe import Markup
 
-# Import all content functions
-from b01_content_new import get_b01_content_new
-from b02_content_new import get_b02_content
-from b03_content_new import get_b03_content
-from b04_content_new import get_b04_content
-from b05_content_new import get_b05_content
-from b06_content_new import get_b06_content
-from b07_content_new import get_b07_content
-from b08_content_new import get_b08_content
-from b09_content_new import get_b09_content
-from b10_content_new import get_b10_content
-from b11_content_new import get_b11_content_new
-from b12_content_new import get_b12_content_new
-from int01_content import get_int01_content
-from int02_content import get_int02_content
-from int03_content import get_int03_content
-from int04_content import get_int04_content
-from int05_content import get_int05_content
-from int06_content import get_int06_content
-from int07_content import get_int07_content
-from int08_content import get_int08_content
-from int09_content import get_int09_content
-from int10_content import get_int10_content
-from int11_content import get_int11_content
-from int12_content import get_int12_content
-from exam_prep_content import (
+# Import all content functions (using relative imports for Vercel)
+from .b01_content_new import get_b01_content_new
+from .b02_content_new import get_b02_content
+from .b03_content_new import get_b03_content
+from .b04_content_new import get_b04_content
+from .b05_content_new import get_b05_content
+from .b06_content_new import get_b06_content
+from .b07_content_new import get_b07_content
+from .b08_content_new import get_b08_content
+from .b09_content_new import get_b09_content
+from .b10_content_new import get_b10_content
+from .b11_content_new import get_b11_content_new
+from .b12_content_new import get_b12_content_new
+from .int01_content import get_int01_content
+from .int02_content import get_int02_content
+from .int03_content import get_int03_content
+from .int04_content import get_int04_content
+from .int05_content import get_int05_content
+from .int06_content import get_int06_content
+from .int07_content import get_int07_content
+from .int08_content import get_int08_content
+from .int09_content import get_int09_content
+from .int10_content import get_int10_content
+from .int11_content import get_int11_content
+from .int12_content import get_int12_content
+from .exam_prep_content import (
     get_exam_prep_content, 
     get_common_mistakes_content,
     get_phrasal_verbs_content,
