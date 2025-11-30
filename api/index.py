@@ -3914,6 +3914,224 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "int12": """
+    <div class="lesson-container max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-bold text-green-400 mb-4">💰 INTERMEDIATE 12 - Value for Money</h1>
+        <p class="text-gray-300 mb-6">ICPNA Intermediate Level - CEFR B1/B2 | Past Perfect & Shopping Language</p>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-green-400 mb-3">🎯 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Use Past Perfect to describe earlier past events</li>
+                <li>Use either/neither for agreement and alternatives</li>
+                <li>Vocabulary: shopping, money, consumer decisions</li>
+                <li>Compare products and discuss value</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">⏪ Past Perfect</h2>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Formation: had + past participle</h3>
+            
+            <div class="bg-white/5 p-4 rounded mb-4">
+                <p class="text-gray-300"><span class="text-green-400">+</span> I <span class="text-yellow-400">had saved</span> money before I bought the phone.</p>
+                <p class="text-gray-300"><span class="text-red-400">-</span> She <span class="text-yellow-400">hadn't compared</span> prices before buying.</p>
+                <p class="text-gray-300"><span class="text-blue-400">?</span> <span class="text-yellow-400">Had</span> you <span class="text-yellow-400">seen</span> the product reviews?</p>
+            </div>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">When to use:</h3>
+            <p class="text-gray-300 mb-3">To show one past action happened BEFORE another past action:</p>
+            
+            <div class="bg-white/5 p-3 rounded mb-4">
+                <p class="text-gray-300 mb-2">Timeline: <span class="text-purple-400">Earlier Past</span> → <span class="text-blue-400">Later Past</span> → Now</p>
+                <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                    <li>When I arrived, the sale <span class="text-purple-400">had already ended</span>. (end = earlier, arrive = later)</li>
+                    <li>She bought it because she <span class="text-purple-400">had read</span> good reviews. (read = earlier, buy = later)</li>
+                    <li>I <span class="text-purple-400">had never seen</span> such low prices before that sale.</li>
+                </ul>
+            </div>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">Key time expressions:</h3>
+            <ul class="list-disc pl-6 space-y-1 text-gray-300">
+                <li><span class="text-blue-400">already</span> - The shop had already closed.</li>
+                <li><span class="text-blue-400">just</span> - They had just sold the last one.</li>
+                <li><span class="text-blue-400">never</span> - I had never bought anything online before.</li>
+                <li><span class="text-blue-400">by the time</span> - By the time I decided, it had sold out.</li>
+                <li><span class="text-blue-400">before/after</span> - Before I bought it, I had compared prices.</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">⚖️ Either / Neither</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white/5 p-3 rounded border-l-4 border-green-500">
+                    <h4 class="text-green-400 mb-2">Either (one or the other)</h4>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>You can have <span class="text-green-400">either</span> the blue or the red one.</li>
+                        <li><span class="text-green-400">Either</span> option is fine with me.</li>
+                        <li>I don't like this one <span class="text-green-400">either</span>. (negative agreement)</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded border-l-4 border-red-500">
+                    <h4 class="text-red-400 mb-2">Neither (not one, not the other)</h4>
+                    <ul class="text-gray-300 space-y-2">
+                        <li><span class="text-red-400">Neither</span> product is worth the price.</li>
+                        <li>I like <span class="text-red-400">neither</span> of them.</li>
+                        <li>A: "I don't want it." B: "<span class="text-red-400">Neither</span> do I."</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">Agreement patterns:</h3>
+            <div class="bg-white/5 p-4 rounded">
+                <p class="text-gray-300 mb-2"><span class="text-green-400">Positive → So + auxiliary + subject</span></p>
+                <p class="text-gray-300 mb-3">"I love bargains." → "So do I!" / "Me too!"</p>
+                
+                <p class="text-gray-300 mb-2"><span class="text-red-400">Negative → Neither + auxiliary + subject</span></p>
+                <p class="text-gray-300">"I don't like expensive brands." → "Neither do I!" / "Me neither!"</p>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">🛍️ Shopping Vocabulary</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Prices & Deals</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">bargain</span> - great deal</li>
+                        <li><span class="text-yellow-400">discount</span> - reduced price</li>
+                        <li><span class="text-yellow-400">sale</span> - special low prices</li>
+                        <li><span class="text-yellow-400">offer</span> - special deal</li>
+                        <li><span class="text-yellow-400">buy one get one free</span> - BOGOF</li>
+                        <li><span class="text-yellow-400">half price</span> - 50% off</li>
+                        <li><span class="text-yellow-400">clearance</span> - final sale</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Price Descriptions</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">affordable</span> - reasonably priced</li>
+                        <li><span class="text-yellow-400">overpriced</span> - too expensive</li>
+                        <li><span class="text-yellow-400">reasonable</span> - fair price</li>
+                        <li><span class="text-yellow-400">pricey</span> - expensive (informal)</li>
+                        <li><span class="text-yellow-400">good value</span> - worth the money</li>
+                        <li><span class="text-yellow-400">rip-off</span> - too expensive (informal)</li>
+                        <li><span class="text-yellow-400">a steal</span> - very cheap (informal)</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Shopping Actions</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">compare prices</span> - check different stores</li>
+                        <li><span class="text-yellow-400">try on</span> - test clothes</li>
+                        <li><span class="text-yellow-400">get a refund</span> - return for money back</li>
+                        <li><span class="text-yellow-400">exchange</span> - swap for another</li>
+                        <li><span class="text-yellow-400">browse</span> - look without buying</li>
+                        <li><span class="text-yellow-400">splurge</span> - spend a lot</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Consumer Terms</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">warranty</span> - guarantee period</li>
+                        <li><span class="text-yellow-400">receipt</span> - proof of purchase</li>
+                        <li><span class="text-yellow-400">brand</span> - company name</li>
+                        <li><span class="text-yellow-400">quality</span> - how good it is</li>
+                        <li><span class="text-yellow-400">customer service</span> - help for buyers</li>
+                        <li><span class="text-yellow-400">review</span> - opinion from buyers</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">💸 Money Expressions</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">save money</span>
+                </div>
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">spend money</span>
+                </div>
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">waste money</span>
+                </div>
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">borrow money</span>
+                </div>
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">lend money</span>
+                </div>
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">owe money</span>
+                </div>
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">be worth</span>
+                </div>
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">cost a fortune</span>
+                </div>
+                <div class="bg-white/5 p-2 rounded text-center">
+                    <span class="text-green-400">can't afford</span>
+                </div>
+            </div>
+            
+            <h3 class="text-lg text-yellow-400 mt-4 mb-2">Idioms:</h3>
+            <ul class="list-disc pl-6 space-y-1 text-gray-300">
+                <li><span class="text-green-400">Money doesn't grow on trees</span> - money is limited</li>
+                <li><span class="text-green-400">Get your money's worth</span> - get good value</li>
+                <li><span class="text-green-400">Break the bank</span> - cost too much</li>
+                <li><span class="text-green-400">Pay through the nose</span> - pay way too much</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-yellow-500/20 rounded-lg border border-yellow-500/50">
+            <h2 class="text-xl text-yellow-400 mb-3">📝 Practice Exercises</h2>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Complete with Past Perfect:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>When I arrived, the sale _____ already _____. (had...ended)</li>
+                <li>She bought it because she _____ the reviews. (had read)</li>
+                <li>By the time I saved enough money, the price _____. (had increased)</li>
+                <li>I _____ never _____ online before last year. (had...shopped)</li>
+                <li>They _____ just _____ the last one when I got there. (had...sold)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Complete with either, neither, so, or too:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I don't like this brand. - _____ do I. (Neither)</li>
+                <li>You can choose _____ the red or the blue one. (either)</li>
+                <li>I love bargains! - _____ do I! / Me _____! (So / too)</li>
+                <li>_____ product is good quality. I don't want them. (Neither)</li>
+                <li>I can't afford it. - I can't _____. (either)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Match the shopping vocabulary:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>Too expensive for what you get = _____ (overpriced / rip-off)</li>
+                <li>A great deal at a low price = _____ (bargain / a steal)</li>
+                <li>Return product and get money back = _____ (get a refund)</li>
+                <li>Spend a lot on something = _____ (splurge)</li>
+                <li>Guarantee for repairs/replacement = _____ (warranty)</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+        
+        <div class="mt-4 p-4 bg-purple-500/20 rounded-lg border border-purple-500/50">
+            <p class="text-purple-400 font-semibold text-center text-xl">🏆 CONGRATULATIONS! 🏆</p>
+            <p class="text-gray-300 text-center mt-2">You have completed the ICPNA Intermediate English Course!</p>
+            <p class="text-gray-400 text-center text-sm mt-1">You're now ready for Advanced level studies.</p>
+        </div>
+    </div>
     """
 }
 
