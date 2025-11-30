@@ -2480,6 +2480,201 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "int5": """
+    <div class="lesson-container">
+        <h1 class="text-3xl font-bold text-green-400 mb-6">🧠 INTERMEDIATE 05 - Brainpower</h1>
+        <p class="text-white/60 mb-6">CEFR Level: B1 | ICPNA: Intermedio 5 | World Link Intermediate 1, Unit 5</p>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📋 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Use vocabulary related to memory and learning</li>
+                <li>Talk about past habits with used to and would</li>
+                <li>Use phrasal verbs related to learning</li>
+                <li>Understand verb + -ing or infinitive patterns</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🧠 Memory Vocabulary</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong class="text-green-400">remember</strong> → recordar</li>
+                    <li><strong class="text-green-400">forget</strong> → olvidar</li>
+                    <li><strong class="text-green-400">memorize</strong> → memorizar</li>
+                    <li><strong class="text-green-400">recall</strong> → recordar/evocar</li>
+                    <li><strong class="text-green-400">retain</strong> → retener información</li>
+                    <li><strong class="text-green-400">retrieve</strong> → recuperar información</li>
+                    <li><strong class="text-green-400">refresh your memory</strong> → refrescar la memoria</li>
+                    <li><strong class="text-green-400">recollect</strong> → rememorar</li>
+                    <li><strong class="text-green-400">remind</strong> → recordar a alguien</li>
+                    <li><strong class="text-green-400">short-term memory</strong> → memoria a corto plazo</li>
+                    <li><strong class="text-green-400">long-term memory</strong> → memoria a largo plazo</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Used To (Past Habits)</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-yellow-400 mb-3"><strong>Subject + used to + base verb</strong></p>
+                <p class="text-white/60 mb-3">Use: Things that were true in the past but are not true now</p>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Affirmative:</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>I <strong>used to</strong> live in Lima. (Now I don't live there)</li>
+                    <li>She <strong>used to</strong> smoke. (Now she doesn't smoke)</li>
+                    <li>We <strong>used to</strong> play together as children.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Negative:</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>I <strong>didn't use to</strong> like coffee. (Now I like it)</li>
+                    <li>He <strong>didn't use to</strong> exercise. (Now he does)</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Questions:</h3>
+                <ul class="space-y-1">
+                    <li><strong>Did you use to</strong> play sports? → Yes, I did. / No, I didn't.</li>
+                    <li><strong>Where did you use to</strong> live?</li>
+                    <li><strong>What did you use to</strong> do on weekends?</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Would (Past Habits)</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-yellow-400 mb-3"><strong>Subject + would + base verb</strong></p>
+                <p class="text-white/60 mb-3">Use: Repeated actions in the past (NOT states)</p>
+                
+                <ul class="space-y-2">
+                    <li>When I was young, I <strong>would play</strong> in the park every day. ✓</li>
+                    <li>My grandmother <strong>would tell</strong> us stories at night. ✓</li>
+                    <li>We <strong>would visit</strong> our grandparents every summer. ✓</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">⚠️ Cannot use WOULD for states:</h3>
+                <ul class="space-y-1">
+                    <li>I <strong>used to</strong> live in Lima. ✓</li>
+                    <li>I <strong>would</strong> live in Lima. ✗ (live = state, not action)</li>
+                    <li>She <strong>used to</strong> have long hair. ✓</li>
+                    <li>She <strong>would</strong> have long hair. ✗ (have = state)</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📚 Learning Phrasal Verbs</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong class="text-green-400">look up</strong> → buscar (en diccionario/internet) → I need to look up this word.</li>
+                    <li><strong class="text-green-400">pick up</strong> → aprender de forma natural → She picked up Spanish while living in Peru.</li>
+                    <li><strong class="text-green-400">catch on</strong> → entender/comprender → It took me a while to catch on.</li>
+                    <li><strong class="text-green-400">figure out</strong> → descifrar/resolver → I can't figure out this problem.</li>
+                    <li><strong class="text-green-400">go over</strong> → repasar → Let's go over the lesson again.</li>
+                    <li><strong class="text-green-400">hand in</strong> → entregar → Don't forget to hand in your homework.</li>
+                    <li><strong class="text-green-400">drop out</strong> → abandonar (estudios) → He dropped out of university.</li>
+                    <li><strong class="text-green-400">sign up</strong> → inscribirse → I signed up for a cooking class.</li>
+                    <li><strong class="text-green-400">keep up with</strong> → seguir el ritmo → I can't keep up with the class.</li>
+                    <li><strong class="text-green-400">fall behind</strong> → atrasarse → Don't fall behind on your studies.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Verb + -ING or Infinitive</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Verbs followed by -ING:</h3>
+                <p class="mb-2">enjoy, finish, avoid, mind, suggest, keep, practice, consider, imagine</p>
+                <ul class="space-y-1 mb-4">
+                    <li>I enjoy <strong>learning</strong> new things.</li>
+                    <li>She finished <strong>studying</strong> at 10 PM.</li>
+                    <li>Avoid <strong>making</strong> the same mistake.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Verbs followed by INFINITIVE:</h3>
+                <p class="mb-2">want, need, decide, hope, plan, expect, promise, learn, agree, refuse</p>
+                <ul class="space-y-1 mb-4">
+                    <li>I want <strong>to learn</strong> French.</li>
+                    <li>She decided <strong>to study</strong> abroad.</li>
+                    <li>He promised <strong>to help</strong> me.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Verbs with DIFFERENT meanings:</h3>
+                <table class="w-full text-left mt-2">
+                    <thead>
+                        <tr class="border-b border-white/20">
+                            <th class="py-2">Verb + -ing</th>
+                            <th class="py-2">Verb + infinitive</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2"><strong>stop + -ing</strong> = quit doing</td>
+                            <td class="py-2"><strong>stop + to</strong> = pause to do</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2">I stopped smoking. (quit)</td>
+                            <td class="py-2">I stopped to smoke. (paused)</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2"><strong>remember + -ing</strong> = recall past</td>
+                            <td class="py-2"><strong>remember + to</strong> = not forget</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2">I remember meeting him. (I recall)</td>
+                            <td class="py-2">Remember to call me. (don't forget)</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2"><strong>try + -ing</strong> = experiment</td>
+                            <td class="py-2"><strong>try + to</strong> = attempt</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">Try eating less sugar. (experiment)</td>
+                            <td class="py-2">I tried to open the door. (attempted)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">✏️ Practice Exercises</h2>
+            <h3 class="text-lg text-yellow-400 mb-3">Complete with used to or would:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I _____ live in a small town. (used to - state)</li>
+                <li>When I was a child, I _____ play outside every day. (would/used to - action)</li>
+                <li>She _____ have long hair, but now it's short. (used to - state)</li>
+                <li>My father _____ read me stories every night. (would/used to - action)</li>
+                <li>They _____ be best friends. (used to - state)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Complete with -ing or infinitive:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I enjoy _____ (learn) new languages. (learning)</li>
+                <li>She decided _____ (study) medicine. (to study)</li>
+                <li>Don't forget _____ (call) me tomorrow! (to call)</li>
+                <li>I remember _____ (meet) him at the party. (meeting - recalling past)</li>
+                <li>He stopped _____ (smoke) last year. (smoking - quit)</li>
+                <li>We want _____ (improve) our English. (to improve)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Complete with the correct phrasal verb:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I need to _____ this word in the dictionary. (look up)</li>
+                <li>She _____ French while living in Paris. (picked up)</li>
+                <li>Don't forget to _____ your homework tomorrow. (hand in)</li>
+                <li>I _____ for a yoga class last week. (signed up)</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 
