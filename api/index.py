@@ -1138,6 +1138,167 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "b8": """
+    <div class="lesson-container">
+        <h1 class="text-3xl font-bold text-green-400 mb-6">⏳ BASIC 08 - Past Continuous</h1>
+        <p class="text-white/60 mb-6">CEFR Level: A2 | ICPNA: Básico 8 | World Link Book 1</p>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📋 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Describe actions in progress in the past</li>
+                <li>Use was/were + verb-ing correctly</li>
+                <li>Contrast Past Simple vs Past Continuous</li>
+                <li>Use time expressions: while, when, as</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Past Continuous Structure</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-yellow-400 mb-3"><strong>Subject + was/were + verb-ING</strong></p>
+                <ul class="space-y-2">
+                    <li><strong>I was</strong> studying at 8 PM. → Yo estaba estudiando a las 8 PM.</li>
+                    <li><strong>You were</strong> sleeping when I called. → Estabas durmiendo cuando llamé.</li>
+                    <li><strong>He/She was</strong> working all day. → Él/Ella estaba trabajando todo el día.</li>
+                    <li><strong>We were</strong> watching TV. → Estábamos viendo TV.</li>
+                    <li><strong>They were</strong> playing soccer. → Estaban jugando fútbol.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Negative:</h3>
+                <ul class="space-y-1">
+                    <li>I <strong>wasn't</strong> sleeping. → No estaba durmiendo.</li>
+                    <li>They <strong>weren't</strong> listening. → No estaban escuchando.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Questions:</h3>
+                <ul class="space-y-1">
+                    <li><strong>Was</strong> she working? → Yes, she was. / No, she wasn't.</li>
+                    <li><strong>Were</strong> they studying? → Yes, they were. / No, they weren't.</li>
+                    <li><strong>What were</strong> you doing at 9 PM?</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🎯 Uses of Past Continuous</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">1. Action in progress at a specific time:</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>At 10 PM last night, I <strong>was reading</strong> a book.</li>
+                    <li>This time yesterday, we <strong>were flying</strong> to Miami.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">2. Interrupted action (with Past Simple):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>I <strong>was cooking</strong> when the phone <strong>rang</strong>.</li>
+                    <li>She <strong>was walking</strong> home when it <strong>started</strong> to rain.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">3. Two parallel actions:</h3>
+                <ul class="space-y-1 mb-4">
+                    <li><strong>While</strong> I <strong>was studying</strong>, my brother <strong>was playing</strong> video games.</li>
+                    <li>She <strong>was cooking</strong> while he <strong>was cleaning</strong>.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">4. Setting the scene (stories):</h3>
+                <ul class="space-y-1">
+                    <li>The sun <strong>was shining</strong>. Birds <strong>were singing</strong>. It was a beautiful day.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">⚡ Past Simple vs Past Continuous</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b border-white/20">
+                            <th class="py-2 text-yellow-400">Past Simple</th>
+                            <th class="py-2 text-yellow-400">Past Continuous</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2">Completed action</td>
+                            <td class="py-2">Action in progress</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2">I <strong>ate</strong> breakfast.</td>
+                            <td class="py-2">I <strong>was eating</strong> breakfast at 8.</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2">She <strong>called</strong> me.</td>
+                            <td class="py-2">She <strong>was calling</strong> when I arrived.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">Short action (interruption)</td>
+                            <td class="py-2">Long action (background)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Key Pattern:</h3>
+                <p class="text-white/80"><strong>WHEN</strong> + Past Simple, Past Continuous</p>
+                <p class="text-white/80"><strong>WHILE</strong> + Past Continuous, Past Simple/Continuous</p>
+                <ul class="mt-2 space-y-1">
+                    <li><strong>When</strong> the phone rang, I <strong>was taking</strong> a shower.</li>
+                    <li><strong>While</strong> I <strong>was walking</strong> home, I <strong>saw</strong> an accident.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">⏰ Time Expressions</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong class="text-green-400">when</strong> → cuando (short action interrupts)</li>
+                    <li><strong class="text-green-400">while</strong> → mientras (parallel actions)</li>
+                    <li><strong class="text-green-400">as</strong> → mientras/cuando</li>
+                    <li><strong class="text-green-400">at that moment</strong> → en ese momento</li>
+                    <li><strong class="text-green-400">at 8 o'clock</strong> → a las 8</li>
+                    <li><strong class="text-green-400">all day/night/morning</strong> → todo el día/noche/mañana</li>
+                    <li><strong class="text-green-400">this time yesterday</strong> → a esta hora ayer</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📝 Spelling Rules for -ING (Review)</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong>Most verbs:</strong> + ing → work<em>ing</em>, play<em>ing</em>, study<em>ing</em></li>
+                    <li><strong>Verbs ending in -e:</strong> drop e + ing → mak<em>ing</em>, writ<em>ing</em>, danc<em>ing</em></li>
+                    <li><strong>Short CVC verbs:</strong> double consonant + ing → run<em>ning</em>, sit<em>ting</em>, swim<em>ming</em></li>
+                    <li><strong>Verbs ending in -ie:</strong> ie → y + ing → l<em>ying</em>, d<em>ying</em></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">✏️ Practice Exercises</h2>
+            <h3 class="text-lg text-yellow-400 mb-3">Complete with Past Simple or Past Continuous:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I _____ (watch) TV when the lights _____ (go) out. (was watching / went)</li>
+                <li>While she _____ (cook), the phone _____ (ring). (was cooking / rang)</li>
+                <li>They _____ (play) soccer at 5 PM yesterday. (were playing)</li>
+                <li>What _____ you _____ (do) when I _____ (call) you? (were/doing / called)</li>
+                <li>He _____ (not/sleep) when the alarm _____ (go) off. (wasn't sleeping / went)</li>
+                <li>While I _____ (study), my sister _____ (listen) to music. (was studying / was listening)</li>
+                <li>The sun _____ (shine) and the birds _____ (sing). It was beautiful. (was shining / were singing)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Complete the story:</h3>
+            <p class="text-white/80 mb-2">Yesterday at 8 PM, I _____ (sit) in my room. I _____ (read) a book. Suddenly, I _____ (hear) a strange noise outside. I _____ (go) to the window. A cat _____ (run) across the garden!</p>
+            <p class="text-green-400">(was sitting / was reading / heard / went / was running)</p>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 
