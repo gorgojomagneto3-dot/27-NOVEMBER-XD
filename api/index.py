@@ -1898,6 +1898,209 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "b12": """
+    <div class="lesson-container">
+        <h1 class="text-3xl font-bold text-green-400 mb-6">🎓 BASIC 12 - Complete Review</h1>
+        <p class="text-white/60 mb-6">CEFR Level: A2 | ICPNA: Básico 12 | Final Review & Preparation for Intermediate</p>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📋 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Review all grammar from Basic 1-11</li>
+                <li>Consolidate vocabulary from all units</li>
+                <li>Identify and correct common errors</li>
+                <li>Prepare for Intermediate level</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Grammar Summary: All Tenses</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b border-white/20">
+                            <th class="py-2 text-yellow-400">Tense</th>
+                            <th class="py-2 text-yellow-400">Structure</th>
+                            <th class="py-2 text-yellow-400">Use</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2 text-green-400">Present Simple</td>
+                            <td class="py-2">I work / She works</td>
+                            <td class="py-2">Habits, routines, facts</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2 text-green-400">Present Continuous</td>
+                            <td class="py-2">I am working</td>
+                            <td class="py-2">Now, temporary actions</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2 text-green-400">Past Simple</td>
+                            <td class="py-2">I worked / I went</td>
+                            <td class="py-2">Completed past actions</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2 text-green-400">Past Continuous</td>
+                            <td class="py-2">I was working</td>
+                            <td class="py-2">Action in progress in past</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2 text-green-400">Present Perfect</td>
+                            <td class="py-2">I have worked</td>
+                            <td class="py-2">Experience, recent past, for/since</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2 text-green-400">Future (will)</td>
+                            <td class="py-2">I will work</td>
+                            <td class="py-2">Predictions, decisions, promises</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 text-green-400">Future (going to)</td>
+                            <td class="py-2">I am going to work</td>
+                            <td class="py-2">Plans, intentions</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Key Grammar Structures</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Verb TO BE:</h3>
+                <p class="mb-4">I am, You are, He/She/It is, We are, They are</p>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">There is / There are:</h3>
+                <p class="mb-4">There is a book. There are three books.</p>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Possessive Adjectives:</h3>
+                <p class="mb-4">my, your, his, her, its, our, their</p>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Prepositions of Place:</h3>
+                <p class="mb-4">in, on, at, next to, between, behind, in front of, across from</p>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Frequency Adverbs:</h3>
+                <p class="mb-4">always, usually, often, sometimes, rarely, never</p>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Time Expressions:</h3>
+                <ul class="space-y-1">
+                    <li><strong>Past:</strong> yesterday, last week, ago, in 2020</li>
+                    <li><strong>Present Perfect:</strong> ever, never, already, yet, just, for, since</li>
+                    <li><strong>Future:</strong> tomorrow, next week, soon, in the future</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📝 Vocabulary Categories Review</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">👤 People:</h3>
+                <p class="mb-4">family members, jobs, physical descriptions, personality adjectives</p>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">🏠 Places:</h3>
+                <p class="mb-4">rooms, furniture, city locations, countries, neighborhoods</p>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">⏰ Time:</h3>
+                <p class="mb-4">days, months, telling time, daily routines</p>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">🍽️ Food:</h3>
+                <p class="mb-4">meals, food types, tastes, ordering at a restaurant</p>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">👕 Shopping:</h3>
+                <p class="mb-4">clothes, prices, sizes, shopping expressions</p>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">🎉 Celebrations:</h3>
+                <p class="mb-4">holidays, parties, traditions, congratulations</p>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">⚠️ Common Errors to Avoid</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-3">
+                    <li>❌ <span class="text-red-400">She work every day.</span> → ✅ <span class="text-green-400">She works every day.</span> (3rd person -s)</li>
+                    <li>❌ <span class="text-red-400">I am agree.</span> → ✅ <span class="text-green-400">I agree.</span> (agree doesn't use BE)</li>
+                    <li>❌ <span class="text-red-400">I have 25 years.</span> → ✅ <span class="text-green-400">I am 25 years old.</span> (age uses BE)</li>
+                    <li>❌ <span class="text-red-400">I am knowing him.</span> → ✅ <span class="text-green-400">I know him.</span> (stative verbs)</li>
+                    <li>❌ <span class="text-red-400">I went there yesterday ago.</span> → ✅ <span class="text-green-400">I went there yesterday.</span> (don't mix)</li>
+                    <li>❌ <span class="text-red-400">I have seen him yesterday.</span> → ✅ <span class="text-green-400">I saw him yesterday.</span> (Past Simple with specific time)</li>
+                    <li>❌ <span class="text-red-400">Where you are going?</span> → ✅ <span class="text-green-400">Where are you going?</span> (question word order)</li>
+                    <li>❌ <span class="text-red-400">I no like coffee.</span> → ✅ <span class="text-green-400">I don't like coffee.</span> (use auxiliaries)</li>
+                    <li>❌ <span class="text-red-400">He don't work here.</span> → ✅ <span class="text-green-400">He doesn't work here.</span> (3rd person doesn't)</li>
+                    <li>❌ <span class="text-red-400">I'm going to the home.</span> → ✅ <span class="text-green-400">I'm going home.</span> (no article with home)</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">✏️ Comprehensive Practice Test</h2>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Part 1: Choose the correct option:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>She _____ to work every day. (goes)</li>
+                <li>I _____ TV when the phone rang. (was watching)</li>
+                <li>They _____ here since 2015. (have lived)</li>
+                <li>Look! It _____ rain! (is going to)</li>
+                <li>_____ there a bank near here? (Is)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Part 2: Correct the errors:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>He have been to Paris. → He <strong>has</strong> been to Paris.</li>
+                <li>I am study English. → I am <strong>studying</strong> English.</li>
+                <li>She don't like pizza. → She <strong>doesn't</strong> like pizza.</li>
+                <li>Where you work? → Where <strong>do you</strong> work?</li>
+                <li>I have saw that movie. → I have <strong>seen</strong> that movie.</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Part 3: Complete with the correct tense:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>Right now, I _____ (study) for my exam. (am studying)</li>
+                <li>Yesterday, we _____ (go) to the beach. (went)</li>
+                <li>She _____ (never/eat) sushi before. (has never eaten)</li>
+                <li>Next week, I _____ (travel) to Cusco. (am going to travel / am traveling)</li>
+                <li>While I _____ (cook), my mom _____ (call). (was cooking / called)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Part 4: Vocabulary - Match:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>bank → where you keep money</li>
+                <li>graduation → finishing school/university</li>
+                <li>bald → without hair</li>
+                <li>straight → type of hair (not curly)</li>
+                <li>toast → drink to celebrate</li>
+            </ol>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🚀 Ready for Intermediate?</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <p class="text-white/80 mb-4">If you can do the following, you're ready for Intermediate level:</p>
+                <ul class="space-y-2">
+                    <li>✅ Introduce yourself and talk about personal information</li>
+                    <li>✅ Describe people, places, and things</li>
+                    <li>✅ Talk about daily routines and habits</li>
+                    <li>✅ Describe past events and experiences</li>
+                    <li>✅ Make plans for the future</li>
+                    <li>✅ Give and follow directions</li>
+                    <li>✅ Order food and go shopping</li>
+                    <li>✅ Talk about celebrations and traditions</li>
+                </ul>
+            </div>
+        </section>
+        
+        <div class="mt-8 p-4 bg-purple-500/20 rounded-lg border border-purple-500/50">
+            <p class="text-purple-400 font-semibold text-xl">🎓 ¡Congratulations! You've completed the Basic Level!</p>
+            <p class="text-white/80 mt-2">You're now ready to start Intermediate 01 - Relative Clauses</p>
+        </div>
+        
+        <div class="mt-4 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 100 XP! (Bonus for finishing Basic!)</p>
+        </div>
+    </div>
     """
 }
 
