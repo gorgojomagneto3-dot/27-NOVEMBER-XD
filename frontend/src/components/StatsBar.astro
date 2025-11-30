@@ -1,0 +1,100 @@
+---
+// Stats bar component - shows XP, streak, level
+---
+
+<div class="bg-slate-800/50 border-b border-white/10">
+  <div class="container mx-auto px-4 py-3">
+    <div class="flex items-center justify-between gap-4 text-sm">
+      <!-- XP -->
+      <div class="flex items-center gap-2" id="xp-display">
+        <span class="text-2xl">⚡</span>
+        <div>
+          <span class="text-white/60">XP</span>
+          <span class="text-white font-bold ml-1" id="xp-value">0</span>
+        </div>
+      </div>
+      
+      <!-- Level -->
+      <div class="flex items-center gap-2" id="level-display">
+        <span class="text-2xl">🏆</span>
+        <div>
+          <span class="text-white/60">Level</span>
+          <span class="text-white font-bold ml-1" id="level-value">1</span>
+        </div>
+      </div>
+      
+      <!-- Streak -->
+      <div class="flex items-center gap-2" id="streak-display">
+        <span class="text-2xl">🔥</span>
+        <div>
+          <span class="text-white/60">Streak</span>
+          <span class="text-white font-bold ml-1" id="streak-value">0</span>
+          <span class="text-white/60">days</span>
+        </div>
+      </div>
+      
+      <!-- Words Learned -->
+      <div class="flex items-center gap-2 hidden md:flex" id="words-display">
+        <span class="text-2xl">📚</span>
+        <div>
+          <span class="text-white/60">Words</span>
+          <span class="text-white font-bold ml-1" id="words-value">0</span>
+        </div>
+      </div>
+      
+      <!-- Progress Bar -->
+      <div class="hidden lg:flex items-center gap-2 flex-1 max-w-xs">
+        <div class="w-full bg-white/10 rounded-full h-2">
+          <div class="bg-gradient-to-r from-green-400 to-blue-500 h-2 rounded-full transition-all duration-500" 
+               id="xp-progress" style="width: 0%"></div>
+        </div>
+        <span class="text-white/60 text-xs whitespace-nowrap" id="xp-next">500 XP to next</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const API_URL = 'http://localhost:5000';
+  
+  function getUserId() {
+    let userId = localStorage.getItem('userId');
+    if (!userId) {
+      userId = crypto.randomUUID();
+      localStorage.setItem('userId', userId);
+    }
+    return userId;
+  }
+  
+  async function loadStats() {
+    try {
+      const response = await fetch(`${API_URL}/api/stats`, {
+        headers: {
+          'X-User-ID': getUserId()
+        }
+      });
+      const data = await response.json();
+      
+      if (data.success) {
+        const stats = data.stats;
+        
+        document.getElementById('xp-value')!.textContent = stats.totalXp.toString();
+        document.getElementById('level-value')!.textContent = stats.level.toString();
+        document.getElementById('streak-value')!.textContent = stats.currentStreak.toString();
+        document.getElementById('words-value')!.textContent = stats.wordsLearned.toString();
+        
+        // Update progress bar
+        const progress = ((500 - stats.xpForNextLevel) / 500) * 100;
+        (document.getElementById('xp-progress') as HTMLElement).style.width = `${progress}%`;
+        document.getElementById('xp-next')!.textContent = `${stats.xpForNextLevel} XP to next`;
+      }
+    } catch (error) {
+      console.error('Error loading stats:', error);
+    }
+  }
+  
+  loadStats();
+  
+  // Refresh stats periodically
+  setInterval(loadStats, 30000);
+</script>

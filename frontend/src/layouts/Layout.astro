@@ -1,0 +1,161 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="English Learning App - ICPNA Curriculum" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="font-sans antialiased">
+    <slot />
+    
+    <!-- Toast Container -->
+    <div id="toast-container" class="fixed bottom-4 right-4 z-50 space-y-2"></div>
+    
+    <!-- Global Scripts -->
+    <script is:inline>
+      // Toast notification system
+      window.showToast = function(message, type = 'success') {
+        const container = document.getElementById('toast-container');
+        const toast = document.createElement('div');
+        const colors = {
+          success: 'bg-green-500',
+          error: 'bg-red-500',
+          info: 'bg-blue-500',
+          warning: 'bg-yellow-500'
+        };
+        
+        toast.className = `${colors[type] || colors.success} text-white px-6 py-3 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300`;
+        toast.textContent = message;
+        
+        container.appendChild(toast);
+        
+        // Animate in
+        requestAnimationFrame(() => {
+          toast.classList.remove('translate-x-full');
+        });
+        
+        // Remove after 3 seconds
+        setTimeout(() => {
+          toast.classList.add('translate-x-full');
+          setTimeout(() => toast.remove(), 300);
+        }, 3000);
+      };
+
+      // Text-to-Speech
+      window.speak = function(text) {
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'en-US';
+          utterance.rate = 0.9;
+          
+          const voices = window.speechSynthesis.getVoices();
+          const englishVoice = voices.find(v => v.lang.startsWith('en'));
+          if (englishVoice) utterance.voice = englishVoice;
+          
+          window.speechSynthesis.speak(utterance);
+        }
+      };
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #0f0f1a;
+    color: white;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1a1a2e;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #4a4a6a;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6a6a8a;
+  }
+
+  /* Content styling */
+  .lesson-content h1 {
+    @apply text-3xl font-bold mb-6 text-white;
+  }
+  
+  .lesson-content h2 {
+    @apply text-2xl font-bold mt-8 mb-4 text-green-400;
+  }
+  
+  .lesson-content h3 {
+    @apply text-xl font-semibold mt-6 mb-3 text-blue-400;
+  }
+  
+  .lesson-content h4 {
+    @apply text-lg font-medium mt-4 mb-2 text-purple-400;
+  }
+  
+  .lesson-content p {
+    @apply mb-4 text-white/80 leading-relaxed;
+  }
+  
+  .lesson-content ul, .lesson-content ol {
+    @apply mb-4 pl-6 space-y-2;
+  }
+  
+  .lesson-content li {
+    @apply text-white/80;
+  }
+  
+  .lesson-content table {
+    @apply w-full mb-6 border-collapse;
+  }
+  
+  .lesson-content th {
+    @apply bg-white/10 text-white font-semibold px-4 py-2 text-left;
+  }
+  
+  .lesson-content td {
+    @apply border border-white/10 px-4 py-2 text-white/80;
+  }
+  
+  .lesson-content .grammar-section,
+  .lesson-content .vocab-section,
+  .lesson-content .speaking-section {
+    @apply bg-white/5 rounded-xl p-6 my-6 border border-white/10;
+  }
+</style>

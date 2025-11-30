@@ -1,0 +1,249 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// Define all possible lesson IDs for static generation
+export function getStaticPaths() {
+  const lessonIds = [
+    'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'b9', 'b10', 'b11', 'b12',
+    'int1', 'int2', 'int3', 'int4', 'int5', 'int6', 'int7', 'int8', 'int9', 'int10', 'int11', 'int12',
+    'exam-prep', 'common-mistakes', 'phrasal-verbs', 'advanced-grammar'
+  ];
+  
+  return lessonIds.map(id => ({
+    params: { id }
+  }));
+}
+
+const { id } = Astro.params;
+---
+
+<Layout title="Lesson - English Learning App">
+  <main class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-lg bg-slate-900/80 border-b border-white/10">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="flex items-center gap-2 text-white hover:text-green-400 transition">
+            <span class="text-2xl">←</span>
+            <span>Back to Lessons</span>
+          </a>
+          <div class="flex items-center gap-4">
+            <button id="tts-toggle" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition">
+              🔊 Audio On
+            </button>
+            <button id="complete-btn" class="px-6 py-2 rounded-lg bg-green-500 hover:bg-green-600 text-white font-semibold transition">
+              ✓ Mark Complete
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Lesson Content -->
+    <div class="container mx-auto px-4 py-8">
+      <div id="lesson-loading" class="text-center py-20">
+        <div class="inline-block animate-spin text-4xl mb-4">⏳</div>
+        <p class="text-white/60">Loading lesson...</p>
+      </div>
+      
+      <article id="lesson-content" class="lesson-content max-w-4xl mx-auto hidden">
+        <!-- Content will be loaded here -->
+      </article>
+    </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-8 right-8 flex flex-col gap-3">
+      <button id="scroll-top" class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white text-xl transition opacity-0">
+        ↑
+      </button>
+    </div>
+  </main>
+</Layout>
+
+<script define:vars={{ lessonId: id }}>
+  const API_URL = 'http://localhost:5000';
+  let ttsEnabled = true;
+  
+  function getUserId() {
+    let userId = localStorage.getItem('userId');
+    if (!userId) {
+      userId = crypto.randomUUID();
+      localStorage.setItem('userId', userId);
+    }
+    return userId;
+  }
+
+  async function loadLesson() {
+    try {
+      const response = await fetch(`${API_URL}/api/lessons/${lessonId}`, {
+        headers: {
+          'X-User-ID': getUserId()
+        }
+      });
+      const data = await response.json();
+      
+      if (data.success) {
+        const contentEl = document.getElementById('lesson-content');
+        const loadingEl = document.getElementById('lesson-loading');
+        
+        contentEl.innerHTML = data.lesson.content;
+        contentEl.classList.remove('hidden');
+        loadingEl.classList.add('hidden');
+        
+        // Add audio buttons to content
+        addAudioButtons();
+        // Add interactive exercises
+        setupExercises();
+      }
+    } catch (error) {
+      console.error('Error loading lesson:', error);
+      document.getElementById('lesson-loading').innerHTML = `
+        <div class="text-red-400 text-xl">❌ Error loading lesson</div>
+        <p class="text-white/60 mt-2">Please check if the API server is running.</p>
+        <a href="/" class="inline-block mt-4 px-6 py-2 bg-white/10 rounded-lg text-white hover:bg-white/20">
+          ← Back to Home
+        </a>
+      `;
+    }
+  }
+
+  function addAudioButtons() {
+    // Add audio buttons to list items with arrows (translations)
+    const listItems = document.querySelectorAll('.lesson-content li');
+    listItems.forEach(li => {
+      const text = li.textContent || '';
+      if (text.includes('→') || text.includes('➡')) {
+        const englishPart = text.split('→')[0]?.split('➡')[0]?.trim();
+        if (englishPart && englishPart.length > 2) {
+          const btn = document.createElement('button');
+          btn.className = 'ml-2 text-blue-400 hover:text-blue-300 transition';
+          btn.textContent = '🔊';
+          btn.onclick = () => speak(englishPart);
+          li.appendChild(btn);
+        }
+      }
+    });
+  }
+
+  function speak(text) {
+    if (!ttsEnabled || !window.speechSynthesis) return;
+    
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.9;
+    
+    const voices = window.speechSynthesis.getVoices();
+    const englishVoice = voices.find(v => v.lang.startsWith('en'));
+    if (englishVoice) utterance.voice = englishVoice;
+    
+    window.speechSynthesis.speak(utterance);
+  }
+
+  function setupExercises() {
+    // Find exercise lists (ordered lists with answers in parentheses)
+    const exercises = document.querySelectorAll('.lesson-content ol li');
+    exercises.forEach(li => {
+      const text = li.innerHTML;
+      const match = text.match(/\(([^)]+)\)\s*$/);
+      
+      if (match) {
+        const answer = match[1];
+        const question = text.replace(match[0], '').trim();
+        
+        // Check if there's a blank to fill
+        if (question.includes('_____') || question.includes('______')) {
+          li.innerHTML = `
+            <span class="exercise-question">${question.replace(/_+/g, '<input type="text" class="exercise-input w-24 mx-1 px-2 py-1 bg-white/10 border border-white/20 rounded text-white text-center" data-answer="${answer}">')}</span>
+            <button class="check-answer ml-2 px-3 py-1 bg-blue-500 hover:bg-blue-600 rounded text-white text-sm transition">Check</button>
+            <span class="answer-result ml-2 hidden"></span>
+          `;
+        }
+      }
+    });
+
+    // Add event listeners to check buttons
+    document.querySelectorAll('.check-answer').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const li = this.closest('li');
+        const input = li.querySelector('.exercise-input');
+        const result = li.querySelector('.answer-result');
+        const answer = input.dataset.answer.toLowerCase().trim();
+        const userAnswer = input.value.toLowerCase().trim();
+        
+        if (userAnswer === answer) {
+          result.textContent = '✅ Correct!';
+          result.className = 'answer-result ml-2 text-green-400';
+          input.classList.add('border-green-400');
+          recordExercise(true);
+        } else {
+          result.textContent = `❌ Answer: ${input.dataset.answer}`;
+          result.className = 'answer-result ml-2 text-red-400';
+          input.classList.add('border-red-400');
+          recordExercise(false);
+        }
+        result.classList.remove('hidden');
+      });
+    });
+  }
+
+  async function recordExercise(correct) {
+    try {
+      await fetch(`${API_URL}/api/stats/exercise`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-User-ID': getUserId()
+        },
+        body: JSON.stringify({ correct })
+      });
+    } catch (error) {
+      console.error('Error recording exercise:', error);
+    }
+  }
+
+  async function completeLesson() {
+    try {
+      const response = await fetch(`${API_URL}/api/lessons/${lessonId}/complete`, {
+        method: 'POST',
+        headers: {
+          'X-User-ID': getUserId()
+        }
+      });
+      const data = await response.json();
+      
+      if (data.success) {
+        window.showToast(`🎉 Lesson completed! +${data.xpEarned} XP`);
+        document.getElementById('complete-btn').textContent = '✓ Completed!';
+        document.getElementById('complete-btn').classList.replace('bg-green-500', 'bg-gray-500');
+      }
+    } catch (error) {
+      console.error('Error completing lesson:', error);
+    }
+  }
+
+  // Initialize when DOM is ready
+  document.addEventListener('DOMContentLoaded', () => {
+    // Event Listeners
+    document.getElementById('complete-btn')?.addEventListener('click', completeLesson);
+    
+    document.getElementById('tts-toggle')?.addEventListener('click', function() {
+      ttsEnabled = !ttsEnabled;
+      this.textContent = ttsEnabled ? '🔊 Audio On' : '🔇 Audio Off';
+    });
+
+    // Scroll to top button
+    const scrollBtn = document.getElementById('scroll-top');
+    if (scrollBtn) {
+      window.addEventListener('scroll', () => {
+        scrollBtn.style.opacity = window.scrollY > 300 ? '1' : '0';
+      });
+      scrollBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    // Load lesson
+    loadLesson();
+  });
+</script>

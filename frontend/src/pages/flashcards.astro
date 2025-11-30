@@ -1,0 +1,287 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Flashcards - English Learning App">
+  <main class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-lg bg-slate-900/80 border-b border-white/10">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="flex items-center gap-2 text-white hover:text-green-400 transition">
+            <span class="text-2xl">←</span>
+            <span>Back to Lessons</span>
+          </a>
+          <h1 class="text-xl font-bold text-white">🎴 Flashcards</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-8">
+      <!-- Stats -->
+      <div class="flex justify-center gap-8 mb-8">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-400" id="correct-count">0</div>
+          <div class="text-white/60">Correct</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-red-400" id="wrong-count">0</div>
+          <div class="text-white/60">Wrong</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-blue-400" id="remaining-count">0</div>
+          <div class="text-white/60">Remaining</div>
+        </div>
+      </div>
+
+      <!-- Flashcard Container -->
+      <div class="flex justify-center items-center min-h-[400px]">
+        <div id="flashcard-container" class="w-full max-w-lg">
+          <!-- Loading state -->
+          <div id="loading-state" class="text-center py-20">
+            <div class="inline-block animate-spin text-4xl mb-4">⏳</div>
+            <p class="text-white/60">Loading flashcards...</p>
+          </div>
+
+          <!-- Empty state -->
+          <div id="empty-state" class="text-center py-20 hidden">
+            <div class="text-6xl mb-4">📝</div>
+            <h2 class="text-2xl font-bold text-white mb-2">No Flashcards Yet</h2>
+            <p class="text-white/60 mb-6">Save vocabulary words while studying lessons to create flashcards.</p>
+            <a href="/" class="inline-block px-6 py-3 bg-green-500 hover:bg-green-600 rounded-lg text-white font-semibold transition">
+              Start Learning
+            </a>
+          </div>
+
+          <!-- Flashcard -->
+          <div id="flashcard" class="hidden cursor-pointer perspective-1000">
+            <div class="flashcard-inner relative w-full h-64 transition-transform duration-500 transform-style-3d">
+              <!-- Front -->
+              <div class="flashcard-front absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center p-8 backface-hidden">
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-white" id="card-word">Word</div>
+                  <button id="speak-btn" class="mt-4 px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg text-white transition">
+                    🔊 Listen
+                  </button>
+                </div>
+              </div>
+              <!-- Back -->
+              <div class="flashcard-back absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center p-8 backface-hidden rotate-y-180">
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-white" id="card-translation">Translation</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Completed state -->
+          <div id="complete-state" class="text-center py-20 hidden">
+            <div class="text-6xl mb-4">🎉</div>
+            <h2 class="text-2xl font-bold text-white mb-2">Session Complete!</h2>
+            <p class="text-white/60 mb-6">
+              You got <span class="text-green-400 font-bold" id="final-correct">0</span> correct out of <span class="text-blue-400 font-bold" id="final-total">0</span>
+            </p>
+            <button id="restart-btn" class="px-6 py-3 bg-green-500 hover:bg-green-600 rounded-lg text-white font-semibold transition">
+              Practice Again
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div id="action-buttons" class="flex justify-center gap-4 mt-8 hidden">
+        <button id="wrong-btn" class="px-8 py-4 bg-red-500 hover:bg-red-600 rounded-xl text-white font-semibold text-lg transition transform hover:scale-105">
+          ❌ Wrong
+        </button>
+        <button id="flip-btn" class="px-8 py-4 bg-blue-500 hover:bg-blue-600 rounded-xl text-white font-semibold text-lg transition transform hover:scale-105">
+          🔄 Flip
+        </button>
+        <button id="correct-btn" class="px-8 py-4 bg-green-500 hover:bg-green-600 rounded-xl text-white font-semibold text-lg transition transform hover:scale-105">
+          ✅ Correct
+        </button>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  
+  .flashcard-inner.flipped {
+    transform: rotateY(180deg);
+  }
+</style>
+
+<script>
+  const API_URL = 'http://localhost:5000';
+  
+  let cards = [];
+  let currentIndex = 0;
+  let correctCount = 0;
+  let wrongCount = 0;
+  let isFlipped = false;
+
+  function getUserId() {
+    let userId = localStorage.getItem('userId');
+    if (!userId) {
+      userId = crypto.randomUUID();
+      localStorage.setItem('userId', userId);
+    }
+    return userId;
+  }
+
+  async function loadFlashcards() {
+    try {
+      const response = await fetch(`${API_URL}/api/practice/flashcards`, {
+        headers: {
+          'X-User-ID': getUserId()
+        }
+      });
+      const data = await response.json();
+      
+      document.getElementById('loading-state').classList.add('hidden');
+      
+      if (data.success && data.cards.length > 0) {
+        cards = data.cards;
+        document.getElementById('flashcard').classList.remove('hidden');
+        document.getElementById('action-buttons').classList.remove('hidden');
+        updateCard();
+        updateCounts();
+      } else {
+        document.getElementById('empty-state').classList.remove('hidden');
+      }
+    } catch (error) {
+      console.error('Error loading flashcards:', error);
+      document.getElementById('loading-state').innerHTML = `
+        <div class="text-red-400 text-xl">❌ Error loading flashcards</div>
+        <p class="text-white/60 mt-2">Please check if the API server is running.</p>
+      `;
+    }
+  }
+
+  function updateCard() {
+    if (currentIndex >= cards.length) {
+      showComplete();
+      return;
+    }
+    
+    const card = cards[currentIndex];
+    document.getElementById('card-word').textContent = card.word;
+    document.getElementById('card-translation').textContent = card.translation || 'No translation';
+    
+    // Reset flip state
+    isFlipped = false;
+    document.querySelector('.flashcard-inner').classList.remove('flipped');
+  }
+
+  function updateCounts() {
+    document.getElementById('correct-count').textContent = correctCount;
+    document.getElementById('wrong-count').textContent = wrongCount;
+    document.getElementById('remaining-count').textContent = cards.length - currentIndex;
+  }
+
+  function flipCard() {
+    isFlipped = !isFlipped;
+    document.querySelector('.flashcard-inner').classList.toggle('flipped');
+  }
+
+  async function markCorrect() {
+    correctCount++;
+    await recordReview(true);
+    nextCard();
+  }
+
+  async function markWrong() {
+    wrongCount++;
+    await recordReview(false);
+    nextCard();
+  }
+
+  async function recordReview(correct) {
+    const card = cards[currentIndex];
+    try {
+      await fetch(`${API_URL}/api/vocabulary/${encodeURIComponent(card.word)}/review`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-User-ID': getUserId()
+        },
+        body: JSON.stringify({ correct })
+      });
+    } catch (error) {
+      console.error('Error recording review:', error);
+    }
+  }
+
+  function nextCard() {
+    currentIndex++;
+    updateCard();
+    updateCounts();
+  }
+
+  function showComplete() {
+    document.getElementById('flashcard').classList.add('hidden');
+    document.getElementById('action-buttons').classList.add('hidden');
+    document.getElementById('complete-state').classList.remove('hidden');
+    document.getElementById('final-correct').textContent = correctCount;
+    document.getElementById('final-total').textContent = cards.length;
+  }
+
+  function restart() {
+    currentIndex = 0;
+    correctCount = 0;
+    wrongCount = 0;
+    document.getElementById('complete-state').classList.add('hidden');
+    document.getElementById('flashcard').classList.remove('hidden');
+    document.getElementById('action-buttons').classList.remove('hidden');
+    updateCard();
+    updateCounts();
+  }
+
+  function speak() {
+    const word = cards[currentIndex]?.word;
+    if (word && window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(word);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.9;
+      window.speechSynthesis.speak(utterance);
+    }
+  }
+
+  // Event Listeners
+  document.getElementById('flip-btn').addEventListener('click', flipCard);
+  document.getElementById('correct-btn').addEventListener('click', markCorrect);
+  document.getElementById('wrong-btn').addEventListener('click', markWrong);
+  document.getElementById('restart-btn').addEventListener('click', restart);
+  document.getElementById('speak-btn').addEventListener('click', (e) => {
+    e.stopPropagation();
+    speak();
+  });
+  
+  // Click on card to flip
+  document.getElementById('flashcard').addEventListener('click', flipCard);
+
+  // Keyboard shortcuts
+  document.addEventListener('keydown', (e) => {
+    if (e.key === ' ' || e.key === 'Enter') flipCard();
+    if (e.key === 'ArrowRight' || e.key === '1') markCorrect();
+    if (e.key === 'ArrowLeft' || e.key === '2') markWrong();
+  });
+
+  loadFlashcards();
+</script>

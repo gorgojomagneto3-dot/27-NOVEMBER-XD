@@ -1,0 +1,243 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Practice - English Learning App">
+  <main class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-lg bg-slate-900/80 border-b border-white/10">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="flex items-center gap-2 text-white hover:text-green-400 transition">
+            <span class="text-2xl">←</span>
+            <span>Back to Lessons</span>
+          </a>
+          <h1 class="text-xl font-bold text-white">🎯 Practice Mode</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-8">
+      <!-- Practice Options -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <!-- Flashcards -->
+        <a href="/flashcards" class="group block p-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+          <div class="text-5xl mb-4">🎴</div>
+          <h3 class="text-2xl font-bold text-white mb-2">Flashcards</h3>
+          <p class="text-white/80">Review your saved vocabulary with spaced repetition.</p>
+          <div class="mt-4 text-white/60 group-hover:text-white transition">
+            <span id="flashcard-count">0</span> cards to review →
+          </div>
+        </a>
+
+        <!-- Vocabulary Quiz -->
+        <div id="vocab-quiz" class="group block p-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+          <div class="text-5xl mb-4">📝</div>
+          <h3 class="text-2xl font-bold text-white mb-2">Vocabulary Quiz</h3>
+          <p class="text-white/80">Test your knowledge with multiple choice questions.</p>
+          <div class="mt-4 text-white/60 group-hover:text-white transition">
+            Start quiz →
+          </div>
+        </div>
+
+        <!-- Add Vocabulary -->
+        <div id="add-vocab-btn" class="group block p-8 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+          <div class="text-5xl mb-4">➕</div>
+          <h3 class="text-2xl font-bold text-white mb-2">Add Vocabulary</h3>
+          <p class="text-white/80">Save new words and translations to your collection.</p>
+          <div class="mt-4 text-white/60 group-hover:text-white transition">
+            Add new word →
+          </div>
+        </div>
+      </div>
+
+      <!-- Add Vocabulary Modal -->
+      <div id="add-vocab-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden flex items-center justify-center">
+        <div class="bg-slate-800 rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl">
+          <h3 class="text-2xl font-bold text-white mb-6">Add New Vocabulary</h3>
+          <form id="vocab-form">
+            <div class="mb-4">
+              <label class="block text-white/70 mb-2">English Word</label>
+              <input type="text" id="vocab-word" 
+                     class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-green-500"
+                     placeholder="e.g., accomplish">
+            </div>
+            <div class="mb-6">
+              <label class="block text-white/70 mb-2">Spanish Translation</label>
+              <input type="text" id="vocab-translation" 
+                     class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-green-500"
+                     placeholder="e.g., lograr, conseguir">
+            </div>
+            <div class="flex gap-4">
+              <button type="button" id="cancel-vocab" 
+                      class="flex-1 px-6 py-3 bg-white/10 hover:bg-white/20 rounded-lg text-white transition">
+                Cancel
+              </button>
+              <button type="submit" 
+                      class="flex-1 px-6 py-3 bg-green-500 hover:bg-green-600 rounded-lg text-white font-semibold transition">
+                Save Word
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Vocabulary List -->
+      <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-xl font-bold text-white">📚 Your Vocabulary</h2>
+          <span class="text-white/60"><span id="vocab-total">0</span> words saved</span>
+        </div>
+        <div id="vocab-list" class="space-y-3">
+          <!-- Loading -->
+          <div id="vocab-loading" class="text-center py-8 text-white/60">
+            Loading vocabulary...
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<script>
+  const API_URL = 'http://localhost:5000';
+  
+  function getUserId() {
+    let userId = localStorage.getItem('userId');
+    if (!userId) {
+      userId = crypto.randomUUID();
+      localStorage.setItem('userId', userId);
+    }
+    return userId;
+  }
+
+  // Load vocabulary
+  async function loadVocabulary() {
+    try {
+      const response = await fetch(`${API_URL}/api/vocabulary`, {
+        headers: {
+          'X-User-ID': getUserId()
+        }
+      });
+      const data = await response.json();
+      
+      const loadingEl = document.getElementById('vocab-loading');
+      const listEl = document.getElementById('vocab-list');
+      
+      if (data.success && data.vocabulary.length > 0) {
+        document.getElementById('vocab-total').textContent = data.vocabulary.length;
+        document.getElementById('flashcard-count').textContent = data.vocabulary.length;
+        
+        loadingEl.classList.add('hidden');
+        listEl.innerHTML = data.vocabulary.map(v => `
+          <div class="flex items-center justify-between p-4 bg-white/5 rounded-xl hover:bg-white/10 transition">
+            <div>
+              <div class="font-semibold text-white">${v.word}</div>
+              <div class="text-white/60">${v.translation || 'No translation'}</div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="text-sm">
+                <span class="text-green-400">✓ ${v.correct_count || 0}</span>
+                <span class="text-white/40 mx-1">|</span>
+                <span class="text-red-400">✗ ${v.wrong_count || 0}</span>
+              </div>
+              <button onclick="speakWord('${v.word}')" class="text-blue-400 hover:text-blue-300 transition text-xl">
+                🔊
+              </button>
+            </div>
+          </div>
+        `).join('');
+      } else {
+        loadingEl.innerHTML = `
+          <div class="text-center py-8">
+            <div class="text-4xl mb-4">📝</div>
+            <p class="text-white/60">No vocabulary saved yet. Start by adding some words!</p>
+          </div>
+        `;
+      }
+    } catch (error) {
+      console.error('Error loading vocabulary:', error);
+      document.getElementById('vocab-loading').innerHTML = `
+        <div class="text-red-400">Error loading vocabulary. Check if API is running.</div>
+      `;
+    }
+  }
+
+  // Add vocabulary
+  async function addVocabulary(word, translation) {
+    try {
+      const response = await fetch(`${API_URL}/api/vocabulary`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-User-ID': getUserId()
+        },
+        body: JSON.stringify({ word, translation })
+      });
+      const data = await response.json();
+      
+      if (data.success) {
+        window.showToast?.('✅ Word saved! +5 XP');
+        loadVocabulary();
+        return true;
+      }
+    } catch (error) {
+      console.error('Error saving vocabulary:', error);
+    }
+    return false;
+  }
+
+  // Speak word
+  window.speakWord = function(word) {
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(word);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.9;
+      window.speechSynthesis.speak(utterance);
+    }
+  };
+
+  // Modal handlers
+  const modal = document.getElementById('add-vocab-modal');
+  const addBtn = document.getElementById('add-vocab-btn');
+  const cancelBtn = document.getElementById('cancel-vocab');
+  const form = document.getElementById('vocab-form');
+
+  addBtn?.addEventListener('click', () => {
+    modal?.classList.remove('hidden');
+  });
+
+  cancelBtn?.addEventListener('click', () => {
+    modal?.classList.add('hidden');
+  });
+
+  modal?.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.add('hidden');
+    }
+  });
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const word = (document.getElementById('vocab-word') as HTMLInputElement).value.trim();
+    const translation = (document.getElementById('vocab-translation') as HTMLInputElement).value.trim();
+    
+    if (word) {
+      const success = await addVocabulary(word, translation);
+      if (success) {
+        modal?.classList.add('hidden');
+        (document.getElementById('vocab-word') as HTMLInputElement).value = '';
+        (document.getElementById('vocab-translation') as HTMLInputElement).value = '';
+      }
+    }
+  });
+
+  // Quiz mode (simple implementation)
+  document.getElementById('vocab-quiz')?.addEventListener('click', () => {
+    window.location.href = '/flashcards';
+  });
+
+  // Load on page load
+  loadVocabulary();
+</script>

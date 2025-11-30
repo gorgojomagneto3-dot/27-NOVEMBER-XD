@@ -1,0 +1,160 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LessonCard from '../components/LessonCard.astro';
+import StatsBar from '../components/StatsBar.astro';
+---
+
+<Layout title="English Learning App - ICPNA">
+  <main class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-lg bg-slate-900/80 border-b border-white/10">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <span class="text-3xl">🎓</span>
+            <h1 class="text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+              English Learning
+            </h1>
+          </div>
+          <nav class="flex items-center gap-4">
+            <a href="/" class="text-white hover:text-green-400 transition">Home</a>
+            <a href="/practice" class="text-white/70 hover:text-green-400 transition">Practice</a>
+            <a href="/flashcards" class="text-white/70 hover:text-green-400 transition">Flashcards</a>
+            <a href="/stats" class="text-white/70 hover:text-green-400 transition">Stats</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <StatsBar />
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+      <!-- Hero Section -->
+      <section class="text-center mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+          Master English with
+          <span class="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">ICPNA Curriculum</span>
+        </h2>
+        <p class="text-xl text-white/70 max-w-2xl mx-auto">
+          Complete course from A1 to B1+ level. Prepare for TOEFL, IELTS, and Cambridge exams.
+        </p>
+      </section>
+
+      <!-- Lessons Grid -->
+      <section id="lessons" class="mb-12">
+        <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <span class="text-3xl">📚</span> Basic Level (B01-B12)
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" id="basic-lessons">
+          <!-- Lessons will be loaded dynamically -->
+          <div class="animate-pulse bg-white/10 rounded-xl h-32"></div>
+          <div class="animate-pulse bg-white/10 rounded-xl h-32"></div>
+          <div class="animate-pulse bg-white/10 rounded-xl h-32"></div>
+          <div class="animate-pulse bg-white/10 rounded-xl h-32"></div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <span class="text-3xl">🚀</span> Intermediate Level
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" id="intermediate-lessons">
+          <div class="animate-pulse bg-white/10 rounded-xl h-32"></div>
+          <div class="animate-pulse bg-white/10 rounded-xl h-32"></div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+          <span class="text-3xl">🎯</span> Special Sections
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="special-lessons">
+          <div class="animate-pulse bg-white/10 rounded-xl h-32"></div>
+          <div class="animate-pulse bg-white/10 rounded-xl h-32"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
+
+<script>
+  const API_URL = 'http://localhost:5000';
+  
+  // Get user ID
+  function getUserId() {
+    let userId = localStorage.getItem('userId');
+    if (!userId) {
+      userId = crypto.randomUUID();
+      localStorage.setItem('userId', userId);
+    }
+    return userId;
+  }
+
+  // Create lesson card HTML
+  function createLessonCard(lesson: any) {
+    const levelColors: Record<string, string> = {
+      'Básico': 'from-green-500 to-emerald-600',
+      'Intermedio': 'from-blue-500 to-indigo-600',
+      'Especial': 'from-purple-500 to-pink-600'
+    };
+    
+    const gradient = levelColors[lesson.level] || 'from-gray-500 to-gray-600';
+    const completedBadge = lesson.completed 
+      ? '<span class="absolute top-2 right-2 text-2xl">✅</span>' 
+      : '';
+    
+    return `
+      <a href="/lesson/${lesson.id}" 
+         class="group relative block p-6 rounded-xl bg-gradient-to-br ${gradient} 
+                hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+        ${completedBadge}
+        <div class="text-white">
+          <span class="text-xs uppercase tracking-wider opacity-80">${lesson.level}</span>
+          <h4 class="text-lg font-semibold mt-1 group-hover:text-white/90">${lesson.title}</h4>
+        </div>
+        <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="text-white text-2xl">→</span>
+        </div>
+      </a>
+    `;
+  }
+
+  // Load lessons
+  async function loadLessons() {
+    try {
+      const response = await fetch(`${API_URL}/api/lessons`, {
+        headers: {
+          'X-User-ID': getUserId()
+        }
+      });
+      const data = await response.json();
+      
+      if (data.success) {
+        const basicLessons = data.lessons.filter((l: any) => l.level === 'Básico');
+        const intermediateLessons = data.lessons.filter((l: any) => l.level === 'Intermedio');
+        const specialLessons = data.lessons.filter((l: any) => l.level === 'Especial');
+        
+        const basicContainer = document.getElementById('basic-lessons');
+        const intermediateContainer = document.getElementById('intermediate-lessons');
+        const specialContainer = document.getElementById('special-lessons');
+        
+        if (basicContainer) {
+          basicContainer.innerHTML = basicLessons.map(createLessonCard).join('');
+        }
+        if (intermediateContainer) {
+          intermediateContainer.innerHTML = intermediateLessons.map(createLessonCard).join('');
+        }
+        if (specialContainer) {
+          specialContainer.innerHTML = specialLessons.map(createLessonCard).join('');
+        }
+      }
+    } catch (error) {
+      console.error('Error loading lessons:', error);
+    }
+  }
+
+  // Load on page load
+  loadLessons();
+</script>
