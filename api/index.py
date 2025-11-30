@@ -2101,6 +2101,211 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 100 XP! (Bonus for finishing Basic!)</p>
         </div>
     </div>
+    """,
+    
+    "int3": """
+    <div class="lesson-container">
+        <h1 class="text-3xl font-bold text-green-400 mb-6">💡 INTERMEDIATE 03 - Creativity</h1>
+        <p class="text-white/60 mb-6">CEFR Level: B1 | ICPNA: Intermedio 3 | World Link Intermediate 1, Unit 3</p>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📋 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Use vocabulary related to problem solving</li>
+                <li>Give suggestions and advice using should, could, why don't you</li>
+                <li>Express opinions effectively</li>
+                <li>Talk about ability in the past: could, was able to, managed to</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🧩 Problem Solving Vocabulary</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong class="text-green-400">solve a problem</strong> → resolver un problema</li>
+                    <li><strong class="text-green-400">reach a decision</strong> → llegar a una decisión</li>
+                    <li><strong class="text-green-400">make up your mind</strong> → decidirse</li>
+                    <li><strong class="text-green-400">come up with an idea</strong> → tener/proponer una idea</li>
+                    <li><strong class="text-green-400">think outside the box</strong> → pensar de forma creativa</li>
+                    <li><strong class="text-green-400">find a solution</strong> → encontrar una solución</li>
+                    <li><strong class="text-green-400">face a challenge</strong> → enfrentar un desafío</li>
+                    <li><strong class="text-green-400">overcome an obstacle</strong> → superar un obstáculo</li>
+                    <li><strong class="text-green-400">weigh the options</strong> → evaluar las opciones</li>
+                    <li><strong class="text-green-400">consider the alternatives</strong> → considerar las alternativas</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Giving Suggestions & Advice</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Strong Advice (SHOULD):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>You <strong>should</strong> talk to your boss. → Deberías hablar con tu jefe.</li>
+                    <li>You <strong>shouldn't</strong> ignore the problem. → No deberías ignorar el problema.</li>
+                    <li><strong>Should</strong> I apply for that job? → ¿Debería aplicar a ese trabajo?</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Softer Suggestions (COULD):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>You <strong>could</strong> try a different approach. → Podrías intentar un enfoque diferente.</li>
+                    <li>We <strong>could</strong> ask for help. → Podríamos pedir ayuda.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Friendly Suggestions:</h3>
+                <ul class="space-y-1 mb-4">
+                    <li><strong>Why don't you</strong> take a break? → ¿Por qué no tomas un descanso?</li>
+                    <li><strong>How about</strong> trying something new? → ¿Qué tal si pruebas algo nuevo?</li>
+                    <li><strong>What about</strong> asking Maria for help? → ¿Qué tal pedirle ayuda a María?</li>
+                    <li><strong>Have you tried</strong> talking to him? → ¿Has intentado hablar con él?</li>
+                    <li><strong>If I were you</strong>, I would wait. → Si yo fuera tú, esperaría.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Responding to Suggestions:</h3>
+                <ul class="space-y-1">
+                    <li><strong>That's a good idea!</strong> → ¡Es buena idea!</li>
+                    <li><strong>I'll try that.</strong> → Lo intentaré.</li>
+                    <li><strong>I'm not sure about that.</strong> → No estoy seguro/a de eso.</li>
+                    <li><strong>I've already tried that.</strong> → Ya lo intenté.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">💬 Expressing Opinions</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Giving Your Opinion:</h3>
+                <ul class="space-y-1 mb-4">
+                    <li><strong>I think (that)</strong>... → Pienso que...</li>
+                    <li><strong>In my opinion</strong>,... → En mi opinión,...</li>
+                    <li><strong>I believe (that)</strong>... → Creo que...</li>
+                    <li><strong>From my point of view</strong>,... → Desde mi punto de vista,...</li>
+                    <li><strong>As I see it</strong>,... → Como lo veo,...</li>
+                    <li><strong>It seems to me that</strong>... → Me parece que...</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Agreeing:</h3>
+                <ul class="space-y-1 mb-4">
+                    <li><strong>I agree (with you).</strong></li>
+                    <li><strong>That's true.</strong> / <strong>That's right.</strong></li>
+                    <li><strong>Exactly!</strong> / <strong>Absolutely!</strong></li>
+                    <li><strong>I think so too.</strong></li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Disagreeing (politely):</h3>
+                <ul class="space-y-1">
+                    <li><strong>I'm not sure about that.</strong></li>
+                    <li><strong>I see your point, but...</strong></li>
+                    <li><strong>I don't really agree.</strong></li>
+                    <li><strong>Actually, I think...</strong></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🎨 Creativity Vocabulary</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong class="text-green-400">creativity</strong> → creatividad</li>
+                    <li><strong class="text-green-400">imagination</strong> → imaginación</li>
+                    <li><strong class="text-green-400">intelligence</strong> → inteligencia</li>
+                    <li><strong class="text-green-400">innovation</strong> → innovación</li>
+                    <li><strong class="text-green-400">inspiration</strong> → inspiración</li>
+                    <li><strong class="text-green-400">original</strong> → original</li>
+                    <li><strong class="text-green-400">inventive</strong> → inventivo</li>
+                    <li><strong class="text-green-400">artistic</strong> → artístico</li>
+                    <li><strong class="text-green-400">talented</strong> → talentoso</li>
+                    <li><strong class="text-green-400">gifted</strong> → dotado/talentoso</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 Ability in the Past</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">COULD (general ability):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>When I was young, I <strong>could</strong> run very fast. (general ability)</li>
+                    <li>She <strong>could</strong> speak French when she was 10.</li>
+                    <li>I <strong>couldn't</strong> swim until I was 12.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">WAS/WERE ABLE TO (specific achievement):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>After hours of trying, I <strong>was able to</strong> fix the computer. ✓</li>
+                    <li>After hours of trying, I <strong>could</strong> fix the computer. ✗ (NOT for specific achievements)</li>
+                    <li>She <strong>was able to</strong> finish the project on time.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">MANAGED TO (with difficulty):</h3>
+                <ul class="space-y-1 mb-4">
+                    <li>I <strong>managed to</strong> pass the exam. (it was difficult, but I did it)</li>
+                    <li>We <strong>managed to</strong> find a solution.</li>
+                    <li>He <strong>didn't manage to</strong> finish on time.</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mb-2">Summary Table:</h3>
+                <table class="w-full text-left mt-2">
+                    <thead>
+                        <tr class="border-b border-white/20">
+                            <th class="py-2">Form</th>
+                            <th class="py-2">Use</th>
+                            <th class="py-2">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2 text-green-400">could</td>
+                            <td class="py-2">General ability in the past</td>
+                            <td class="py-2">I could swim when I was 5.</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="py-2 text-green-400">was/were able to</td>
+                            <td class="py-2">Specific achievement</td>
+                            <td class="py-2">I was able to finish the race.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 text-green-400">managed to</td>
+                            <td class="py-2">Success despite difficulty</td>
+                            <td class="py-2">I managed to pass the exam.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">✏️ Practice Exercises</h2>
+            <h3 class="text-lg text-yellow-400 mb-3">Give advice using should, could, why don't you:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I'm stressed about my exams. → You _____ take breaks while studying. (should)</li>
+                <li>I can't sleep at night. → _____ trying to read before bed? (How about)</li>
+                <li>I don't know what career to choose. → You _____ talk to a career counselor. (could)</li>
+                <li>I'm always late to work. → _____ set your alarm earlier? (Why don't you)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Choose: could, was able to, or managed to:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>When I was a child, I _____ play the piano very well. (could - general ability)</li>
+                <li>After trying for hours, she _____ solve the puzzle. (was able to / managed to - specific)</li>
+                <li>The traffic was terrible, but we _____ arrive on time. (managed to - with difficulty)</li>
+                <li>He _____ speak three languages when he was 10. (could - general ability)</li>
+                <li>I _____ find the information I needed online. (was able to / managed to)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Express your opinion:</h3>
+            <p class="text-white/80">Complete with an opinion phrase:</p>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>_____, creativity can be learned. (In my opinion / I believe that)</li>
+                <li>_____, practice is more important than talent. (I think / As I see it)</li>
+                <li>_____ everyone has some creative ability. (It seems to me that)</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 
