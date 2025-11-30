@@ -2,8 +2,10 @@
  * API Client for the English Learning App
  */
 
-// Use the deployed backend API or localhost for development
-const API_URL = import.meta.env.PUBLIC_API_URL || (typeof window !== 'undefined' && window.location.hostname !== 'localhost' ? 'https://27-november-xd.vercel.app' : 'http://localhost:5000');
+// API URL - uses environment variable or production URL
+const API_URL = import.meta.env.PUBLIC_API_URL || 'https://27-november-xd.vercel.app';
+
+// For local development, set PUBLIC_API_URL=http://localhost:5000 in .env
 
 // Get or create user ID
 function getUserId(): string {
