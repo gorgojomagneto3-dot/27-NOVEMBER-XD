@@ -3513,6 +3513,197 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "int10": """
+    <div class="lesson-container max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-bold text-green-400 mb-4">🔄 INTERMEDIATE 10 - Reinvention</h1>
+        <p class="text-gray-300 mb-6">ICPNA Intermediate Level - CEFR B1/B2 | Present Perfect Continuous & Personal Change</p>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-green-400 mb-3">🎯 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Use Present Perfect Continuous for ongoing actions</li>
+                <li>Compare Present Perfect Simple vs. Continuous</li>
+                <li>Vocabulary: appearance, personal change, transformation</li>
+                <li>Collocations with appearance and change</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">⏳ Present Perfect Continuous</h2>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Formation: have/has + been + verb-ing</h3>
+            
+            <div class="bg-white/5 p-4 rounded mb-4">
+                <p class="text-gray-300"><span class="text-green-400">+</span> I <span class="text-yellow-400">have been working</span> out for 3 months.</p>
+                <p class="text-gray-300"><span class="text-red-400">-</span> She <span class="text-yellow-400">hasn't been sleeping</span> well lately.</p>
+                <p class="text-gray-300"><span class="text-blue-400">?</span> <span class="text-yellow-400">Have</span> you <span class="text-yellow-400">been waiting</span> long?</p>
+            </div>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">When to use:</h3>
+            <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                <li><span class="text-green-400">Action started in past, still continuing:</span>
+                    <br>I've been learning English <span class="text-blue-400">for 2 years</span>. (still learning)</li>
+                <li><span class="text-green-400">Recent activity with visible results:</span>
+                    <br>You look tired. <span class="text-yellow-400">Have you been working</span> hard?</li>
+                <li><span class="text-green-400">Temporary situation:</span>
+                    <br>I've been staying with friends <span class="text-blue-400">while my apartment is being renovated</span>.</li>
+            </ul>
+            
+            <h3 class="text-lg text-yellow-400 mt-4 mb-2">Time expressions:</h3>
+            <p class="text-gray-300"><span class="text-blue-400">for</span> (duration): for 3 hours, for a week, for years</p>
+            <p class="text-gray-300"><span class="text-blue-400">since</span> (starting point): since Monday, since 2020, since I was a child</p>
+            <p class="text-gray-300"><span class="text-blue-400">lately/recently</span>: I've been feeling tired lately.</p>
+            <p class="text-gray-300"><span class="text-blue-400">all day/week/year</span>: She's been studying all day.</p>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">⚖️ Present Perfect Simple vs. Continuous</h2>
+            
+            <div class="overflow-x-auto mb-4">
+                <table class="w-full text-gray-300">
+                    <thead class="bg-white/10">
+                        <tr>
+                            <th class="p-2 text-left text-green-400">Present Perfect Simple</th>
+                            <th class="p-2 text-left text-blue-400">Present Perfect Continuous</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">Focus on <span class="text-yellow-400">result/completion</span></td>
+                            <td class="p-2">Focus on <span class="text-yellow-400">duration/process</span></td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">I've read 3 books. ✓ (finished)</td>
+                            <td class="p-2">I've been reading a lot. (activity)</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">She's lost 10 kg. ✓ (result)</td>
+                            <td class="p-2">She's been dieting. (ongoing effort)</td>
+                        </tr>
+                        <tr class="border-b border-white/10">
+                            <td class="p-2">I've painted the room. ✓ (done)</td>
+                            <td class="p-2">I've been painting. (maybe not finished)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="bg-yellow-500/10 p-3 rounded border border-yellow-500/30">
+                <p class="text-yellow-400">⚠️ Note: Some verbs don't use continuous (stative verbs):</p>
+                <p class="text-gray-300">know, believe, like, love, want, need, understand</p>
+                <p class="text-gray-300">I've <span class="text-green-400">known</span> him for years. (NOT: I've been knowing)</p>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">👤 Appearance Vocabulary</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Hair</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">grow out</span> - let it get longer</li>
+                        <li><span class="text-yellow-400">dye/color</span> - change hair color</li>
+                        <li><span class="text-yellow-400">highlights</span> - lighter streaks</li>
+                        <li><span class="text-yellow-400">shave</span> - remove hair</li>
+                        <li><span class="text-yellow-400">trim</span> - cut a little</li>
+                        <li><span class="text-yellow-400">get a haircut</span> - cut hair</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Body/Fitness</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">lose weight</span> - become thinner</li>
+                        <li><span class="text-yellow-400">gain weight</span> - become heavier</li>
+                        <li><span class="text-yellow-400">get in shape</span> - become fit</li>
+                        <li><span class="text-yellow-400">work out</span> - exercise</li>
+                        <li><span class="text-yellow-400">tone up</span> - build muscle definition</li>
+                        <li><span class="text-yellow-400">slim down</span> - become thinner</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Style Changes</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">makeover</span> - complete style change</li>
+                        <li><span class="text-yellow-400">update your look</span> - modernize style</li>
+                        <li><span class="text-yellow-400">dress up</span> - wear formal clothes</li>
+                        <li><span class="text-yellow-400">dress down</span> - wear casual clothes</li>
+                        <li><span class="text-yellow-400">try a new style</span> - experiment</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Describing Change</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">transform</span> - change completely</li>
+                        <li><span class="text-yellow-400">reinvent yourself</span> - become a new person</li>
+                        <li><span class="text-yellow-400">turn over a new leaf</span> - start fresh</li>
+                        <li><span class="text-yellow-400">make a fresh start</span> - begin again</li>
+                        <li><span class="text-yellow-400">change your image</span> - new appearance</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">💫 Collocations for Personal Change</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div class="bg-white/5 p-2 rounded">
+                    <span class="text-green-400">make</span> a change / a difference / progress / an effort
+                </div>
+                <div class="bg-white/5 p-2 rounded">
+                    <span class="text-green-400">take</span> a risk / a chance / a step / action
+                </div>
+                <div class="bg-white/5 p-2 rounded">
+                    <span class="text-green-400">set</span> a goal / a target / a deadline / priorities
+                </div>
+                <div class="bg-white/5 p-2 rounded">
+                    <span class="text-green-400">break</span> a habit / a pattern / the cycle / free
+                </div>
+                <div class="bg-white/5 p-2 rounded">
+                    <span class="text-green-400">develop</span> skills / confidence / a routine / habits
+                </div>
+                <div class="bg-white/5 p-2 rounded">
+                    <span class="text-green-400">build</span> strength / muscle / character / self-esteem
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-yellow-500/20 rounded-lg border border-yellow-500/50">
+            <h2 class="text-xl text-yellow-400 mb-3">📝 Practice Exercises</h2>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Complete with Present Perfect Continuous:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I _____ (work out) for 6 months. (have been working out)</li>
+                <li>She _____ (try) to change her style lately. (has been trying)</li>
+                <li>How long _____ you _____ (learn) English? (have...been learning)</li>
+                <li>They _____ (not/sleep) well recently. (haven't been sleeping)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Choose Simple or Continuous:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>I _____ (lose) 5 kg this month! (have lost - result)</li>
+                <li>She _____ (diet) since January. (has been dieting - ongoing)</li>
+                <li>He _____ (read) that book for weeks. (has been reading - duration)</li>
+                <li>We _____ (finish) the project! (have finished - completed)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Complete with appearance vocabulary:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>She decided to _____ her hair blonde. (dye)</li>
+                <li>He's been trying to _____ weight for months. (lose)</li>
+                <li>I want to _____ a complete makeover. (get/have)</li>
+                <li>She's _____ her hair out after years of short styles. (growing)</li>
+                <li>He's been _____ to get in shape. (working out)</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 
