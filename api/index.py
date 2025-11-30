@@ -3704,6 +3704,216 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "int11": """
+    <div class="lesson-container max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-bold text-green-400 mb-4">🎲 INTERMEDIATE 11 - Rules & Luck</h1>
+        <p class="text-gray-300 mb-6">ICPNA Intermediate Level - CEFR B1/B2 | Negative Prefixes & Past Modals</p>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-green-400 mb-3">🎯 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Form negative adjectives with prefixes (un-, in-, im-, il-, ir-, dis-)</li>
+                <li>Use past modals for speculation (must have, might have, can't have)</li>
+                <li>Vocabulary: luck, chance, rules, and regulations</li>
+                <li>Express certainty and possibility about past events</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">🔤 Negative Prefixes</h2>
+            
+            <p class="text-gray-300 mb-4">Add these prefixes to make adjectives negative:</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-yellow-400 mb-2">un- (most common)</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li>lucky → <span class="text-red-400">un</span>lucky</li>
+                        <li>fair → <span class="text-red-400">un</span>fair</li>
+                        <li>happy → <span class="text-red-400">un</span>happy</li>
+                        <li>usual → <span class="text-red-400">un</span>usual</li>
+                        <li>expected → <span class="text-red-400">un</span>expected</li>
+                        <li>believable → <span class="text-red-400">un</span>believable</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-yellow-400 mb-2">in- (Latin roots)</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li>correct → <span class="text-red-400">in</span>correct</li>
+                        <li>complete → <span class="text-red-400">in</span>complete</li>
+                        <li>visible → <span class="text-red-400">in</span>visible</li>
+                        <li>formal → <span class="text-red-400">in</span>formal</li>
+                        <li>secure → <span class="text-red-400">in</span>secure</li>
+                        <li>dependent → <span class="text-red-400">in</span>dependent</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-yellow-400 mb-2">im- (before m, p, b)</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li>possible → <span class="text-red-400">im</span>possible</li>
+                        <li>patient → <span class="text-red-400">im</span>patient</li>
+                        <li>polite → <span class="text-red-400">im</span>polite</li>
+                        <li>mature → <span class="text-red-400">im</span>mature</li>
+                        <li>perfect → <span class="text-red-400">im</span>perfect</li>
+                        <li>moral → <span class="text-red-400">im</span>moral</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-yellow-400 mb-2">il- / ir- / dis-</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li>legal → <span class="text-red-400">il</span>legal (before l)</li>
+                        <li>logical → <span class="text-red-400">il</span>logical</li>
+                        <li>regular → <span class="text-red-400">ir</span>regular (before r)</li>
+                        <li>responsible → <span class="text-red-400">ir</span>responsible</li>
+                        <li>honest → <span class="text-red-400">dis</span>honest</li>
+                        <li>organized → <span class="text-red-400">dis</span>organized</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">🔮 Past Modals for Speculation</h2>
+            
+            <p class="text-gray-300 mb-4">Use modal + have + past participle to speculate about the past:</p>
+            
+            <div class="space-y-4 mb-4">
+                <div class="bg-green-500/10 p-3 rounded border-l-4 border-green-500">
+                    <h4 class="text-green-400 mb-2">must have + past participle (almost certain - 95%)</h4>
+                    <p class="text-gray-300">She's not here. She <span class="text-green-400">must have left</span> early.</p>
+                    <p class="text-gray-300">He knew the answer. He <span class="text-green-400">must have studied</span>.</p>
+                    <p class="text-sm text-gray-400">= I'm almost sure this happened</p>
+                </div>
+                
+                <div class="bg-yellow-500/10 p-3 rounded border-l-4 border-yellow-500">
+                    <h4 class="text-yellow-400 mb-2">might/may/could have + past participle (possible - 50%)</h4>
+                    <p class="text-gray-300">She's late. She <span class="text-yellow-400">might have missed</span> the bus.</p>
+                    <p class="text-gray-300">He looks tired. He <span class="text-yellow-400">may have worked</span> late.</p>
+                    <p class="text-gray-300">They're not answering. They <span class="text-yellow-400">could have gone</span> out.</p>
+                    <p class="text-sm text-gray-400">= It's possible this happened</p>
+                </div>
+                
+                <div class="bg-red-500/10 p-3 rounded border-l-4 border-red-500">
+                    <h4 class="text-red-400 mb-2">can't/couldn't have + past participle (impossible - 95% sure NOT)</h4>
+                    <p class="text-gray-300">She <span class="text-red-400">can't have stolen</span> it. She's honest!</p>
+                    <p class="text-gray-300">He <span class="text-red-400">couldn't have known</span>. Nobody told him.</p>
+                    <p class="text-sm text-gray-400">= I'm almost sure this didn't happen</p>
+                </div>
+            </div>
+            
+            <div class="bg-white/5 p-3 rounded">
+                <h4 class="text-blue-400 mb-2">📊 Certainty Scale:</h4>
+                <p class="text-gray-300">
+                    <span class="text-red-400">can't have</span> (0%) → 
+                    <span class="text-yellow-400">might/may have</span> (50%) → 
+                    <span class="text-green-400">must have</span> (95%)
+                </p>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">🍀 Luck & Chance Vocabulary</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Good Luck</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">lucky</span> - having good fortune</li>
+                        <li><span class="text-yellow-400">fortunate</span> - lucky (formal)</li>
+                        <li><span class="text-yellow-400">by chance</span> - accidentally</li>
+                        <li><span class="text-yellow-400">coincidence</span> - unexpected connection</li>
+                        <li><span class="text-yellow-400">stroke of luck</span> - sudden good fortune</li>
+                        <li><span class="text-yellow-400">in the right place at the right time</span></li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-red-400 mb-2">Bad Luck</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">unlucky</span> - having bad fortune</li>
+                        <li><span class="text-yellow-400">unfortunate</span> - unlucky (formal)</li>
+                        <li><span class="text-yellow-400">bad luck</span> - misfortune</li>
+                        <li><span class="text-yellow-400">jinxed</span> - cursed with bad luck</li>
+                        <li><span class="text-yellow-400">out of luck</span> - no luck this time</li>
+                        <li><span class="text-yellow-400">just my luck!</span> - typical bad luck</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3 class="text-lg text-yellow-400 mb-2">Expressions with Luck:</h3>
+            <ul class="list-disc pl-6 space-y-1 text-gray-300">
+                <li><span class="text-green-400">Good luck!</span> - wish someone success</li>
+                <li><span class="text-green-400">Best of luck!</span> - stronger good wishes</li>
+                <li><span class="text-green-400">Fingers crossed!</span> - hoping for good outcome</li>
+                <li><span class="text-green-400">Touch wood / Knock on wood</span> - to avoid bad luck</li>
+                <li><span class="text-green-400">Third time lucky</span> - success after two failures</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8 p-4 bg-white/10 rounded-lg">
+            <h2 class="text-xl text-blue-400 mb-3">📋 Rules & Regulations Vocabulary</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Types of Rules</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">law</span> - official rule by government</li>
+                        <li><span class="text-yellow-400">regulation</span> - official rule</li>
+                        <li><span class="text-yellow-400">rule</span> - principle to follow</li>
+                        <li><span class="text-yellow-400">policy</span> - company/organization rule</li>
+                        <li><span class="text-yellow-400">guideline</span> - recommended practice</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-3 rounded">
+                    <h4 class="text-green-400 mb-2">Following/Breaking Rules</h4>
+                    <ul class="text-gray-300 space-y-1">
+                        <li><span class="text-yellow-400">obey/follow</span> the rules</li>
+                        <li><span class="text-yellow-400">break/violate</span> the rules</li>
+                        <li><span class="text-yellow-400">bend</span> the rules - almost break</li>
+                        <li><span class="text-yellow-400">enforce</span> - make sure rules are followed</li>
+                        <li><span class="text-yellow-400">fine</span> - money penalty</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-8 p-4 bg-yellow-500/20 rounded-lg border border-yellow-500/50">
+            <h2 class="text-xl text-yellow-400 mb-3">📝 Practice Exercises</h2>
+            
+            <h3 class="text-lg text-yellow-400 mb-3">Add the correct negative prefix:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>That's _____legal! You could get arrested. (il)</li>
+                <li>It's _____possible to finish by tomorrow. (im)</li>
+                <li>Her behavior was very _____responsible. (ir)</li>
+                <li>How _____lucky! I lost my wallet. (un)</li>
+                <li>The test results were _____correct. (in)</li>
+                <li>He's very _____patient. He can't wait for anything. (im)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Complete with must have, might have, or can't have:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>She knew the answer. She _____ studied. (must have)</li>
+                <li>He's not answering. He _____ gone to sleep. (might have)</li>
+                <li>She _____ stolen it. She's the most honest person I know! (can't have)</li>
+                <li>They look tired. They _____ worked late. (must have)</li>
+                <li>I'm not sure, but he _____ forgotten about the meeting. (might have)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Match the expressions:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>An unexpected happy connection = _____ (coincidence)</li>
+                <li>Sudden good fortune = _____ (stroke of luck)</li>
+                <li>I hope it works! = _____ (Fingers crossed!)</li>
+                <li>Make sure rules are followed = _____ (enforce)</li>
+                <li>Almost break a rule = _____ (bend the rules)</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 
