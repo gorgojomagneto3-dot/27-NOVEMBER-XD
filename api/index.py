@@ -987,6 +987,157 @@ LESSON_CONTENT = {
             <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
         </div>
     </div>
+    """,
+    
+    "b7": """
+    <div class="lesson-container">
+        <h1 class="text-3xl font-bold text-green-400 mb-6">🏙️ BASIC 07 - City Life</h1>
+        <p class="text-white/60 mb-6">CEFR Level: A2 | ICPNA: Básico 7 | World Link Intro Units 7-9</p>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📋 Learning Objectives</h2>
+            <ul class="list-disc pl-6 space-y-2 text-white/80">
+                <li>Describe locations in a city</li>
+                <li>Use prepositions of place correctly</li>
+                <li>Ask for and give directions</li>
+                <li>Describe your neighborhood</li>
+            </ul>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🏢 City Places Vocabulary</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong class="text-green-400">bank</strong> → banco</li>
+                    <li><strong class="text-green-400">post office</strong> → correo</li>
+                    <li><strong class="text-green-400">hospital</strong> → hospital</li>
+                    <li><strong class="text-green-400">pharmacy/drugstore</strong> → farmacia</li>
+                    <li><strong class="text-green-400">supermarket</strong> → supermercado</li>
+                    <li><strong class="text-green-400">restaurant</strong> → restaurante</li>
+                    <li><strong class="text-green-400">café/coffee shop</strong> → cafetería</li>
+                    <li><strong class="text-green-400">gas station</strong> → gasolinera/grifo</li>
+                    <li><strong class="text-green-400">police station</strong> → comisaría</li>
+                    <li><strong class="text-green-400">bus stop</strong> → paradero de bus</li>
+                    <li><strong class="text-green-400">train station</strong> → estación de tren</li>
+                    <li><strong class="text-green-400">shopping mall</strong> → centro comercial</li>
+                    <li><strong class="text-green-400">movie theater</strong> → cine</li>
+                    <li><strong class="text-green-400">museum</strong> → museo</li>
+                    <li><strong class="text-green-400">park</strong> → parque</li>
+                    <li><strong class="text-green-400">church</strong> → iglesia</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📍 Prepositions of Place</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong class="text-yellow-400">next to</strong> → al lado de → The bank is <em>next to</em> the post office.</li>
+                    <li><strong class="text-yellow-400">across from / opposite</strong> → frente a → The café is <em>across from</em> the park.</li>
+                    <li><strong class="text-yellow-400">between</strong> → entre → The pharmacy is <em>between</em> the bank and the restaurant.</li>
+                    <li><strong class="text-yellow-400">behind</strong> → detrás de → The parking lot is <em>behind</em> the mall.</li>
+                    <li><strong class="text-yellow-400">in front of</strong> → delante de → There's a bus stop <em>in front of</em> the hospital.</li>
+                    <li><strong class="text-yellow-400">on the corner of</strong> → en la esquina de → The bank is <em>on the corner of</em> Main St. and 5th Ave.</li>
+                    <li><strong class="text-yellow-400">near</strong> → cerca de → Is there a restaurant <em>near</em> here?</li>
+                    <li><strong class="text-yellow-400">far from</strong> → lejos de → The airport is <em>far from</em> downtown.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🧭 Giving Directions</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Imperatives for Directions:</h3>
+                <ul class="space-y-2">
+                    <li><strong>Go straight</strong> → Sigue derecho</li>
+                    <li><strong>Turn left</strong> → Dobla a la izquierda</li>
+                    <li><strong>Turn right</strong> → Dobla a la derecha</li>
+                    <li><strong>Go past the...</strong> → Pasa el/la...</li>
+                    <li><strong>Take the first/second street on the left/right</strong></li>
+                    <li><strong>It's on your left/right</strong> → Está a tu izquierda/derecha</li>
+                    <li><strong>Keep going for two blocks</strong> → Sigue por dos cuadras</li>
+                    <li><strong>Cross the street</strong> → Cruza la calle</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Example Dialogue:</h3>
+                <ul class="space-y-1 text-white/80">
+                    <li><strong>A:</strong> Excuse me, how do I get to the bank?</li>
+                    <li><strong>B:</strong> Go straight for two blocks. Turn right on Main Street.</li>
+                    <li><strong>B:</strong> The bank is on the corner, next to the pharmacy.</li>
+                    <li><strong>A:</strong> Thank you!</li>
+                    <li><strong>B:</strong> You're welcome!</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">❓ Asking for Directions</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong>Excuse me, where is the...?</strong> → Disculpe, ¿dónde está el/la...?</li>
+                    <li><strong>How do I get to...?</strong> → ¿Cómo llego a...?</li>
+                    <li><strong>Is there a... near here?</strong> → ¿Hay un/una... cerca de aquí?</li>
+                    <li><strong>Can you tell me how to get to...?</strong> → ¿Puede decirme cómo llegar a...?</li>
+                    <li><strong>Is it far from here?</strong> → ¿Está lejos de aquí?</li>
+                    <li><strong>How long does it take to get there?</strong> → ¿Cuánto tiempo toma llegar?</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">🏘️ Describing Your Neighborhood</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <h3 class="text-lg text-yellow-400 mb-2">Useful Adjectives:</h3>
+                <ul class="space-y-1">
+                    <li><strong>quiet</strong> → tranquilo | <strong>noisy</strong> → ruidoso</li>
+                    <li><strong>safe</strong> → seguro | <strong>dangerous</strong> → peligroso</li>
+                    <li><strong>clean</strong> → limpio | <strong>dirty</strong> → sucio</li>
+                    <li><strong>modern</strong> → moderno | <strong>old</strong> → antiguo</li>
+                    <li><strong>convenient</strong> → conveniente</li>
+                    <li><strong>residential</strong> → residencial</li>
+                    <li><strong>commercial</strong> → comercial</li>
+                </ul>
+                
+                <h3 class="text-lg text-yellow-400 mt-4 mb-2">Example:</h3>
+                <p class="text-white/80">I live in a quiet neighborhood in Miraflores. There are many restaurants and cafés near my house. The supermarket is on the corner, next to the pharmacy. It's a very convenient and safe area.</p>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">📖 There is / There are (Review)</h2>
+            <div class="bg-white/10 p-4 rounded-lg">
+                <ul class="space-y-2">
+                    <li><strong>There is</strong> a bank on Main Street.</li>
+                    <li><strong>There are</strong> two restaurants near here.</li>
+                    <li><strong>Is there</strong> a pharmacy nearby? → Yes, there is. / No, there isn't.</li>
+                    <li><strong>Are there</strong> any parks in your neighborhood? → Yes, there are. / No, there aren't.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="mb-8">
+            <h2 class="text-2xl text-blue-400 mb-4">✏️ Practice Exercises</h2>
+            <h3 class="text-lg text-yellow-400 mb-3">Complete with the correct preposition:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>The bank is _____ the post office and the restaurant. (between)</li>
+                <li>The café is _____ the park. You can see it from there. (across from)</li>
+                <li>There's a bus stop _____ the hospital. (in front of)</li>
+                <li>The supermarket is _____ my house. I walk there every day. (near/next to)</li>
+                <li>The parking lot is _____ the building. (behind)</li>
+            </ol>
+            
+            <h3 class="text-lg text-yellow-400 mt-6 mb-3">Give directions from the school to the bank:</h3>
+            <ol class="list-decimal pl-6 space-y-3">
+                <li>_____ straight for one block. (Go)</li>
+                <li>_____ left on Central Avenue. (Turn)</li>
+                <li>The bank is _____ the corner. (on)</li>
+            </ol>
+        </section>
+        
+        <div class="mt-8 p-4 bg-green-500/20 rounded-lg border border-green-500/50">
+            <p class="text-green-400 font-semibold">🎉 Complete this lesson to earn 50 XP!</p>
+        </div>
+    </div>
     """
 }
 
